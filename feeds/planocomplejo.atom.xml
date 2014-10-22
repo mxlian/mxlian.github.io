@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>planocomplejo</title><link href="/" rel="alternate"></link><link href="/feeds/planocomplejo.atom.xml" rel="self"></link><id>/</id><updated>2014-10-20T20:41:59+02:00</updated><entry><title>stop the nonsense: from Wordpress to static blogging</title><link href="/stop-the-nonsense-from-wordpress-to-static-blogging.html" rel="alternate"></link><updated>2014-10-20T20:41:59+02:00</updated><author><name>planocomplejo</name></author><id>tag:,2014-10-20:stop-the-nonsense-from-wordpress-to-static-blogging.html</id><summary type="html">&lt;html&gt;&lt;body&gt;&lt;p&gt;Why i went from Wordpress to Pelican.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</summary><category term="markdown"></category><category term="blog"></category></entry><entry><title>Extracting RFID chip from SSS Siedle</title><link href="/extracting-rfid-chip-from-sss-siedle.html" rel="alternate"></link><updated>2013-10-17T00:00:00+02:00</updated><author><name>planocomplejo</name></author><id>tag:,2013-10-17:extracting-rfid-chip-from-sss-siedle.html</id><summary type="html">&lt;html&gt;&lt;body&gt;&lt;p&gt;At work we use RFID cards to get through the doors. I don't like to carry it hanging from the neck. I wanted to put the rfid card in my phone, which is the only artifact (beside my wristwatch) that I carry with me all the time. &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>planocomplejo</title><link href="http://mxlian.github.io/" rel="alternate"></link><link href="http://mxlian.github.io/feeds/planocomplejo.atom.xml" rel="self"></link><id>http://mxlian.github.io/</id><updated>2014-10-22T13:51:08+02:00</updated><entry><title>stop the nonsense: from Wordpress to static blogging</title><link href="http://mxlian.github.io/stop-the-nonsense-from-wordpress-to-static-blogging.html" rel="alternate"></link><updated>2014-10-22T13:51:08+02:00</updated><author><name>planocomplejo</name></author><id>tag:mxlian.github.io,2014-10-22:stop-the-nonsense-from-wordpress-to-static-blogging.html</id><summary type="html">&lt;html&gt;&lt;body&gt;&lt;p&gt;Why i went from Wordpress to Pelican.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</summary><category term="markdown"></category><category term="blog"></category></entry><entry><title>Extracting RFID chip from SSS Siedle</title><link href="http://mxlian.github.io/extracting-rfid-chip-from-sss-siedle.html" rel="alternate"></link><updated>2013-10-17T00:00:00+02:00</updated><author><name>planocomplejo</name></author><id>tag:mxlian.github.io,2013-10-17:extracting-rfid-chip-from-sss-siedle.html</id><summary type="html">&lt;html&gt;&lt;body&gt;&lt;p&gt;At work we use RFID cards to get through the doors. I don't like to carry it hanging from the neck. I wanted to put the rfid card in my phone, which is the only artifact (beside my wristwatch) that I carry with me all the time. &lt;/p&gt;
 &lt;p&gt;One problem: the card is too thick to fit inside the phone. But it's mostly made of plastic, so my idea was to somehow extract the chip and antena from the card.&lt;/p&gt;
 &lt;p&gt;Researching I found almost the same solution I wanted by &lt;a href="http://www.adafruit.com/blog/2012/07/16/how-to-embed-a-rfid-transit-card-in-your-iphone/"&gt;Adafruits&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The idea is to 'dissolve' the plastic and extract the internals. Sound much easier than it actually is and it depends a lot from the type of card you are using.&lt;/p&gt;
 &lt;p&gt;After some failed attempts (3 actually), I decided to document the process to help someone with the same kind of card.&lt;/p&gt;
 &lt;p&gt;So if you have a Siedle RFID card, which looks like the picture, keep reading:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="SSS Siedle RFID" src="/images/rfid/sss-siedle-card.jpg" style="width: 300px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="SSS Siedle RFID" src="http://mxlian.github.io/images/rfid/sss-siedle-card.jpg" style="width: 300px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
 
 &lt;h1&gt;1. Dissolve the plastic&lt;/h1&gt;
 &lt;p&gt;The solvent used was &lt;strong&gt;acetone&lt;/strong&gt;. You can find it in cheap nail lacquer removers. It takes a lot of time. I got usable results after 10-12 hours. The best is to leave it covered, to prevent flooding your entire home with acetone and also reduce the evaporation.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail remover" src="/images/rfid/1.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/1.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
 &lt;p&gt;I covered it with a glass (don't use plastic!) bowl, and leave it the whole night working.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail remover" src="/images/rfid/2.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/2.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
 &lt;p&gt;The plastic is not rigid anymore. It look like gum. You can easily distinguish the antenna ring on the card.&lt;/p&gt;
 &lt;h1&gt;2. Extract the chip&lt;/h1&gt;
 &lt;p&gt;Using scissors cut the circle formed by the antenna. Don't worry there are nothing useful outside the ring, but be careful not to cut too much. It's better to leave some room for errors and then retouch it later in small increments.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail remover" src="/images/rfid/3.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/3.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
 &lt;p&gt;The card is like a sandwich, with the rfid circuit in the middle. Why you want to do is to get rid of the bread. Using small increments, cut arround the circle formed by the antenna until you find a spot where both sides of the card aren't stick to each other. From that sort of bubble you want to start to pull the both sides in opposite directions.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail remover" src="/images/rfid/4.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/4.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
 &lt;p&gt;It's better to start on the opposite side where the chip resides, to leave the dedicate part for the end, when you already have revealed most of the antenna's surface.&lt;/p&gt;
 &lt;p&gt;I've marked with a circle where the chip approximately resides, and with an arrow the best place to start pulling the card aside.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail remover" src="/images/rfid/5.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/5.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
 &lt;p&gt;Start pulling slowly and very carefully ...&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail remover" src="/images/rfid/6.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;
-&lt;img alt="Nail remover" src="/images/rfid/7.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/6.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;
+&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/7.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
 &lt;p&gt;The chip is attached to the antenna with &lt;strong&gt;very very thin wires&lt;/strong&gt;. If you brake it, you're done. So be very careful. That's the tricky part.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail remover" src="/images/rfid/8.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;
-&lt;img alt="Nail remover" src="/images/rfid/9.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/8.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;
+&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/9.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
 &lt;h1&gt;3. Protect it&lt;/h1&gt;
 &lt;p&gt;Now that you managed to get rid of the plastic and the chip stills being connected to the antenna it's time to protect this fragile device. I used simple Tesa tape, to sandwich it. Works like a charm.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail remover" src="/images/rfid/10.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;
-&lt;img alt="Nail remover" src="/images/rfid/11.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/10.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;
+&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/11.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
 &lt;p&gt;Now enjoy the magic of oppening the doors only with your phone.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail remover" src="/images/rfid/12.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</summary></entry></feed>
+&lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/12.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</summary></entry></feed>
