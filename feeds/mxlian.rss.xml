@@ -33,7 +33,9 @@
 &lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/11.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
 &lt;p&gt;Now enjoy the magic of oppening the doors only with your phone.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/12.JPG" style="width: 1024px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">mxlian</dc:creator><pubDate>Thu, 17 Oct 2013 00:00:00 +0200</pubDate><guid>tag:mxlian.github.io,2013-10-17:extracting-rfid-chip-from-sss-siedle.html</guid></item><item><title>Biometric identification using analysis of the angular changes of a door when a person opens it</title><link>http://mxlian.github.io/neuror.html</link><description>&lt;html&gt;&lt;body&gt;&lt;p&gt;Differences between human beings (physical and psychological) make us interact with our surrounding in a very unique way.&lt;/p&gt;
-&lt;p&gt;With my friend Julian we thought it may be possible to identify a person entering into a building from the way it opens the building's door.&lt;/p&gt;
+&lt;p&gt;With my friend Julian we thought it may be possible to identify a person entering into a building from the way it opens the building's door, analyzing the angular values over time.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="samples" src="http://mxlian.github.io/images/neuror/samples.png" style="width: 2095px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
+
 &lt;h1&gt;Input&lt;/h1&gt;
 &lt;p&gt;The first step is to collect some samples, so we can have a nice test set to develop the recognition system.&lt;/p&gt;
 &lt;p&gt;To feed the system, we wanted to sample the angular position of a door at a fixed rate for a fixed amount of time. This sample will then be used as the 'fingerprint' of the person to be identified.&lt;/p&gt;
@@ -186,11 +188,11 @@
 &lt;span class="cp"&gt;#s.close()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;h1&gt;Samples&lt;/h1&gt;
-&lt;p&gt;The samples obtained were very very nice. You can tell just by looking at them, the different patters that appear.
-&lt;img alt="samples" src="http://mxlian.github.io/images/neuror/samples.png" style="width: 2095px; height: auto; max-width: 100%;"/&gt;
-&lt;img alt="samples" src="http://mxlian.github.io/images/neuror/sample47.png" style="width: 2095px; height: auto; max-width: 100%;"/&gt;
+&lt;p&gt;The samples obtained were very very nice. You can tell just by looking at them, the different patters that appear.&lt;/p&gt;
+&lt;p&gt;See the picture at the beginning of the article.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="samples" src="http://mxlian.github.io/images/neuror/sample47.png" style="width: 2095px; height: auto; max-width: 100%;"/&gt;
 &lt;img alt="samples" src="http://mxlian.github.io/images/neuror/sample49.png" style="width: 2095px; height: auto; max-width: 100%;"/&gt;&lt;/p&gt;
 &lt;h1&gt;Analysis&lt;/h1&gt;
 &lt;p&gt;Julian started to train some neuronal networks to be able to recognize and group the patterns. He worked with Kohonnen maps.&lt;/p&gt;
-&lt;p&gt;Sadly we had to quit the project because we got a scholarship to go to Germany and we end up abandon the project.&lt;/p&gt;
+&lt;p&gt;Sadly we had to quit the project because we got another priorities and we end up abandon the project.&lt;/p&gt;
 &lt;p&gt;UPDATE: I put some of the stuff on &lt;a href="//github.com/mxlian/neuror"&gt;GitHub&lt;/a&gt; if case you're interested&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">mxlian</dc:creator><pubDate>Tue, 27 Jul 2010 00:00:00 +0200</pubDate><guid>tag:mxlian.github.io,2010-07-27:neuror.html</guid></item></channel></rss>
