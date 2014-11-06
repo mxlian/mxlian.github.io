@@ -30,39 +30,43 @@ the whole night working.&lt;/p&gt;
 &lt;p&gt;The plastic is not rigid anymore. It looks more like gum. You can
 easily distinguish the antenna ring on the card.&lt;/p&gt;
 &lt;h1&gt;2. Extract the chip&lt;/h1&gt;
-&lt;p&gt;Using scissors cut the circle formed by the antenna. Don't worry
-there are nothing useful outside the ring, but be careful not to cut
-too much. It's better to leave some room for errors and then retouch
+&lt;p&gt;Using scissors cut the circle formed by the antenna. Don't worry,
+there are nothing useful outside the ring. Just be careful not to cut
+the ring. It's better to leave some room for errors and then retouch
 it later in small increments.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Cutting" src="http://mxlian.github.io/images/rfid/3.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;The card is like a sandwich, with the rfid circuit in the middle.
-Why you want to do is to get rid of the bread. Using small
-increments, cut around the circle formed by the antenna until you
-find a spot where both sides of the card aren't stick to each other.
-From that sort of bubble you want to start to pull the both sides in
-opposite directions.&lt;/p&gt;
+What you want to do is to get rid of the 'bread'. &lt;/p&gt;
+&lt;p&gt;Using small increments, cut around the circle formed by the antenna
+until you find a spot where both sides of the card aren't stick to
+each other. From that sort of bubble you want to start to pull 
+both sides in opposite directions.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Cutting" src="http://mxlian.github.io/images/rfid/4.resized.JPG" /&gt;&lt;/p&gt;
-&lt;p&gt;It's better to start on the opposite side where the chip resides, to
-leave the dedicate part for the end, when you already have revealed
-most of the antenna's surface.&lt;/p&gt;
-&lt;p&gt;I've marked with a circle where the chip approximately resides, and
-with an arrow the best place to start pulling the card aside.&lt;/p&gt;
+&lt;p&gt;It's better to start with the opposite side where the chip resides,
+to leave the delicate part to the end, when you already have
+revealed most of the antenna's surface.&lt;/p&gt;
+&lt;p&gt;I've marked with a circle where the chip approximately resides and
+with an arrow the best place (in my opinion) to start pulling the
+card aside.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Cutting" src="http://mxlian.github.io/images/rfid/5.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;Start pulling slowly and very carefully ...&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Peeling" src="http://mxlian.github.io/images/rfid/6.resized.JPG" /&gt;
 &lt;img alt="Peeling" src="http://mxlian.github.io/images/rfid/7.resized.JPG" /&gt;&lt;/p&gt;
-&lt;p&gt;The chip is attached to the antenna with &lt;strong&gt;very very thin wires&lt;/strong&gt;.
-If you brake it, you're done. So be very careful. That's the tricky
-part.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Peeling" src="http://mxlian.github.io/images/rfid/8.resized.JPG" /&gt;
-&lt;img alt="Core" src="http://mxlian.github.io/images/rfid/9.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;Now comes the tricky part. The chip is attached to the antenna with
+&lt;strong&gt;very very thin wires&lt;/strong&gt;. If you brake them, you're done. So be
+&lt;strong&gt;very careful&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Peeling" src="http://mxlian.github.io/images/rfid/8.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;Mission accomplished!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Core" src="http://mxlian.github.io/images/rfid/9.resized.JPG" /&gt;&lt;/p&gt;
 &lt;h1&gt;3. Protect it&lt;/h1&gt;
-&lt;p&gt;Now that you managed to get rid of the plastic and the chip stills
-being connected to the antenna it's time to protect this fragile
-device. I used simple Tesa tape, to sandwich it. Works like a charm.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Protect it" src="http://mxlian.github.io/images/rfid/10.resized.JPG" /&gt;
-&lt;img alt="Protect it" src="http://mxlian.github.io/images/rfid/11.resized.JPG" /&gt;&lt;/p&gt;
-&lt;p&gt;Now enjoy the magic of oppening the doors only with your phone.&lt;/p&gt;
+&lt;p&gt;Now that you &lt;em&gt;hopefully&lt;/em&gt; managed to get rid of the plastic without
+ripping the chip from the antenna apart, it's time to protect this
+fragile device. &lt;/p&gt;
+&lt;p&gt;I used simple Tesa tape, to sandwich it. Works like a charm.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Protect it" src="http://mxlian.github.io/images/rfid/10.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;Now with a little bit of love an awesome RFID device:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Protect it" src="http://mxlian.github.io/images/rfid/11.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;Now enjoy the magic of opening the doors only with your phone.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Into the phone" src="http://mxlian.github.io/images/rfid/12.resized.JPG" /&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">mxlian</dc:creator><pubDate>Thu, 17 Oct 2013 00:00:00 +0200</pubDate><guid>tag:mxlian.github.io,2013-10-17:extracting-rfid-chip-from-sss-siedle.html</guid></item><item><title>Biometric identification analyzing door movements</title><link>http://mxlian.github.io/neuror.html</link><description>&lt;p&gt;With my friend Julian we thought it may be possible to identify a person
 entering into a building from the way it opens the building's door, analyzing
 the angular values over time.&lt;/p&gt;
