@@ -55,28 +55,46 @@ Biometric identification analyzing door movements  </title>
     <h1><a href="http://mxlian.github.io/neuror.html">Biometric identification analyzing door movements</a></h1>
   </div>
   <div id="article_text">
-    <p>With my friend Julian we thought it may be possible to identify a person entering into a building from the way it opens the building's door, analyzing the angular values over time.</p>
-<p>It's because of the differences between human beings (physical and psychological) that anyone of us interact with our surroundings in a very unique way. The key thing here is to be able to recognize patterns for each individual, and then use them as identification method.</p>
+    <p>With my friend Julian we thought it may be possible to identify a person
+entering into a building from the way it opens the building's door, analyzing
+the angular values over time.</p>
+<p>It's because of the differences between human beings (physical and
+psychological) that anyone of us interact with our surroundings in a very unique
+way. The key thing here is to be able to recognize patterns for each individual,
+and then use them as identification method.</p>
 <p><img alt="samples" src="http://mxlian.github.io/images/neuror/samples.png" /></p>
 
 
 <h1>Input</h1>
-<p>The first step is to collect some samples, so we can have a nice test set to develop/train the recognition system.</p>
-<p>To feed the system, we wanted to sample the angular position of a door at a fixed rate for a fixed amount of time. This sample will then be used as the 'fingerprint' of the person to be identified.</p>
-<p>The experiment is going to take place with a garage door, where only a reduced amount of people has access. </p>
-<p>For the sensor we use a potentiometer with its body fixed to the wall, and the moving shaft attached to the door. </p>
+<p>The first step is to collect some samples, so we can have a nice test set to
+develop/train the recognition system.</p>
+<p>To feed the system, we wanted to sample the angular position of a door at
+a fixed rate for a fixed amount of time. This sample will then be used as the
+'fingerprint' of the person to be identified.</p>
+<p>The experiment is going to take place with a garage door, where only a reduced
+amount of people has access. </p>
+<p>For the sensor we use a potentiometer with its body fixed to the wall, and the
+moving shaft attached to the door. </p>
 <p><img alt="potetiometer" src="http://mxlian.github.io/images/neuror/1.resized.JPG" /></p>
-<p>The potentiometer should be aligned with the door axis, allowing the moving shaft to follow the angular movements of the door.</p>
+<p>The potentiometer should be aligned with the door axis, allowing the moving
+shaft to follow the angular movements of the door.</p>
 <p><img alt="potetiometer" src="http://mxlian.github.io/images/neuror/2.resized.JPG" /></p>
-<p>Nice, we're all set. Now whenever someone opens the door, the potentiometer will track the movement all the time.</p>
+<p>Nice, we're all set. Now whenever someone opens the door, the potentiometer will
+track the movement all the time.</p>
 <!--![potetiometer]({filename}/images/neuror/3.resized.JPG)-->
 
-<p>To process the signal we use an Arduino, and because we are students with no money it's my self made Severino version.</p>
-<p>The signals of the potentiometer are directly connected to the Arduino, where it's digitalized/cuantified and then sent to a PC where it's going to be stored in a database for future processing.</p>
+<p>To process the signal we use an Arduino, and because we are students with no
+money it's my self made Severino version.</p>
+<p>The signals of the potentiometer are directly connected to the Arduino, where
+it's digitalized/cuantified and then sent to a PC where it's going to be stored
+in a database for future processing.</p>
 <p><img alt="arduino" src="http://mxlian.github.io/images/neuror/4.resized.JPG" /></p>
-<p>We defined our data sample as the serie of measurements while the door is open. When the door is closed we don't care. </p>
-<p>As the Arduino is very scarse on memory we have can't store the whole data sample on it, and then send it to the PC. We have to send every measurement away to keep the memory footprint low, and assemple the data sample on the PC which has more resources.
-The arduino runs a sketch wich performs the following: </p>
+<p>We defined our data sample as the serie of measurements while the door is open.
+When the door is closed we don't care. </p>
+<p>As the Arduino is very scarse on memory we have can't store the whole data
+sample on it, and then send it to the PC. We have to send every measurement away
+to keep the memory footprint low, and assemple the data sample on the PC which
+has more resources.  The arduino runs a sketch wich performs the following: </p>
 <ul>
 <li>It calibrates the value of the door closed</li>
 <li>Detects when the door starts to open</li>
@@ -156,8 +174,7 @@ The arduino runs a sketch wich performs the following: </p>
 65
 66
 67
-68
-69</pre></div></td><td class="code"><div class="codehilite"><pre><span class="cm">/*</span>
+68</pre></div></td><td class="code"><div class="codehilite"><pre><span class="cm">/*</span>
 <span class="cm">       Neuror - Door Interface Sketch </span>
 <span class="cm">*/</span>
 
@@ -168,34 +185,33 @@ The arduino runs a sketch wich performs the following: </p>
 <span class="cp">#define TiempoEntreMuestras 20 </span><span class="c1">// Valor en ms. + lo q toma enviar </span>
                                <span class="c1">// los 2/3/4/5 bytes por serial.</span>
 
-<span class="kt">int</span> <span class="n">valorAD</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">valorMinimo</span> <span class="o">=</span> <span class="mi">1023</span><span class="p">;</span>        <span class="c1">// Para forzar una recalibracion</span>
 <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">valorAD</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">valorMinimo</span> <span class="o">=</span> <span class="mi">1023</span><span class="p">;</span> <span class="c1">// Para forzar una recalibracion</span>
 
 <span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
     <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span> 
     <span class="n">pinMode</span><span class="p">(</span><span class="n">PinLedIndicador</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
 
     <span class="c1">// Serial.println(&quot;READY!&quot;);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">PinLedIndicador</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>   <span class="c1">// Mostar q ya empieza el programa</span>
+    <span class="c1">// Mostar q ya empieza el programa</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">PinLedIndicador</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>   
     <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>                  
     <span class="n">digitalWrite</span><span class="p">(</span><span class="n">PinLedIndicador</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
 
-
     <span class="c1">/// RUTINA RECALIBRACION ///</span>
     <span class="n">valorAD</span> <span class="o">=</span> <span class="n">analogRead</span><span class="p">(</span><span class="n">PinAnalogico</span><span class="p">);</span>
-    <span class="k">if</span> <span class="p">((</span><span class="n">valorAD</span><span class="o">-</span><span class="n">valorMinimo</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="o">-</span><span class="p">(</span><span class="n">Tolerancia</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span> <span class="p">{</span> <span class="c1">// Hay q recalibrar el minimo</span>
-        <span class="k">if</span> <span class="p">((</span><span class="mi">1023</span><span class="o">-</span><span class="n">valorAD</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">Tolerancia</span><span class="p">)</span> <span class="p">{</span>          <span class="c1">// Si el minimo esta demasiado </span>
-                                                    <span class="c1">// cerca del limite superior del </span>
-                                                    <span class="c1">// CAD no hay q establecerlo </span>
-                                                    <span class="c1">// tan cerca.</span>
+    <span class="k">if</span> <span class="p">((</span><span class="n">valorAD</span><span class="o">-</span><span class="n">valorMinimo</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="o">-</span><span class="p">(</span><span class="n">Tolerancia</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span> <span class="p">{</span> 
+        <span class="c1">// Hay q recalibrar el minimo.  Si el minimo esta demasiado cerca</span>
+        <span class="c1">// del limite superior del CAD no hay q establecerlo tan cerca.</span>
+        <span class="k">if</span> <span class="p">((</span><span class="mi">1023</span><span class="o">-</span><span class="n">valorAD</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">Tolerancia</span><span class="p">)</span> <span class="p">{</span>          
           <span class="n">valorMinimo</span> <span class="o">=</span> <span class="n">valorAD</span><span class="p">;</span>
         <span class="p">}</span>
         <span class="k">else</span> <span class="p">{</span>
           <span class="n">valorMinimo</span> <span class="o">=</span><span class="mi">1023</span> <span class="o">-</span> <span class="n">Tolerancia</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
         <span class="p">}</span>
 
-        <span class="c1">// Prendemos el led para mostar q se recalibro (old sucking copypaste way)</span>
+        <span class="c1">// Prendemos el led para mostar q se recalibro (sucking copypaste) </span>
         <span class="n">digitalWrite</span><span class="p">(</span><span class="n">PinLedIndicador</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>   
         <span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>                  
         <span class="n">digitalWrite</span><span class="p">(</span><span class="n">PinLedIndicador</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
@@ -229,20 +245,28 @@ The arduino runs a sketch wich performs the following: </p>
 </pre></div>
 </td></tr></table>
 
-<p>To recieve the data we reconditioned some old hardware, and we plug the Arduino Severino to the serial port (I like old fashion).</p>
+<p>To recieve the data we reconditioned some old hardware, and we plug the Arduino
+Severino to the serial port (I like old fashion). If you're interested you can
+read about <a href="http://mxlian.github.io/hack-your-monitor-to-hang-upside-down.html">how to invert your monitor coils</a>.</p>
 <p><img alt="pc" src="http://mxlian.github.io/images/neuror/5.resized.JPG" /></p>
-<p>The data is now received on the PC through the serial port. To keep it simple we run a SQLite database and a python script which constantly waiting for data. The script recieves all the measurements in secuence, and when the newline caracter arrives it will recognice it as the end of the sample and store it in the database. </p>
+<p>The data is now received on the PC through the serial port. To keep it simple we
+run a SQLite database and a python script which constantly waiting for data. The
+script recieves all the measurements in secuence, and when the newline caracter
+arrives it will recognice it as the end of the sample and store it in the
+database. </p>
 <p>So a little more of detail:</p>
 <ul>
 <li>Connect to the database and get a cursor</li>
 <li>Open the serial port</li>
 <li>Go in a loop where:<ul>
-<li>It receives each reading until a <code>newline</code> character signalizes the end of the sampling </li>
+<li>It receives each reading until a <code>newline</code> character signalizes the end 
+of the sampling </li>
 <li>Store the sample on the database</li>
 </ul>
 </li>
 </ul>
-<p>NOTE: The <code>readline()</code> function of the Serial library blocks until the newline character appears on the line.</p>
+<p>NOTE: The <code>readline()</code> function of the Serial library blocks until the newline
+character appears on the line.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -318,14 +342,19 @@ The arduino runs a sketch wich performs the following: </p>
 </td></tr></table>
 
 <h1>Samples</h1>
-<p>The samples obtained were very nice. You can tell just by looking at them, the different patters that appear.</p>
-<p>See the picture at the beginning of the article. I used matplotlib to plot some of them. </p>
+<p>The samples obtained were very nice. You can tell just by looking at them, the
+different patters that appear.</p>
+<p>See the picture at the beginning of the article. I used matplotlib to plot some
+of them. </p>
 <p><img alt="samples" src="http://mxlian.github.io/images/neuror/sample47.png" />
 <img alt="samples" src="http://mxlian.github.io/images/neuror/sample49.png" /></p>
 <h1>Analysis</h1>
-<p>Julian started to train some neuronal networks to be able to recognize and group the patterns. He worked with Kohonnen maps.</p>
-<p>Sadly we had to quit the project because we got another priorities and we end up abandon the project.</p>
-<p><strong>UPDATE (Oct 2014)</strong>: I put all the samples and code on <a href="//github.com/mxlian/neuror">GitHub</a> in case you're interested. </p>
+<p>Julian started to train some neuronal networks to be able to recognize and group
+the patterns. He worked with Kohonnen maps.</p>
+<p>Sadly we had to quit the project because we got another priorities and we end up
+abandon the project.</p>
+<p><strong>UPDATE (Oct 2014)</strong>: I put all the samples and code on
+<a href="//github.com/mxlian/neuror">GitHub</a> in case you're interested. </p>
   </div>
   <div id="article_meta">
   	<p>Author: <a href="http://mxlian.github.io/author/mxlian.html">mxlian</a></p>

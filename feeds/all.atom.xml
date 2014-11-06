@@ -10,51 +10,69 @@
 &lt;p&gt;After some failed attempts (3 actually), I decided to document the process to help someone with the same kind of card. Here we go:&lt;/p&gt;
 &lt;h1&gt;1. Dissolve the plastic&lt;/h1&gt;
 &lt;p&gt;The solvent used was &lt;strong&gt;acetone&lt;/strong&gt;. You can find it in cheap nail lacquer removers. It takes a lot of time. I got usable results after 10-12 hours. The best is to leave it covered, to prevent flooding your entire home with acetone and also reduce the evaporation.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/1.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Nail polish remover" src="http://mxlian.github.io/images/rfid/1.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;I covered it with a glass (don't use plastic!) bowl, and leave it the whole night working.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/2.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Plastic dissolved" src="http://mxlian.github.io/images/rfid/2.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;The plastic is not rigid anymore. It look like gum. You can easily distinguish the antenna ring on the card.&lt;/p&gt;
 &lt;h1&gt;2. Extract the chip&lt;/h1&gt;
 &lt;p&gt;Using scissors cut the circle formed by the antenna. Don't worry there are nothing useful outside the ring, but be careful not to cut too much. It's better to leave some room for errors and then retouch it later in small increments.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/3.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Cutting" src="http://mxlian.github.io/images/rfid/3.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;The card is like a sandwich, with the rfid circuit in the middle. Why you want to do is to get rid of the bread. Using small increments, cut arround the circle formed by the antenna until you find a spot where both sides of the card aren't stick to each other. From that sort of bubble you want to start to pull the both sides in opposite directions.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/4.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Cutting" src="http://mxlian.github.io/images/rfid/4.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;It's better to start on the opposite side where the chip resides, to leave the dedicate part for the end, when you already have revealed most of the antenna's surface.&lt;/p&gt;
 &lt;p&gt;I've marked with a circle where the chip approximately resides, and with an arrow the best place to start pulling the card aside.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/5.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Cutting" src="http://mxlian.github.io/images/rfid/5.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;Start pulling slowly and very carefully ...&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/6.resized.JPG" /&gt;
-&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/7.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Peeling" src="http://mxlian.github.io/images/rfid/6.resized.JPG" /&gt;
+&lt;img alt="Peeling" src="http://mxlian.github.io/images/rfid/7.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;The chip is attached to the antenna with &lt;strong&gt;very very thin wires&lt;/strong&gt;. If you brake it, you're done. So be very careful. That's the tricky part.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/8.resized.JPG" /&gt;
-&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/9.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Peeling" src="http://mxlian.github.io/images/rfid/8.resized.JPG" /&gt;
+&lt;img alt="Core" src="http://mxlian.github.io/images/rfid/9.resized.JPG" /&gt;&lt;/p&gt;
 &lt;h1&gt;3. Protect it&lt;/h1&gt;
 &lt;p&gt;Now that you managed to get rid of the plastic and the chip stills being connected to the antenna it's time to protect this fragile device. I used simple Tesa tape, to sandwich it. Works like a charm.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/10.resized.JPG" /&gt;
-&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/11.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Protect it" src="http://mxlian.github.io/images/rfid/10.resized.JPG" /&gt;
+&lt;img alt="Protect it" src="http://mxlian.github.io/images/rfid/11.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;Now enjoy the magic of oppening the doors only with your phone.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail remover" src="http://mxlian.github.io/images/rfid/12.resized.JPG" /&gt;&lt;/p&gt;</summary></entry><entry><title>Biometric identification analyzing door movements</title><link href="http://mxlian.github.io/neuror.html" rel="alternate"></link><updated>2010-07-27T00:00:00+02:00</updated><author><name>mxlian</name></author><id>tag:mxlian.github.io,2010-07-27:neuror.html</id><summary type="html">&lt;p&gt;With my friend Julian we thought it may be possible to identify a person entering into a building from the way it opens the building's door, analyzing the angular values over time.&lt;/p&gt;
-&lt;p&gt;It's because of the differences between human beings (physical and psychological) that anyone of us interact with our surroundings in a very unique way. The key thing here is to be able to recognize patterns for each individual, and then use them as identification method.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Into the phone" src="http://mxlian.github.io/images/rfid/12.resized.JPG" /&gt;&lt;/p&gt;</summary></entry><entry><title>Biometric identification analyzing door movements</title><link href="http://mxlian.github.io/neuror.html" rel="alternate"></link><updated>2010-07-27T00:00:00+02:00</updated><author><name>mxlian</name></author><id>tag:mxlian.github.io,2010-07-27:neuror.html</id><summary type="html">&lt;p&gt;With my friend Julian we thought it may be possible to identify a person
+entering into a building from the way it opens the building's door, analyzing
+the angular values over time.&lt;/p&gt;
+&lt;p&gt;It's because of the differences between human beings (physical and
+psychological) that anyone of us interact with our surroundings in a very unique
+way. The key thing here is to be able to recognize patterns for each individual,
+and then use them as identification method.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="samples" src="http://mxlian.github.io/images/neuror/samples.png" /&gt;&lt;/p&gt;
 
 
 &lt;h1&gt;Input&lt;/h1&gt;
-&lt;p&gt;The first step is to collect some samples, so we can have a nice test set to develop/train the recognition system.&lt;/p&gt;
-&lt;p&gt;To feed the system, we wanted to sample the angular position of a door at a fixed rate for a fixed amount of time. This sample will then be used as the 'fingerprint' of the person to be identified.&lt;/p&gt;
-&lt;p&gt;The experiment is going to take place with a garage door, where only a reduced amount of people has access. &lt;/p&gt;
-&lt;p&gt;For the sensor we use a potentiometer with its body fixed to the wall, and the moving shaft attached to the door. &lt;/p&gt;
+&lt;p&gt;The first step is to collect some samples, so we can have a nice test set to
+develop/train the recognition system.&lt;/p&gt;
+&lt;p&gt;To feed the system, we wanted to sample the angular position of a door at
+a fixed rate for a fixed amount of time. This sample will then be used as the
+'fingerprint' of the person to be identified.&lt;/p&gt;
+&lt;p&gt;The experiment is going to take place with a garage door, where only a reduced
+amount of people has access. &lt;/p&gt;
+&lt;p&gt;For the sensor we use a potentiometer with its body fixed to the wall, and the
+moving shaft attached to the door. &lt;/p&gt;
 &lt;p&gt;&lt;img alt="potetiometer" src="http://mxlian.github.io/images/neuror/1.resized.JPG" /&gt;&lt;/p&gt;
-&lt;p&gt;The potentiometer should be aligned with the door axis, allowing the moving shaft to follow the angular movements of the door.&lt;/p&gt;
+&lt;p&gt;The potentiometer should be aligned with the door axis, allowing the moving
+shaft to follow the angular movements of the door.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="potetiometer" src="http://mxlian.github.io/images/neuror/2.resized.JPG" /&gt;&lt;/p&gt;
-&lt;p&gt;Nice, we're all set. Now whenever someone opens the door, the potentiometer will track the movement all the time.&lt;/p&gt;
+&lt;p&gt;Nice, we're all set. Now whenever someone opens the door, the potentiometer will
+track the movement all the time.&lt;/p&gt;
 &lt;!--![potetiometer]({filename}/images/neuror/3.resized.JPG)--&gt;
 
-&lt;p&gt;To process the signal we use an Arduino, and because we are students with no money it's my self made Severino version.&lt;/p&gt;
-&lt;p&gt;The signals of the potentiometer are directly connected to the Arduino, where it's digitalized/cuantified and then sent to a PC where it's going to be stored in a database for future processing.&lt;/p&gt;
+&lt;p&gt;To process the signal we use an Arduino, and because we are students with no
+money it's my self made Severino version.&lt;/p&gt;
+&lt;p&gt;The signals of the potentiometer are directly connected to the Arduino, where
+it's digitalized/cuantified and then sent to a PC where it's going to be stored
+in a database for future processing.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="arduino" src="http://mxlian.github.io/images/neuror/4.resized.JPG" /&gt;&lt;/p&gt;
-&lt;p&gt;We defined our data sample as the serie of measurements while the door is open. When the door is closed we don't care. &lt;/p&gt;
-&lt;p&gt;As the Arduino is very scarse on memory we have can't store the whole data sample on it, and then send it to the PC. We have to send every measurement away to keep the memory footprint low, and assemple the data sample on the PC which has more resources.
-The arduino runs a sketch wich performs the following: &lt;/p&gt;
+&lt;p&gt;We defined our data sample as the serie of measurements while the door is open.
+When the door is closed we don't care. &lt;/p&gt;
+&lt;p&gt;As the Arduino is very scarse on memory we have can't store the whole data
+sample on it, and then send it to the PC. We have to send every measurement away
+to keep the memory footprint low, and assemple the data sample on the PC which
+has more resources.  The arduino runs a sketch wich performs the following: &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;It calibrates the value of the door closed&lt;/li&gt;
 &lt;li&gt;Detects when the door starts to open&lt;/li&gt;
@@ -134,8 +152,7 @@ The arduino runs a sketch wich performs the following: &lt;/p&gt;
 65
 66
 67
-68
-69&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
+68&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;       Neuror - Door Interface Sketch &lt;/span&gt;
 &lt;span class="cm"&gt;*/&lt;/span&gt;
 
@@ -146,34 +163,33 @@ The arduino runs a sketch wich performs the following: &lt;/p&gt;
 &lt;span class="cp"&gt;#define TiempoEntreMuestras 20 &lt;/span&gt;&lt;span class="c1"&gt;// Valor en ms. + lo q toma enviar &lt;/span&gt;
                                &lt;span class="c1"&gt;// los 2/3/4/5 bytes por serial.&lt;/span&gt;
 
-&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;valorAD&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;valorMinimo&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1023&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;        &lt;span class="c1"&gt;// Para forzar una recalibracion&lt;/span&gt;
 &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;valorAD&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;valorMinimo&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1023&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// Para forzar una recalibracion&lt;/span&gt;
 
 &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="n"&gt;Serial&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;begin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;9600&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; 
     &lt;span class="n"&gt;pinMode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PinLedIndicador&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;OUTPUT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 
     &lt;span class="c1"&gt;// Serial.println(&amp;quot;READY!&amp;quot;);&lt;/span&gt;
-    &lt;span class="n"&gt;digitalWrite&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PinLedIndicador&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;HIGH&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;   &lt;span class="c1"&gt;// Mostar q ya empieza el programa&lt;/span&gt;
+    &lt;span class="c1"&gt;// Mostar q ya empieza el programa&lt;/span&gt;
+    &lt;span class="n"&gt;digitalWrite&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PinLedIndicador&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;HIGH&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;   
     &lt;span class="n"&gt;delay&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;                  
     &lt;span class="n"&gt;digitalWrite&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PinLedIndicador&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;LOW&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 
-
     &lt;span class="c1"&gt;/// RUTINA RECALIBRACION ///&lt;/span&gt;
     &lt;span class="n"&gt;valorAD&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;analogRead&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PinAnalogico&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;valorAD&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;valorMinimo&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Tolerancia&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="c1"&gt;// Hay q recalibrar el minimo&lt;/span&gt;
-        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;1023&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;valorAD&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;Tolerancia&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;          &lt;span class="c1"&gt;// Si el minimo esta demasiado &lt;/span&gt;
-                                                    &lt;span class="c1"&gt;// cerca del limite superior del &lt;/span&gt;
-                                                    &lt;span class="c1"&gt;// CAD no hay q establecerlo &lt;/span&gt;
-                                                    &lt;span class="c1"&gt;// tan cerca.&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;valorAD&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;valorMinimo&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Tolerancia&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+        &lt;span class="c1"&gt;// Hay q recalibrar el minimo.  Si el minimo esta demasiado cerca&lt;/span&gt;
+        &lt;span class="c1"&gt;// del limite superior del CAD no hay q establecerlo tan cerca.&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;1023&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;valorAD&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;Tolerancia&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;          
           &lt;span class="n"&gt;valorMinimo&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;valorAD&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
         &lt;span class="p"&gt;}&lt;/span&gt;
         &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
           &lt;span class="n"&gt;valorMinimo&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1023&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;Tolerancia&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
         &lt;span class="p"&gt;}&lt;/span&gt;
 
-        &lt;span class="c1"&gt;// Prendemos el led para mostar q se recalibro (old sucking copypaste way)&lt;/span&gt;
+        &lt;span class="c1"&gt;// Prendemos el led para mostar q se recalibro (sucking copypaste) &lt;/span&gt;
         &lt;span class="n"&gt;digitalWrite&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PinLedIndicador&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;HIGH&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;   
         &lt;span class="n"&gt;delay&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;                  
         &lt;span class="n"&gt;digitalWrite&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PinLedIndicador&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;LOW&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
@@ -207,20 +223,28 @@ The arduino runs a sketch wich performs the following: &lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
-&lt;p&gt;To recieve the data we reconditioned some old hardware, and we plug the Arduino Severino to the serial port (I like old fashion).&lt;/p&gt;
+&lt;p&gt;To recieve the data we reconditioned some old hardware, and we plug the Arduino
+Severino to the serial port (I like old fashion). If you're interested you can
+read about &lt;a href="http://mxlian.github.io/hack-your-monitor-to-hang-upside-down.html"&gt;how to invert your monitor coils&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="pc" src="http://mxlian.github.io/images/neuror/5.resized.JPG" /&gt;&lt;/p&gt;
-&lt;p&gt;The data is now received on the PC through the serial port. To keep it simple we run a SQLite database and a python script which constantly waiting for data. The script recieves all the measurements in secuence, and when the newline caracter arrives it will recognice it as the end of the sample and store it in the database. &lt;/p&gt;
+&lt;p&gt;The data is now received on the PC through the serial port. To keep it simple we
+run a SQLite database and a python script which constantly waiting for data. The
+script recieves all the measurements in secuence, and when the newline caracter
+arrives it will recognice it as the end of the sample and store it in the
+database. &lt;/p&gt;
 &lt;p&gt;So a little more of detail:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Connect to the database and get a cursor&lt;/li&gt;
 &lt;li&gt;Open the serial port&lt;/li&gt;
 &lt;li&gt;Go in a loop where:&lt;ul&gt;
-&lt;li&gt;It receives each reading until a &lt;code&gt;newline&lt;/code&gt; character signalizes the end of the sampling &lt;/li&gt;
+&lt;li&gt;It receives each reading until a &lt;code&gt;newline&lt;/code&gt; character signalizes the end 
+of the sampling &lt;/li&gt;
 &lt;li&gt;Store the sample on the database&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;NOTE: The &lt;code&gt;readline()&lt;/code&gt; function of the Serial library blocks until the newline character appears on the line.&lt;/p&gt;
+&lt;p&gt;NOTE: The &lt;code&gt;readline()&lt;/code&gt; function of the Serial library blocks until the newline
+character appears on the line.&lt;/p&gt;
 &lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
  2
  3
@@ -296,11 +320,70 @@ The arduino runs a sketch wich performs the following: &lt;/p&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 &lt;h1&gt;Samples&lt;/h1&gt;
-&lt;p&gt;The samples obtained were very nice. You can tell just by looking at them, the different patters that appear.&lt;/p&gt;
-&lt;p&gt;See the picture at the beginning of the article. I used matplotlib to plot some of them. &lt;/p&gt;
+&lt;p&gt;The samples obtained were very nice. You can tell just by looking at them, the
+different patters that appear.&lt;/p&gt;
+&lt;p&gt;See the picture at the beginning of the article. I used matplotlib to plot some
+of them. &lt;/p&gt;
 &lt;p&gt;&lt;img alt="samples" src="http://mxlian.github.io/images/neuror/sample47.png" /&gt;
 &lt;img alt="samples" src="http://mxlian.github.io/images/neuror/sample49.png" /&gt;&lt;/p&gt;
 &lt;h1&gt;Analysis&lt;/h1&gt;
-&lt;p&gt;Julian started to train some neuronal networks to be able to recognize and group the patterns. He worked with Kohonnen maps.&lt;/p&gt;
-&lt;p&gt;Sadly we had to quit the project because we got another priorities and we end up abandon the project.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;UPDATE (Oct 2014)&lt;/strong&gt;: I put all the samples and code on &lt;a href="//github.com/mxlian/neuror"&gt;GitHub&lt;/a&gt; in case you're interested. &lt;/p&gt;</summary></entry></feed>
+&lt;p&gt;Julian started to train some neuronal networks to be able to recognize and group
+the patterns. He worked with Kohonnen maps.&lt;/p&gt;
+&lt;p&gt;Sadly we had to quit the project because we got another priorities and we end up
+abandon the project.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE (Oct 2014)&lt;/strong&gt;: I put all the samples and code on
+&lt;a href="//github.com/mxlian/neuror"&gt;GitHub&lt;/a&gt; in case you're interested. &lt;/p&gt;</summary></entry><entry><title>Hack your monitor to hang upside down</title><link href="http://mxlian.github.io/hack-your-monitor-to-hang-upside-down.html" rel="alternate"></link><updated>2010-05-25T00:00:00+02:00</updated><author><name>mxlian</name></author><id>tag:mxlian.github.io,2010-05-25:hack-your-monitor-to-hang-upside-down.html</id><summary type="html">&lt;p&gt;For another project I was lacking enough room to put a CRT monitor and a PC on
+relatively small shelf. So instead of getting another extra shelf I decided to
+put the monitor on the bottom side of the shelf. Yeah :) &lt;/p&gt;
+&lt;p&gt;I just need to manage to invert the image of the monitor, to make some use of
+this &lt;em&gt;fancy&lt;/em&gt; setup.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Monitor with inverted coils" src="http://mxlian.github.io/images/coil/0.resized.JPG" /&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Actually I found it's not a big deal.&lt;/p&gt;
+&lt;p&gt;Without going in too many details about how a CRT monitor works, it's enough to
+know that it consist on a cannon located on the back that 'fires' electrons to
+the screen in the front. When the electrons hit the screen it glows (phosphor)
+and the image can be form.&lt;/p&gt;
+&lt;p&gt;The important thing here are the coils. The cannon 'fires' in straight line to
+the center of the screen. To reach the entire surface the electron beam will be
+bent through magnetic deflection. Those magnetic fields are
+produced by the &lt;em&gt;deflection coils&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;This coils are located between the cannon and the screen. The intensity of the
+current flowing trough them determines the power of the magnetic field and how
+much will be the beam deflected. There are two pairs. One for vertical
+deflection and the other for horizontal.&lt;/p&gt;
+&lt;p&gt;The idea is incredible simple. Just invert the polarity of the coils. The beams
+will be then deflected in the opposite direction as intended, creating a mirror
+image. Great.&lt;/p&gt;
+&lt;p&gt;Let's find them.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WARNING&lt;/strong&gt;: Inside the monitor there are big capacitors which work with really
+high voltage. Very important to take necessary protections and to unplug the
+monitor while it still on, to help the capacitors discharge themselves.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Monitor internals" src="http://mxlian.github.io/images/coil/1.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;We are looking for a connector with two pair of cables. One for each coil. To
+make it even easier, the usually came in the same colors.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Yellow/Brown&lt;/li&gt;
+&lt;li&gt;Red/Blue&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt="Coil connector" src="http://mxlian.github.io/images/coil/2.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;Just to be sure, we check with the multimeter. The coils are independent, so to
+find each coil you have to find the combination of cables who show some
+resistance in the multimeter. &lt;/p&gt;
+&lt;p&gt;Now lets make a test, and invert the polarity of the coil. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Coil polarity inversion" src="http://mxlian.github.io/images/coil/4.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;And test it.
+&lt;img alt="Inversion test" src="http://mxlian.github.io/images/coil/5.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;Wonderful we inverted the vertical deflectors, and we are getting a vertically
+mirrored image.&lt;/p&gt;
+&lt;p&gt;To achieve the desired effect I will also switch the polarity of the horizontal
+deflectors and also make sure everything is well isolated.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Coil connector" src="http://mxlian.github.io/images/coil/6.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;Test again. Ta da! Exactly what I was needing.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Coil connector" src="http://mxlian.github.io/images/coil/8.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;Take a look at the final setup.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Coil connector" src="http://mxlian.github.io/images/coil/9.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt;: I found a nice video on the matter:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/QVYG3ShP6S4"
+frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary></entry></feed>
