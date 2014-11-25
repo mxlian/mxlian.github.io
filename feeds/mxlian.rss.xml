@@ -67,7 +67,356 @@ fragile device. &lt;/p&gt;
 &lt;p&gt;Now with a little bit of love an awesome RFID device:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Protect it" src="http://mxlian.github.io/images/rfid/11.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;Now enjoy the magic of opening the doors only with your phone.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Into the phone" src="http://mxlian.github.io/images/rfid/12.resized.JPG" /&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">mxlian</dc:creator><pubDate>Thu, 17 Oct 2013 00:00:00 +0200</pubDate><guid>tag:mxlian.github.io,2013-10-17:extracting-rfid-chip-from-sss-siedle.html</guid></item><item><title>Biometric identification analyzing door movements</title><link>http://mxlian.github.io/neuror.html</link><description>&lt;p&gt;With my friend Julian we thought it may be possible to identify a person
+&lt;p&gt;&lt;img alt="Into the phone" src="http://mxlian.github.io/images/rfid/12.resized.JPG" /&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">mxlian</dc:creator><pubDate>Thu, 17 Oct 2013 00:00:00 +0200</pubDate><guid>tag:mxlian.github.io,2013-10-17:extracting-rfid-chip-from-sss-siedle.html</guid></item><item><title>Electronic controller for my washing machine</title><link>http://mxlian.github.io/electronic-controller-for-my-washing-machine.html</link><description>&lt;p&gt;The electromechanical timer of my washing machine died. It couldn't
+be repaired and had to be replaced. &lt;/p&gt;
+&lt;p&gt;What to do?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Be boring, go to the store, buy a new one, replace it&lt;/li&gt;
+&lt;li&gt;Build your own, even if you have no idea how &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you think the second option is the right one keep reading...&lt;/p&gt;
+&lt;p&gt;&lt;img alt="samples" src="http://mxlian.github.io/images/washing-machine/summary2.JPG" /&gt;&lt;/p&gt;
+
+
+&lt;h1&gt;Background&lt;/h1&gt;
+&lt;p&gt;It's 2007. My great old washing machine (an Aurora T-5502) got stuck
+while in the spin cycle and spun for hours. When I found out it was
+too late and there was already some damage in the machine.&lt;/p&gt;
+&lt;p&gt;Cause? The electromechanical timer. It was worn-out and the contacts
+couldn't rotate as originally designed. The old timer couldn't be
+repaired and has to be replaced. &lt;/p&gt;
+&lt;p&gt;The timer was like an old fashioned clock, where the hand touches
+different contacts along the way, activating different functions. &lt;/p&gt;
+&lt;p&gt;That's grandpa tech. I needed something better.&lt;/p&gt;
+&lt;p&gt;No long ago I had read about microcontrollers and got fascinated
+about the topic. So I decided to make my own electronic timer, which
+should be cooler.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DISCLAIMER:&lt;/strong&gt; As I said, I had almost no idea of electronics when
+I started the project, so don't kill me for all the wrong choices.&lt;/p&gt;
+&lt;h1&gt;The finished project&lt;/h1&gt;
+&lt;p&gt;Don't want to bore you with details, so let me show you how it went
+and leave the rest for the end in case you still interested.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="finished" src="http://mxlian.github.io/images/washing-machine/finished.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;The machine provides 4 different full programs, 2 short ones, and configuration:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ropa de algodón (cotton)&lt;/li&gt;
+&lt;li&gt;Ropa delicada (delicate)&lt;/li&gt;
+&lt;li&gt;Ropa muy sucia (very dirty)&lt;/li&gt;
+&lt;li&gt;Modo agresivo (aggressive mode)&lt;/li&gt;
+&lt;li&gt;Drain&lt;/li&gt;
+&lt;li&gt;Spin only&lt;/li&gt;
+&lt;li&gt;Configuration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For each program following parameters can also be selected:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Prewash&lt;/li&gt;
+&lt;li&gt;Temperature&lt;/li&gt;
+&lt;li&gt;Disable spin cycle&lt;/li&gt;
+&lt;li&gt;Initial delay&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE 2014&lt;/strong&gt;: I added uploaded some old videos to youtube.&lt;/p&gt;
+&lt;iframe width="420" height="315" src="//www.youtube.com/embed/WQ8yoPQx2lU"
+frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://youtu.be/SyI2P_iRjRw"&gt;Program selection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://youtu.be/PJSPM-CavEs"&gt;Washing cycle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://youtu.be/CsDk-Pk9I4E"&gt;Spin cycle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Washing machine internals&lt;/h1&gt;
+&lt;p&gt;&lt;img alt="internals" src="http://mxlian.github.io/images/washing-machine/topview.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;The system is divided in three parts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The control panel&lt;/li&gt;
+&lt;li&gt;The motherboard&lt;/li&gt;
+&lt;li&gt;The interface with the washing machine&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;The control panel&lt;/h2&gt;
+&lt;p&gt;It's the interface with the user. Contains:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LCD screen (16x2)&lt;/li&gt;
+&lt;li&gt;3 buttons (Left, Right, Enter)&lt;/li&gt;
+&lt;li&gt;Red power led (to show the power stage is working)&lt;/li&gt;
+&lt;li&gt;Yellow led (show established link to pc, if connected)&lt;/li&gt;
+&lt;li&gt;Piezoelectric sounder (to generate tones)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="logic diagram" src="http://mxlian.github.io/images/washing-machine/control_panel.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;The LCD has his own driver (microcontroller). Mine was the HD44780, and the
+protocol can be found on the datasheet. I used a library which spared me the
+headache. Sadly the driver is very sensitive to EMI, which caused a LOT of
+trouble.&lt;/p&gt;
+&lt;p&gt;A special consideration is required with the buttons, specially if you buy cheap
+ones: when you press the button the metallic pieces bounce at an almost
+microscopic level. In many cases the bounce interrupts the electric flow up to
+many times for some microseconds before completely close the circuit as expected
+to. As the microcontroller is fast enough it could wrongly sense many presses of
+the button even if you only pressed it once.&lt;/p&gt;
+&lt;p&gt;There is two solutions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hardware filters (low pass)&lt;/li&gt;
+&lt;li&gt;Filter it by software&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The sounder is connected directly to the microcontroller, being able to generate
+a wide range of tones.&lt;/p&gt;
+&lt;h2&gt;The motherboard&lt;/h2&gt;
+&lt;p&gt;It's the central part of the design. It hosts the microcontroller and
+connects it with the peripherals.&lt;/p&gt;
+&lt;p&gt;The design was made with Eagle CAD. You can find it on &lt;a href="http://github.com/mxlian/wm"&gt;Github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="eagle" src="http://mxlian.github.io/images/washing-machine/eagle.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;The PCB it's made of cheap Pertinax (FR-2) to save some money. No high
+frequencies to justify a higher quality.&lt;/p&gt;
+&lt;p&gt;The first thing is the power source. The input voltage is 9VAC 1A (a 220v/9v
+transformer with fuse). The motherboard contains a diode bridge to obtain 12VDC
+for the relays and the servo and voltage regulator (LM7805) to power the LCD and
+the micro at 5VDC.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="trafo" src="http://mxlian.github.io/images/washing-machine/trafo.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;Peripherals are connected to the mainboard trough housing connectors, making
+removal of the motherboard very easy.&lt;/p&gt;
+&lt;p&gt;The microcontroller used is the PIC 16F877PI with at 4Mhz. There was no need to
+run at a higher frequency. It also worked better at this frequency with the tone
+generator library for the piezo sounder.&lt;/p&gt;
+&lt;p&gt;To program it there is a ICSP socket, to allow direct firmware updates without
+having to extract the micro.&lt;/p&gt;
+&lt;p&gt;There is optical isolation with the power stage using optocouplers (HPCL-817).&lt;/p&gt;
+&lt;p&gt;&lt;img alt="mainboard" src="http://mxlian.github.io/images/washing-machine/motherboard.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;The firmware is C code compiled with the PCM compiler from CCS, a very good
+PIC compilers of that time. The firmware uses about 85% of the ROM and required
+some nasty tricks to fit them in.&lt;/p&gt;
+&lt;h2&gt;Interface with the washing machine&lt;/h2&gt;
+&lt;h3&gt;Power stage&lt;/h3&gt;
+&lt;p&gt;It consists in a 'panel' of relays, acting as switches to control the
+electric flow to the different components of the machine:&lt;/p&gt;
+&lt;p&gt;The panel diagram:
+&lt;img alt="Panel Diagram" src="http://mxlian.github.io/images/washing-machine/panelDistribucion.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;The actual panel:
+&lt;img alt="Real Panel" src="http://mxlian.github.io/images/washing-machine/WM_Relays.JPG" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Electrovalve(RLY_EV): an electrically controlled water inlet. It let
+water flow when an electrical current is applied. The water goes
+directly to the dispenser system&lt;/li&gt;
+&lt;li&gt;The heater(RLY_TR): a resistance to heat the water&lt;/li&gt;
+&lt;li&gt;Drain pump(RLY_BA): to extract the water from the wash drum&lt;/li&gt;
+&lt;li&gt;The motor(RLY_AC, RLY_ML1, RLY_ML2, RLY_SM1, RLY_SM2): provides
+the rotation of the drum. My machine has one motor with 2 different
+coils. One for slow speed and one for the spin cycle. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The connections to Electrovalve, Heater and Pump were relatively
+straightforward. So I will omit the explanation.&lt;/p&gt;
+&lt;p&gt;To interface the motor I had to do some experimentation to find out
+how to make it work. These are the results:&lt;/p&gt;
+&lt;p&gt;Lets assign numbers to the connector pins (from left to right). The
+upper row 1, 2, 3 and 4, 5, 6 to the bottom row.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Motor connector" src="http://mxlian.github.io/images/washing-machine/fichon.JPG" /&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Pin number&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;GND&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;High Speed Coil (MC_1)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;Low Speed Coil (ML_1)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;GND&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;High Speed Coil (MC_2)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;Low Speed Coil (ML_2)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;em&gt;NOTE: The electrolytic condenser (CAPACITOR_MOTOR_LAVARROPAS) is
+shared within the two coils.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The relays RLY_MLx makes the commutation between low speed coil (for
+normal washing) ML_x and high speed one (for spinning) MC_x. &lt;/p&gt;
+&lt;p&gt;When the low speed coil is active, the relays RLY_SM control the
+direction of rotation (see panel diagram). When the high speed coil
+is active they have no effect.&lt;/p&gt;
+&lt;p&gt;The relay RLY_AC switch the motor on and off. The &lt;a href="http://en.wikipedia.org/wiki/Snubber"&gt;snubber&lt;/a&gt;
+reduces the EMI of the commutation, which is horrible for big
+inductive loads like the motor.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Snubber" src="http://mxlian.github.io/images/washing-machine/snubber.png" /&gt;&lt;/p&gt;
+&lt;p&gt;The snubber configuration used (ignore the values of the diagram):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;R=100Ohm/1Watt&lt;/li&gt;
+&lt;li&gt;C=100nF/250V&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The relays I used are SANYOU SRD-S-112D, the are very cheap. I end
+up using it in pairs instead of buyin &lt;em&gt;double pole&lt;/em&gt; ones.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="SANYOU relays" src="http://mxlian.github.io/images/washing-machine/relay.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;To control the relays I used an array of Darlington transistors
+(ULN2003AN). Each Darlington comes with a &lt;a href="https://www.youtube.com/watch?v=LXGtE3X2k7Y"&gt;freewheeling diode&lt;/a&gt;,
+to protect the transistors from coil auto induction, when driving
+inductive loads.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="ULN2003AN" src="http://mxlian.github.io/images/washing-machine/uln2003.png" /&gt;&lt;/p&gt;
+&lt;h3&gt;Sensors&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Pressure switch&lt;/strong&gt;: allows to know when the water reached
+a predefined level by measuring the air pressure exert by the water
+in a special air chamber. It's used as a normal switch.
+&lt;img alt="Pressure switch" src="http://mxlian.github.io/images/washing-machine/presometro.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Door switch&lt;/strong&gt;: actually a main switch, which is closed only by the door. When
+the door closes the machine is turned on. I keep using it as originally
+designed. The door switch doesn't contains any lock mechanism.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Temperature sensor&lt;/strong&gt;: originally was a bimetalic thermostat to
+measure water temperature and control the heater. I completely
+replaced it with a LM35 temperature sensor reusing the original
+metallic housing of the thermostat. The LM35 was attached to the 
+housing using super glue.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pressure switch" src="http://mxlian.github.io/images/washing-machine/thermostat.png" /&gt;&lt;/p&gt;
+&lt;h3&gt;Dispenser system&lt;/h3&gt;
+&lt;p&gt;This machine has only one water inlet and a rotatory arm to divert
+the water flow into the different compartments. The arm was
+originally controlled by the electromechanical timer. To achieve the
+same function I used a low cost servo for model airplanes (I took
+the idea from &lt;a href="http://pablin.com.ar/electron/circuito/mc/lavapic/index.htm"&gt;Pablo Canello&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Servo" src="http://mxlian.github.io/images/washing-machine/WM_Servo2.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;The servo was attached to the rotatory arm (green) using a little
+bit of bricolage ingenuity.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Servo" src="http://mxlian.github.io/images/washing-machine/WM_Servo1.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;See the first video of operation (configuration) to get a better
+idea.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The servo has 3 lines, VCC, GND and signal. To control the servo
+position the PIC will generate a PWM signal at 50Hz. Varying the
+pulse within 1ms to aprox 2.5ms will be linearly translated to
+0 degrees and 180 degrees respectively. &lt;/p&gt;
+&lt;p&gt;As long the PWM signal is present, the servo will do all it can to
+get to the desired position. If the signal is interrupted the servo
+remains in its last position and will not try to correct externally
+applied forces&lt;/p&gt;
+&lt;p&gt;Every time before loading water, the servo will be positioned in
+the corresponding compartment.&lt;/p&gt;
+&lt;p&gt;To correctly move the rotatory arm, the servo position
+corresponding to each compartment of the dispenser will be recorded
+with help of a calibration routine (a once time operation). Each
+position is a value between 0 and 255 (one byte) and will be stored
+in the PIC EEPROM.&lt;/p&gt;
+&lt;h1&gt;Operation&lt;/h1&gt;
+&lt;p&gt;Simplifying a little, the operation starts by selecting the washing
+parameters.&lt;/p&gt;
+&lt;p&gt;It's followed by many cycles of the following tasks:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Select the desired compartiment on the dispenser system&lt;/li&gt;
+&lt;li&gt;Load water until pressure switch closes&lt;/li&gt;
+&lt;li&gt;Wash alternating directions&lt;/li&gt;
+&lt;li&gt;Pump water out&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The operation finishes with the spinning cycle (if the spin option
+wasn't excluded when selecting the parameters).&lt;/p&gt;
+&lt;p&gt;Each task has its own parameters which varies between all the
+washing programs. Please refer to the code to see the differences.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="logic diagram" src="http://mxlian.github.io/images/washing-machine/diagLogico.png" /&gt;&lt;/p&gt;
+&lt;h1&gt;Hardware versions&lt;/h1&gt;
+&lt;p&gt;The motherboard went through 3 different iterations:&lt;/p&gt;
+&lt;h3&gt;Version 1&lt;/h3&gt;
+&lt;p&gt;The proof of concept. It was a RS232 interface between the washing
+machine and the PC. The power stage and the sensors where connected
+to a PIC 16F84A. &lt;/p&gt;
+&lt;p&gt;The user interface was a computer program which sent orders to the
+PIC UART through a serial interface.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="serial connector" src="http://mxlian.github.io/images/washing-machine/serialconn.JPG" /&gt;&lt;/p&gt;
+&lt;h3&gt;Version 2&lt;/h3&gt;
+&lt;p&gt;I grew up my skills on microcontrollers so I went for an autonomous
+solution. A new set of features were added:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LCD screen with HD44780 microcontroller&lt;/li&gt;
+&lt;li&gt;Buttons&lt;/li&gt;
+&lt;li&gt;Piezoelectric sounder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Therefore a more powerful microcontroller came into play. The amazing PIC
+16F877PI.&lt;/p&gt;
+&lt;p&gt;The biggest problem with this version was random freezes on the PIC.  It was
+very hard to get the program to finished after installing it on the machine.
+Outside all tests and simulation worked perfectly.  I almost went crazy with
+this problem.&lt;/p&gt;
+&lt;h3&gt;Version 3&lt;/h3&gt;
+&lt;p&gt;After realizing that the freezing problem was electromagnetic noise (EMI), I put
+all my effort (really felt clueless most of the time) to eradicate it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Filters on the power supply&lt;/li&gt;
+&lt;li&gt;Galvanic isolation from the power stage (with optocouplers)&lt;/li&gt;
+&lt;li&gt;Decoupling capacitors (between VCC and GND)&lt;/li&gt;
+&lt;li&gt;A Faraday cage (sort of) for the PIC connecte to GND&lt;/li&gt;
+&lt;li&gt;Better PCB design&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It improved the stability of the system a lot, but it was still not
+freeze free. After an incredible amount of time (because it only
+happened randomly and very spaciated in time) I discovered that the
+LCD microcontroller was also being affected by EMI and as result it
+was blocking my PIC. &lt;/p&gt;
+&lt;p&gt;I applied 2 extra measures:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Snubbers on the relays to reduce EMI emission (they make a hell of
+a mess when commuting, especially the motor) &lt;/li&gt;
+&lt;li&gt;Faraday cage to the LCD circuit (as much as possible)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Firmware history&lt;/h1&gt;
+&lt;h3&gt;Version 1&lt;/h3&gt;
+&lt;p&gt;The interface between the PIC 16F84A and the PC. A bidirectional
+communication implemented with a software based UART.&lt;/p&gt;
+&lt;p&gt;The PC was responsible to send the desired output and servo
+position, and it received the state of the sensors.&lt;/p&gt;
+&lt;h3&gt;Version 2&lt;/h3&gt;
+&lt;p&gt;Designed to match the new ambitious plans, and the power of the 2nd
+hardware generation.&lt;/p&gt;
+&lt;p&gt;I tried to leverage the power of a real time operating system.
+Therefore I used CCS-RTOS, programming every process as a different
+task:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LCD update&lt;/li&gt;
+&lt;li&gt;Temperature regulation&lt;/li&gt;
+&lt;li&gt;Servo position update&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;without having to worry about the coordination between them.&lt;/p&gt;
+&lt;p&gt;It was a failure because of the stack overflows. They were a lot of
+tasks, and the PIC has only a 8 bytes stack.&lt;/p&gt;
+&lt;h3&gt;Version 3&lt;/h3&gt;
+&lt;p&gt;A minimalistic secuencial version. No RTOS. &lt;/p&gt;
+&lt;p&gt;There is only one washing program. The LCD display isn't updated
+while washing.&lt;/p&gt;
+&lt;h3&gt;Version 4&lt;/h3&gt;
+&lt;p&gt;I borrowed a lot of the nice ideas of using a RTOS and introduced it
+in the sequential version to obtain a similar behaviour.&lt;/p&gt;
+&lt;p&gt;Different washing programs were added, and the EEPROM is used to
+resume after a power failure.&lt;/p&gt;
+&lt;p&gt;The display is updated while the washing task are running. Now we
+are talking!&lt;/p&gt;
+&lt;h3&gt;Version 5&lt;/h3&gt;
+&lt;p&gt;Basically a lot of small improvements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New menu to:&lt;ul&gt;
+&lt;li&gt;Select washing temperature&lt;/li&gt;
+&lt;li&gt;Prewash&lt;/li&gt;
+&lt;li&gt;Exclude spinning&lt;/li&gt;
+&lt;li&gt;Initial delay&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Better temperature sensing algorithm &lt;/li&gt;
+&lt;li&gt;Improved relay switching to reduce wear out&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="Firmware simulation" src="http://mxlian.github.io/images/washing-machine/WMv5on4.jpg" /&gt;&lt;/p&gt;
+&lt;h1&gt;Sources&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Update 2014&lt;/strong&gt;: You can find the sources and designs in &lt;a href="http://github.com/mxlian/wm"&gt;Github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If something wrong or missing just drop me a line.  &lt;/p&gt;
+&lt;h1&gt;Acknowledgements&lt;/h1&gt;
+&lt;p&gt;I got a lot of inspiration and ideas from Pablo Canelo and his 
+&lt;a href="http://pablin.com.ar/electron/circuito/mc/lavapic/index.htm"&gt;washing machine&lt;/a&gt;. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">mxlian</dc:creator><pubDate>Wed, 25 Aug 2010 00:00:00 +0200</pubDate><guid>tag:mxlian.github.io,2010-08-25:electronic-controller-for-my-washing-machine.html</guid><category>pic</category><category>washing machine</category><category>controller</category></item><item><title>Biometric identification analyzing door movements</title><link>http://mxlian.github.io/neuror.html</link><description>&lt;p&gt;With my friend Julian we thought it may be possible to identify a person
 entering into a building from the way it opens the building's door, analyzing
 the angular values over time.&lt;/p&gt;
 &lt;p&gt;It's because of the differences between human beings (physical and
