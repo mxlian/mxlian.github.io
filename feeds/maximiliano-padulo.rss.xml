@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>planocomplejo</title><link href="http://mxlian.github.io/" rel="alternate"></link><link href="http://mxlian.github.io/feeds/mxlian.atom.xml" rel="self"></link><id>http://mxlian.github.io/</id><updated>2013-10-17T00:00:00+02:00</updated><entry><title>Extracting RFID chip from SSS Siedle</title><link href="http://mxlian.github.io/extracting-rfid-chip-from-sss-siedle.html" rel="alternate"></link><updated>2013-10-17T00:00:00+02:00</updated><author><name>mxlian</name></author><id>tag:mxlian.github.io,2013-10-17:extracting-rfid-chip-from-sss-siedle.html</id><summary type="html">&lt;p&gt;At work we use RFID cards to get through the doors. I don't like to
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>planocomplejo</title><link>http://mxlian.github.io/</link><description></description><atom:link href="http://mxlian.github.io/feeds/maximiliano-padulo.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 17 Oct 2013 00:00:00 +0200</lastBuildDate><item><title>Extracting RFID chip from SSS Siedle</title><link>http://mxlian.github.io/extracting-rfid-chip-from-sss-siedle.html</link><description>&lt;p&gt;At work we use RFID cards to get through the doors. I don't like to
 carry it hanging from the neck. I wanted to put the rfid card in my
 phone, which is the only artifact (beside my wristwatch) that
 I carry with me all the time. &lt;/p&gt;
@@ -67,7 +67,7 @@ fragile device. &lt;/p&gt;
 &lt;p&gt;Now with a little bit of love an awesome RFID device:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Protect it" src="http://mxlian.github.io/images/rfid/11.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;Now enjoy the magic of opening the doors only with your phone.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Into the phone" src="http://mxlian.github.io/images/rfid/12.resized.JPG" /&gt;&lt;/p&gt;</summary></entry><entry><title>Electronic controller for my washing machine</title><link href="http://mxlian.github.io/electronic-controller-for-my-washing-machine.html" rel="alternate"></link><updated>2010-08-25T00:00:00+02:00</updated><author><name>mxlian</name></author><id>tag:mxlian.github.io,2010-08-25:electronic-controller-for-my-washing-machine.html</id><summary type="html">&lt;p&gt;The electromechanical timer of my washing machine died. It couldn't
+&lt;p&gt;&lt;img alt="Into the phone" src="http://mxlian.github.io/images/rfid/12.resized.JPG" /&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maximiliano Padulo</dc:creator><pubDate>Thu, 17 Oct 2013 00:00:00 +0200</pubDate><guid>tag:mxlian.github.io,2013-10-17:extracting-rfid-chip-from-sss-siedle.html</guid></item><item><title>Electronic controller for my washing machine</title><link>http://mxlian.github.io/wm.html</link><description>&lt;p&gt;The electromechanical timer of my washing machine died. It couldn't
 be repaired and had to be replaced. &lt;/p&gt;
 &lt;p&gt;What to do?&lt;/p&gt;
 &lt;ol&gt;
@@ -115,11 +115,13 @@ and leave the rest for the end in case you still interested.&lt;/p&gt;
 &lt;li&gt;Initial delay&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;UPDATE 2014&lt;/strong&gt;: I added uploaded some old videos to youtube.&lt;/p&gt;
-&lt;iframe width="420" height="315" src="//www.youtube.com/embed/WQ8yoPQx2lU"
+&lt;iframe width="640" height="480" src="//www.youtube.com/embed/SyI2P_iRjRw"
+frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe width="640" height="480" src="//www.youtube.com/embed/WQ8yoPQx2lU"
 frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://youtu.be/SyI2P_iRjRw"&gt;Program selection&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://youtu.be/PJSPM-CavEs"&gt;Washing cycle&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://youtu.be/CsDk-Pk9I4E"&gt;Spin cycle&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -416,7 +418,7 @@ are talking!&lt;/p&gt;
 &lt;p&gt;If something wrong or missing just drop me a line.  &lt;/p&gt;
 &lt;h1&gt;Acknowledgements&lt;/h1&gt;
 &lt;p&gt;I got a lot of inspiration and ideas from Pablo Canelo and his 
-&lt;a href="http://pablin.com.ar/electron/circuito/mc/lavapic/index.htm"&gt;washing machine&lt;/a&gt;. &lt;/p&gt;</summary><category term="pic"></category><category term="washing machine"></category><category term="controller"></category></entry><entry><title>Biometric identification analyzing door movements</title><link href="http://mxlian.github.io/neuror.html" rel="alternate"></link><updated>2010-07-27T00:00:00+02:00</updated><author><name>mxlian</name></author><id>tag:mxlian.github.io,2010-07-27:neuror.html</id><summary type="html">&lt;p&gt;With my friend Julian we thought it may be possible to identify a person
+&lt;a href="http://pablin.com.ar/electron/circuito/mc/lavapic/index.htm"&gt;washing machine&lt;/a&gt;. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maximiliano Padulo</dc:creator><pubDate>Wed, 25 Aug 2010 00:00:00 +0200</pubDate><guid>tag:mxlian.github.io,2010-08-25:wm.html</guid><category>pic</category><category>washing machine</category><category>controller</category></item><item><title>Biometric identification analyzing door movements</title><link>http://mxlian.github.io/neuror.html</link><description>&lt;p&gt;With my friend Julian we thought it may be possible to identify a person
 entering into a building from the way it opens the building's door, analyzing
 the angular values over time.&lt;/p&gt;
 &lt;p&gt;It's because of the differences between human beings (physical and
@@ -608,7 +610,7 @@ has more resources.  The arduino runs a sketch wich performs the following: &lt;
 
 &lt;p&gt;To recieve the data we reconditioned some old hardware, and we plug the Arduino
 Severino to the serial port (I like old fashion). If you're interested you can
-read about &lt;a href="http://mxlian.github.io/hack-your-monitor-to-hang-upside-down.html"&gt;how to invert your monitor coils&lt;/a&gt;.&lt;/p&gt;
+read about &lt;a href="http://mxlian.github.io/monitor-coil-inversion.html"&gt;how to invert your monitor coils&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="pc" src="http://mxlian.github.io/images/neuror/5.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;The data is now received on the PC through the serial port. To keep it simple we
 run a SQLite database and a python script which constantly waiting for data. The
@@ -715,7 +717,7 @@ the patterns. He worked with Kohonnen maps.&lt;/p&gt;
 &lt;p&gt;Sadly we had to quit the project because we got another priorities and we end up
 abandon the project.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;UPDATE (Oct 2014)&lt;/strong&gt;: I put all the samples and code on
-&lt;a href="//github.com/mxlian/neuror"&gt;GitHub&lt;/a&gt; in case you're interested. &lt;/p&gt;</summary></entry><entry><title>Hack your monitor to hang upside down</title><link href="http://mxlian.github.io/hack-your-monitor-to-hang-upside-down.html" rel="alternate"></link><updated>2010-05-25T00:00:00+02:00</updated><author><name>mxlian</name></author><id>tag:mxlian.github.io,2010-05-25:hack-your-monitor-to-hang-upside-down.html</id><summary type="html">&lt;p&gt;For another project I was lacking enough room to put a CRT monitor and a PC on
+&lt;a href="//github.com/mxlian/neuror"&gt;GitHub&lt;/a&gt; in case you're interested. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maximiliano Padulo</dc:creator><pubDate>Tue, 27 Jul 2010 00:00:00 +0200</pubDate><guid>tag:mxlian.github.io,2010-07-27:neuror.html</guid></item><item><title>Hack your monitor to hang upside down</title><link>http://mxlian.github.io/monitor-coil-inversion.html</link><description>&lt;p&gt;For another project I was lacking enough room to put a CRT monitor and a PC on
 relatively small shelf. So instead of getting another extra shelf I decided to
 put the monitor on the bottom side of the shelf. Yeah :) &lt;/p&gt;
 &lt;p&gt;I just need to manage to invert the image of the monitor, to make some use of
@@ -769,4 +771,4 @@ deflectors and also make sure everything is well isolated.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Coil connector" src="http://mxlian.github.io/images/coil/9.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt;: I found a nice video on the matter:&lt;/p&gt;
 &lt;iframe width="560" height="315" src="//www.youtube.com/embed/QVYG3ShP6S4"
-frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary></entry></feed>
+frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maximiliano Padulo</dc:creator><pubDate>Tue, 25 May 2010 00:00:00 +0200</pubDate><guid>tag:mxlian.github.io,2010-05-25:monitor-coil-inversion.html</guid></item></channel></rss>
