@@ -16,9 +16,10 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   <link href="http://mxlian.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="planocomplejo Full Atom Feed" />
 
+<meta name="keywords" content="puppet, facter, facts">
 
   <title>
-Categories  </title>
+Add custom facts to puppet  </title>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -59,20 +60,58 @@ Categories  </title>
 
   <main>
      <header>
-		<p><a href="http://mxlian.github.io">planocomplejo</a>
-        	&#124; <a href="http://mxlian.github.io/feeds/all.atom.xml" title="ATOM FEED"><i class="fa fa-rss"></i></a></li>
-          </p>
+<p>Posted on Do 27 November 2014</p>
     </header>
 <article>
-  <div id="article_text">
-    <ul>
-      <li><a href="http://mxlian.github.io/category/hacks.html">hacks</a></li>
-      <li><a href="http://mxlian.github.io/category/misc.html">misc</a></li>
-    </ul>
+  <div id="article_title">
+    <h1><a href="http://mxlian.github.io/add-custom-facts-to-puppet.html">Add custom facts to puppet</a></h1>
   </div>
+  <div id="article_text">
+    <p>I'm using vagrant to manage my development VMs and puppet to provision their
+internals.</p>
+<p>To reuse some of the manifests, there are some variables to customize the
+behaviour of the manifests depending on the context. The context is managed
+with <a href="https://docs.puppetlabs.com/puppet/latest/reference/lang_facts_and_builtin_vars.html"><em>facts</em></a>.</p>
+<p>What if you want to define your own facts for testing some manifests? I couldn't
+find on the web an easy way to do it. It seems that most of the puppet
+documentation is related to agent/master use cases, and not my particular
+minimalistic setup without a master.</p>
+<p>Just needed something I could set up with a couple of commands on the machine
+where I'm using/testing the manifests. </p>
+<p>Surprissingly I found what I was looking for digging in <a href="https://github.com/mitchellh/vagrant/blob/efd1d5e11bfc5a72c7a1d1eae294b4751d841544/plugins/provisioners/puppet/provisioner/puppet_server.rb">Vagrant code</a>. Put
+your facts in environment variables, prefixed with '<code>FACTER_</code>':</p>
+<div class="codehilite"><pre># Define your facts as variables
+export FACTER_YOURCUSTOMFACT=value1
+export FACTER_OTHERFACT=value2
+
+puppet apply /path/to/puppet/test/main.pp
+</pre></div>
+
+
+<p>Happy testing!</p>
+  </div>
+  <div id="article_meta">
+  	<p>Author: <a href="http://mxlian.github.io/author/maximiliano-padulo.html">Maximiliano Padulo</a></p>
+    <p>Category: <a href="http://mxlian.github.io/category/misc.html">misc</a></p>
+    <p>Tags:
+      <a href="http://mxlian.github.io/tag/puppet.html">puppet</a>,      <a href="http://mxlian.github.io/tag/facter.html">facter</a>,      <a href="http://mxlian.github.io/tag/facts.html">facts</a>    </p>
+  </div>
+    <div class="comments">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "add-custom-facts-to-puppet.html";
+        var disqus_url = "http://mxlian.github.io/add-custom-facts-to-puppet.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://planocomplejo.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
 </article>
 
     <footer> 
+<p><a href="http://mxlian.github.io/" class="button_accent">&larr; Back to Index</a></p>
     </footer>
 
     <div id="ending_message">
