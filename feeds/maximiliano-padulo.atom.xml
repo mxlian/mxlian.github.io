@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>planocomplejo</title><link href="http://mxlian.github.io/" rel="alternate"></link><link href="http://mxlian.github.io/feeds/maximiliano-padulo.atom.xml" rel="self"></link><id>http://mxlian.github.io/</id><updated>2014-11-27T14:18:56+01:00</updated><entry><title>Add custom facts to puppet</title><link href="http://mxlian.github.io/add-custom-facts-to-puppet.html" rel="alternate"></link><updated>2014-11-27T14:18:56+01:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2014-11-27:add-custom-facts-to-puppet.html</id><summary type="html">&lt;p&gt;I'm using vagrant to manage my development VMs and puppet to provision their
-internals.&lt;/p&gt;
-&lt;p&gt;To reuse some of the manifests, there are some variables to customize the
-behaviour of the manifests depending on the context. The context is managed
-with &lt;a href="https://docs.puppetlabs.com/puppet/latest/reference/lang_facts_and_builtin_vars.html"&gt;&lt;em&gt;facts&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;What if you want to define your own facts for testing some manifests? I couldn't
-find on the web an easy way to do it. It seems that most of the puppet
-documentation is related to agent/master use cases, and not my particular
-minimalistic setup without a master.&lt;/p&gt;
-&lt;p&gt;Just needed something I could set up with a couple of commands on the machine
-where I'm using/testing the manifests. &lt;/p&gt;
-&lt;p&gt;Surprissingly I found what I was looking for digging in &lt;a href="https://github.com/mitchellh/vagrant/blob/efd1d5e11bfc5a72c7a1d1eae294b4751d841544/plugins/provisioners/puppet/provisioner/puppet_server.rb"&gt;Vagrant code&lt;/a&gt;. Put
-your facts in environment variables, prefixed with '&lt;code&gt;FACTER_&lt;/code&gt;':&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>planocomplejo</title><link href="http://mxlian.github.io/" rel="alternate"></link><link href="http://mxlian.github.io/feeds/maximiliano-padulo.atom.xml" rel="self"></link><id>http://mxlian.github.io/</id><updated>2014-11-27T14:18:56+01:00</updated><entry><title>Add custom facts to puppet</title><link href="http://mxlian.github.io/add-custom-facts-to-puppet.html" rel="alternate"></link><updated>2014-11-27T14:18:56+01:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2014-11-27:add-custom-facts-to-puppet.html</id><summary type="html">&lt;p&gt;Just needed a fast way to set up &lt;code&gt;facts&lt;/code&gt; with a couple of commands on
+the machine where I'm using/testing puppet manifests. &lt;/p&gt;
+&lt;p&gt;Surprissingly I found what I was looking for digging in &lt;a href="https://github.com/mitchellh/vagrant/blob/efd1d5e11bfc5a72c7a1d1eae294b4751d841544/plugins/provisioners/puppet/provisioner/puppet_server.rb"&gt;Vagrant
+code&lt;/a&gt;. Put your facts in environment variables, prefixed with
+'&lt;code&gt;FACTER_&lt;/code&gt;':&lt;/p&gt;
 &lt;div class="codehilite"&gt;&lt;pre&gt;# Define your facts as variables
 export FACTER_YOURCUSTOMFACT=value1
 export FACTER_OTHERFACT=value2
@@ -20,7 +12,18 @@ puppet apply /path/to/puppet/test/main.pp
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Happy testing!&lt;/p&gt;</summary><category term="puppet"></category><category term="facter"></category><category term="facts"></category></entry><entry><title>Extracting RFID chip from SSS Siedle</title><link href="http://mxlian.github.io/extracting-rfid-chip-from-sss-siedle.html" rel="alternate"></link><updated>2013-10-17T00:00:00+02:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2013-10-17:extracting-rfid-chip-from-sss-siedle.html</id><summary type="html">&lt;p&gt;At work we use RFID cards to get through the doors. I don't like to
+&lt;p&gt;Happy testing!
+&lt;/p&gt;
+&lt;h1&gt;Background&lt;/h1&gt;
+&lt;p&gt;I'm using vagrant to manage my development VMs and puppet to provision their
+internals.&lt;/p&gt;
+&lt;p&gt;To reuse some of the manifests, there are some variables to customize the
+behaviour of the manifests depending on the context. The context is managed
+with &lt;a href="https://docs.puppetlabs.com/puppet/latest/reference/lang_facts_and_builtin_vars.html"&gt;&lt;em&gt;facts&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What if you want to define your own facts for testing some manifests? I couldn't
+find on the web an easy way to do it. It seems that most of the puppet
+documentation is related to agent/master use cases, and not my particular
+minimalistic setup without a master.&lt;/p&gt;</summary><category term="puppet"></category><category term="facter"></category><category term="facts"></category></entry><entry><title>Extracting RFID chip from SSS Siedle</title><link href="http://mxlian.github.io/extracting-rfid-chip-from-sss-siedle.html" rel="alternate"></link><updated>2013-10-17T00:00:00+02:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2013-10-17:extracting-rfid-chip-from-sss-siedle.html</id><summary type="html">&lt;p&gt;At work we use RFID cards to get through the doors. I don't like to
 carry it hanging from the neck. I wanted to put the rfid card in my
 phone, which is the only artifact (beside my wristwatch) that
 I carry with me all the time. &lt;/p&gt;

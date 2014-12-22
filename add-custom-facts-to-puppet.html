@@ -67,19 +67,11 @@ Add custom facts to puppet  </title>
     <h1><a href="http://mxlian.github.io/add-custom-facts-to-puppet.html">Add custom facts to puppet</a></h1>
   </div>
   <div id="article_text">
-    <p>I'm using vagrant to manage my development VMs and puppet to provision their
-internals.</p>
-<p>To reuse some of the manifests, there are some variables to customize the
-behaviour of the manifests depending on the context. The context is managed
-with <a href="https://docs.puppetlabs.com/puppet/latest/reference/lang_facts_and_builtin_vars.html"><em>facts</em></a>.</p>
-<p>What if you want to define your own facts for testing some manifests? I couldn't
-find on the web an easy way to do it. It seems that most of the puppet
-documentation is related to agent/master use cases, and not my particular
-minimalistic setup without a master.</p>
-<p>Just needed something I could set up with a couple of commands on the machine
-where I'm using/testing the manifests. </p>
-<p>Surprissingly I found what I was looking for digging in <a href="https://github.com/mitchellh/vagrant/blob/efd1d5e11bfc5a72c7a1d1eae294b4751d841544/plugins/provisioners/puppet/provisioner/puppet_server.rb">Vagrant code</a>. Put
-your facts in environment variables, prefixed with '<code>FACTER_</code>':</p>
+    <p>Just needed a fast way to set up <code>facts</code> with a couple of commands on
+the machine where I'm using/testing puppet manifests. </p>
+<p>Surprissingly I found what I was looking for digging in <a href="https://github.com/mitchellh/vagrant/blob/efd1d5e11bfc5a72c7a1d1eae294b4751d841544/plugins/provisioners/puppet/provisioner/puppet_server.rb">Vagrant
+code</a>. Put your facts in environment variables, prefixed with
+'<code>FACTER_</code>':</p>
 <div class="codehilite"><pre># Define your facts as variables
 export FACTER_YOURCUSTOMFACT=value1
 export FACTER_OTHERFACT=value2
@@ -88,7 +80,18 @@ puppet apply /path/to/puppet/test/main.pp
 </pre></div>
 
 
-<p>Happy testing!</p>
+<p>Happy testing!
+</p>
+<h1>Background</h1>
+<p>I'm using vagrant to manage my development VMs and puppet to provision their
+internals.</p>
+<p>To reuse some of the manifests, there are some variables to customize the
+behaviour of the manifests depending on the context. The context is managed
+with <a href="https://docs.puppetlabs.com/puppet/latest/reference/lang_facts_and_builtin_vars.html"><em>facts</em></a>.</p>
+<p>What if you want to define your own facts for testing some manifests? I couldn't
+find on the web an easy way to do it. It seems that most of the puppet
+documentation is related to agent/master use cases, and not my particular
+minimalistic setup without a master.</p>
   </div>
   <div id="article_meta">
   	<p>Author: <a href="http://mxlian.github.io/author/maximiliano-padulo.html">Maximiliano Padulo</a></p>
