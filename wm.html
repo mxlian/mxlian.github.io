@@ -19,7 +19,7 @@
 <meta name="keywords" content="pic, washing machine, controller">
 
   <title>
-Electronic controller for my washing machine  </title>
+Electronic controller for the washing machine  </title>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -38,7 +38,7 @@ Electronic controller for my washing machine  </title>
     <aside style="background: url('/images/back-7sd.jpg') top left no-repeat #0D0C0C;">
     <div id="user_meta">
         <a href="http://mxlian.github.io">
-        <img src="/images/complex-plane.png" alt="logo">
+        <img src="/images/me-soldering.resized.jpg" alt="logo">
       </a>
       <h2><a href="http://mxlian.github.io">planocomplejo</a></h2>
       <p class="tagline">by mxlian</p>
@@ -64,7 +64,7 @@ Electronic controller for my washing machine  </title>
     </header>
 <article>
   <div id="article_title">
-    <h1><a href="http://mxlian.github.io/wm.html">Electronic controller for my washing machine</a></h1>
+    <h1><a href="http://mxlian.github.io/wm.html">Electronic controller for the washing machine</a></h1>
   </div>
   <div id="article_text">
     <p>The electromechanical timer of my washing machine died. It couldn't
@@ -96,7 +96,8 @@ I started the project, so don't kill me for all the wrong choices.</p>
 <h1>The finished project</h1>
 <p>Don't want to bore you with details, so let me show you how it went
 and leave the rest for the end in case you still interested.</p>
-<p><img alt="finished" src="http://mxlian.github.io/images/washing-machine/finished.JPG" /></p>
+<p><img alt="finished" src="http://mxlian.github.io/images/washing-machine/finished-trim.JPG" /></p>
+<p><img alt="internals" src="http://mxlian.github.io/images/washing-machine/topview.JPG" /></p>
 <p>The machine provides 4 different full programs, 2 short ones, and configuration:</p>
 <ul>
 <li>Ropa de algodón (cotton)</li>
@@ -114,11 +115,11 @@ and leave the rest for the end in case you still interested.</p>
 <li>Disable spin cycle</li>
 <li>Initial delay</li>
 </ul>
-<p><strong>UPDATE 2014</strong>: I added uploaded some old videos to youtube.</p>
-<iframe width="640" height="480" src="//www.youtube.com/embed/SyI2P_iRjRw"
+<p><strong>UPDATE 2014</strong>: I added uploaded some videos to youtube.</p>
+<iframe width="560" height="315" src="//www.youtube.com/embed/SyI2P_iRjRw"
 frameborder="0" allowfullscreen></iframe>
 
-<iframe width="640" height="480" src="//www.youtube.com/embed/WQ8yoPQx2lU"
+<iframe width="560" height="315" src="//www.youtube.com/embed/WQ8yoPQx2lU"
 frameborder="0" allowfullscreen></iframe>
 
 <ul>
@@ -126,7 +127,6 @@ frameborder="0" allowfullscreen></iframe>
 <li><a href="http://youtu.be/CsDk-Pk9I4E">Spin cycle</a></li>
 </ul>
 <h1>Washing machine internals</h1>
-<p><img alt="internals" src="http://mxlian.github.io/images/washing-machine/topview.JPG" /></p>
 <p>The system is divided in three parts:</p>
 <ul>
 <li>The control panel</li>
@@ -291,8 +291,8 @@ the idea from <a href="http://pablin.com.ar/electron/circuito/mc/lavapic/index.h
 <p>The servo was attached to the rotatory arm (green) using a little
 bit of bricolage ingenuity.</p>
 <p><img alt="Servo" src="http://mxlian.github.io/images/washing-machine/WM_Servo1.jpg" /></p>
-<p><strong>See the first video of operation (configuration) to get a better
-idea.</strong></p>
+<p>Check this <a href="//www.youtube.com/embed/WQ8yoPQx2lU">video</a> to see exactly how it
+works.</p>
 <p>The servo has 3 lines, VCC, GND and signal. To control the servo
 position the PIC will generate a PWM signal at 50Hz. Varying the
 pulse within 1ms to aprox 2.5ms will be linearly translated to

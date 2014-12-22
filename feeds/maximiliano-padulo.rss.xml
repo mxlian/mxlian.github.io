@@ -27,8 +27,8 @@ I carry with me all the time. &lt;/p&gt;
 &lt;p&gt;One problem: the card is too thick to fit inside the phone. But it's
 mostly made of plastic, so my idea was to somehow extract the chip
 and antenna from the card.&lt;/p&gt;
-&lt;p&gt;So if you have a Siedle RFID card, which looks like the picture,
-keep reading:&lt;/p&gt;
+&lt;p&gt;If you have a Siedle RFID card, which looks like the picture, and want do do the
+same keep reading:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="SSS Siedle RFID" src="http://mxlian.github.io/images/rfid/sss-siedle-card.jpg" /&gt;&lt;/p&gt;
 
 
@@ -88,7 +88,7 @@ fragile device. &lt;/p&gt;
 &lt;p&gt;Now with a little bit of love an awesome RFID device:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Protect it" src="http://mxlian.github.io/images/rfid/11.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;Now enjoy the magic of opening the doors only with your phone.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Into the phone" src="http://mxlian.github.io/images/rfid/12.resized.JPG" /&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maximiliano Padulo</dc:creator><pubDate>Thu, 17 Oct 2013 00:00:00 +0200</pubDate><guid>tag:mxlian.github.io,2013-10-17:extracting-rfid-chip-from-sss-siedle.html</guid></item><item><title>Electronic controller for my washing machine</title><link>http://mxlian.github.io/wm.html</link><description>&lt;p&gt;The electromechanical timer of my washing machine died. It couldn't
+&lt;p&gt;&lt;img alt="Into the phone" src="http://mxlian.github.io/images/rfid/12.resized.JPG" /&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maximiliano Padulo</dc:creator><pubDate>Thu, 17 Oct 2013 00:00:00 +0200</pubDate><guid>tag:mxlian.github.io,2013-10-17:extracting-rfid-chip-from-sss-siedle.html</guid></item><item><title>Electronic controller for the washing machine</title><link>http://mxlian.github.io/wm.html</link><description>&lt;p&gt;The electromechanical timer of my washing machine died. It couldn't
 be repaired and had to be replaced. &lt;/p&gt;
 &lt;p&gt;What to do?&lt;/p&gt;
 &lt;ol&gt;
@@ -117,7 +117,8 @@ I started the project, so don't kill me for all the wrong choices.&lt;/p&gt;
 &lt;h1&gt;The finished project&lt;/h1&gt;
 &lt;p&gt;Don't want to bore you with details, so let me show you how it went
 and leave the rest for the end in case you still interested.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="finished" src="http://mxlian.github.io/images/washing-machine/finished.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="finished" src="http://mxlian.github.io/images/washing-machine/finished-trim.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="internals" src="http://mxlian.github.io/images/washing-machine/topview.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;The machine provides 4 different full programs, 2 short ones, and configuration:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Ropa de algodón (cotton)&lt;/li&gt;
@@ -135,11 +136,11 @@ and leave the rest for the end in case you still interested.&lt;/p&gt;
 &lt;li&gt;Disable spin cycle&lt;/li&gt;
 &lt;li&gt;Initial delay&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;UPDATE 2014&lt;/strong&gt;: I added uploaded some old videos to youtube.&lt;/p&gt;
-&lt;iframe width="640" height="480" src="//www.youtube.com/embed/SyI2P_iRjRw"
+&lt;p&gt;&lt;strong&gt;UPDATE 2014&lt;/strong&gt;: I added uploaded some videos to youtube.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/SyI2P_iRjRw"
 frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;iframe width="640" height="480" src="//www.youtube.com/embed/WQ8yoPQx2lU"
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/WQ8yoPQx2lU"
 frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;ul&gt;
@@ -147,7 +148,6 @@ frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;li&gt;&lt;a href="http://youtu.be/CsDk-Pk9I4E"&gt;Spin cycle&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;Washing machine internals&lt;/h1&gt;
-&lt;p&gt;&lt;img alt="internals" src="http://mxlian.github.io/images/washing-machine/topview.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;The system is divided in three parts:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The control panel&lt;/li&gt;
@@ -312,8 +312,8 @@ the idea from &lt;a href="http://pablin.com.ar/electron/circuito/mc/lavapic/inde
 &lt;p&gt;The servo was attached to the rotatory arm (green) using a little
 bit of bricolage ingenuity.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Servo" src="http://mxlian.github.io/images/washing-machine/WM_Servo1.jpg" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;See the first video of operation (configuration) to get a better
-idea.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Check this &lt;a href="//www.youtube.com/embed/WQ8yoPQx2lU"&gt;video&lt;/a&gt; to see exactly how it
+works.&lt;/p&gt;
 &lt;p&gt;The servo has 3 lines, VCC, GND and signal. To control the servo
 position the PIC will generate a PWM signal at 50Hz. Varying the
 pulse within 1ms to aprox 2.5ms will be linearly translated to
@@ -439,7 +439,7 @@ are talking!&lt;/p&gt;
 &lt;p&gt;If something wrong or missing just drop me a line.  &lt;/p&gt;
 &lt;h1&gt;Acknowledgements&lt;/h1&gt;
 &lt;p&gt;I got a lot of inspiration and ideas from Pablo Canelo and his 
-&lt;a href="http://pablin.com.ar/electron/circuito/mc/lavapic/index.htm"&gt;washing machine&lt;/a&gt;. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maximiliano Padulo</dc:creator><pubDate>Wed, 25 Aug 2010 00:00:00 +0200</pubDate><guid>tag:mxlian.github.io,2010-08-25:wm.html</guid><category>pic</category><category>washing machine</category><category>controller</category></item><item><title>Biometric identification analyzing door movements</title><link>http://mxlian.github.io/neuror.html</link><description>&lt;p&gt;With my friend Julian we thought it may be possible to identify a person
+&lt;a href="http://pablin.com.ar/electron/circuito/mc/lavapic/index.htm"&gt;washing machine&lt;/a&gt;. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maximiliano Padulo</dc:creator><pubDate>Wed, 25 Aug 2010 00:00:00 +0200</pubDate><guid>tag:mxlian.github.io,2010-08-25:wm.html</guid><category>pic</category><category>washing machine</category><category>controller</category></item><item><title>Biometric identification through door movement analysis</title><link>http://mxlian.github.io/neuror.html</link><description>&lt;p&gt;With my friend Julian we thought it may be possible to identify a person
 entering into a building from the way it opens the building's door, analyzing
 the angular values over time.&lt;/p&gt;
 &lt;p&gt;It's because of the differences between human beings (physical and
@@ -459,13 +459,13 @@ a fixed rate for a fixed amount of time. This sample will then be used as the
 amount of people has access. &lt;/p&gt;
 &lt;p&gt;For the sensor we use a potentiometer with its body fixed to the wall, and the
 moving shaft attached to the door. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="potetiometer" src="http://mxlian.github.io/images/neuror/1.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="potentionmeter" src="http://mxlian.github.io/images/neuror/1.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;The potentiometer should be aligned with the door axis, allowing the moving
 shaft to follow the angular movements of the door.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="potetiometer" src="http://mxlian.github.io/images/neuror/2.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="potentionmeter" src="http://mxlian.github.io/images/neuror/2.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;Nice, we're all set. Now whenever someone opens the door, the potentiometer will
 track the movement all the time.&lt;/p&gt;
-&lt;!--![potetiometer]({filename}/images/neuror/3.resized.JPG)--&gt;
+&lt;!--![potentionmeter]({filename}/images/neuror/3.resized.JPG)--&gt;
 
 &lt;p&gt;To process the signal we use an Arduino, and because we are students with no
 money it's my self made Severino version.&lt;/p&gt;
@@ -631,7 +631,7 @@ has more resources.  The arduino runs a sketch wich performs the following: &lt;
 
 &lt;p&gt;To recieve the data we reconditioned some old hardware, and we plug the Arduino
 Severino to the serial port (I like old fashion). If you're interested you can
-read about &lt;a href="http://mxlian.github.io/monitor-coil-inversion.html"&gt;how to invert your monitor coils&lt;/a&gt;.&lt;/p&gt;
+read about &lt;a href="{filename}/coil-inversion.md"&gt;how to invert your monitor coils&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="pc" src="http://mxlian.github.io/images/neuror/5.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;The data is now received on the PC through the serial port. To keep it simple we
 run a SQLite database and a python script which constantly waiting for data. The
@@ -792,4 +792,102 @@ deflectors and also make sure everything is well isolated.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Coil connector" src="http://mxlian.github.io/images/coil/9.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt;: I found a nice video on the matter:&lt;/p&gt;
 &lt;iframe width="560" height="315" src="//www.youtube.com/embed/QVYG3ShP6S4"
-frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maximiliano Padulo</dc:creator><pubDate>Tue, 25 May 2010 00:00:00 +0200</pubDate><guid>tag:mxlian.github.io,2010-05-25:monitor-coil-inversion.html</guid></item></channel></rss>
+frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maximiliano Padulo</dc:creator><pubDate>Tue, 25 May 2010 00:00:00 +0200</pubDate><guid>tag:mxlian.github.io,2010-05-25:monitor-coil-inversion.html</guid></item><item><title>15 digit 7 segment display</title><link>http://mxlian.github.io/15-digit-7-segment-display.html</link><description>&lt;p&gt;To show some stats of my home server I end up building a nice 7 segment display
+with following specs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;15 digits (supporting all alphabet)&lt;/li&gt;
+&lt;li&gt;flicker free&lt;/li&gt;
+&lt;li&gt;doesn't require constant refreshing&lt;/li&gt;
+&lt;li&gt;must be cheap (I'm a student)&lt;/li&gt;
+&lt;li&gt;should work with with the serial port&lt;/li&gt;
+&lt;li&gt;modular (simply connect many of them to expand the display if necessary)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="7sd" src="http://mxlian.github.io/images/7sd/intro.JPG" /&gt;&lt;/p&gt;
+
+
+&lt;h1&gt;Background&lt;/h1&gt;
+&lt;p&gt;Looking on the internet about 7 segment display arrays I only found designs with
+a relative small number of digits (mostly 2 or 4). What didn't convinced me was
+the way they were controlled. They all shared the 8 bits data lines, and they
+were switched on and off one at the time. Done fast enough your eye should
+perceive the numbers well enough.&lt;/p&gt;
+&lt;p&gt;That design has some drawbacks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You need to constantly refresh the display&lt;/li&gt;
+&lt;li&gt;The duty cycle of each display is inversely proportional to the amount of
+components&lt;/li&gt;
+&lt;li&gt;The flickering became worst as the number of digit grows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For a big display the results should be very poor. I already find the flickering
+on my microwave very annoying only with 4 digits, so flickering it's a no go.&lt;/p&gt;
+&lt;p&gt;As in a lot of projects in college I'll work with Julian Perelli. He'll write the
+driver and I'll build the hardware. &lt;/p&gt;
+&lt;h1&gt;Design&lt;/h1&gt;
+&lt;p&gt;To solve 2 of the requirements at the same time we use shift registers. They act
+as a memory to hold the content of each digit preventing flickering and
+without requiring constant refresh.&lt;/p&gt;
+&lt;p&gt;The selected 8-Stage Shift register is the CD4094. They will be wired in series
+to form a cascade of &lt;code&gt;15digits x 8stages = 120 stages&lt;/code&gt;. Imagine it as a 120 bit
+array.&lt;/p&gt;
+&lt;p&gt;We can drive the array with 2 or 3 lines:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data&lt;/li&gt;
+&lt;li&gt;Clock (on each cycle the stages will cascade once to the 'right')&lt;/li&gt;
+&lt;li&gt;Strobe (just to be fancy, prevents flickering when sendig data)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To keep it cheap, we don't want to have extra components to decode the data
+coming from the serial port. Using the &lt;a href="http://es.wikipedia.org/wiki/RS-232#Conexiones_.28desde_la_perspectiva_del_DTE.29"&gt;serial port&lt;/a&gt; in an unconventional way it's
+possible to drive the shift registers without extra logic. &lt;/p&gt;
+&lt;p&gt;The control lines can be setted/unsetted at will. It will only require a minimal
+voltage adaptation with some passive components. We use:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pinout" src="http://upload.wikimedia.org/wikipedia/commons/2/29/RS-232_DE-9_Connector_Pinouts.png" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DTR (Data Terminal Ready) as &lt;strong&gt;Data&lt;/strong&gt; (PIN 4 - DB9) &lt;/li&gt;
+&lt;li&gt;RTS (Request to Send) as &lt;strong&gt;Clock&lt;/strong&gt; (PIN 7 - DB9)&lt;/li&gt;
+&lt;li&gt;TX (Data) as &lt;strong&gt;Strobe&lt;/strong&gt; (PIN 3 - DB9)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the display we use the Kingbright BA56-11. These are very unexpensive
+3 digit modules.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="display" src="http://mxlian.github.io/images/7sd/display.png" /&gt;&lt;/p&gt;
+&lt;h1&gt;Hardware&lt;/h1&gt;
+&lt;p&gt;The connection of the shift registers is very straight forward and to keep it
+even simpler (and after reading the datasheets) I even didn't use any resistors
+between the outputs and the 7 segments.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pcb" src="http://mxlian.github.io/images/7sd/diag.png" /&gt;&lt;/p&gt;
+&lt;p&gt;As you can see there is a lot of wire that we have to route on the PCB. That is
+a very challenging operation (and it seems you can allways do better). I got it
+down to the following:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pcb" src="http://mxlian.github.io/images/7sd/layout.png" /&gt;&lt;/p&gt;
+&lt;p&gt;There is only one trace you will have to do connect manually (on the left, green
+wire).&lt;/p&gt;
+&lt;p&gt;The components are placed mostly on the front side of the PCB &lt;/p&gt;
+&lt;p&gt;&lt;img alt="pcb" src="http://mxlian.github.io/images/7sd/front.png" /&gt;&lt;/p&gt;
+&lt;p&gt;but I have to squeeze one CD4094 on the back with the DB-9 Connectors.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pcb" src="http://mxlian.github.io/images/7sd/back2.png" /&gt;&lt;/p&gt;
+&lt;p&gt;To produce the PCB the low cost toner transfer method (I may upload the process
+if someone is interested)&lt;/p&gt;
+&lt;p&gt;I won't lie. The manufacturing of this PCB is hard, but for me it's a lot of
+fun. It took me over 10 hours of printing, drilling and soldering, but I enjoyed
+every minute of it.&lt;/p&gt;
+&lt;p&gt;If you don't enjoy it send the layout to your favourite PCB manufacturer. Just
+to give you an idea of the complexity see some stats: &lt;/p&gt;
+&lt;p&gt;&lt;img alt="stats" src="http://mxlian.github.io/images/7sd/stats.png" /&gt;&lt;/p&gt;
+&lt;p&gt;To make the schematic and layout I've used Proteus from Labcenter Electronics.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DISCLAIMER:&lt;/strong&gt; The PCB is pretty good, but not yet perfect. If you want to
+improve it I put the schematics and layouts in the &lt;a href="https://github.com/mxlian/7sd"&gt;Github repository&lt;/a&gt;.&lt;/p&gt;
+&lt;h1&gt;Driver&lt;/h1&gt;
+&lt;p&gt;Julian made an awesome program to drive the display. Basically it encodes
+a string in a way it can be represented by the 7 segements (see below) and then
+it sends the data to the display using the control lines of the serial port. He
+also implemented some nice features to display strings longer than the display
+itself with automatic rotation. Feel free to experiment with it.&lt;/p&gt;
+&lt;p&gt;Encoding digits is obvious but to encode letters we use the Harvey Twyman font.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="font" src="http://www.twyman.org.uk/Fonts/7%20Seq-3D.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;The results are very readable most of the time, specially because the breain can
+'guess' the 'not so obvious' letters using the context. Using smaller displays
+the results aren't so spectacular.&lt;/p&gt;
+&lt;p&gt;You can find the sources in &lt;a href="https://github.com/mxlian/7sd"&gt;Github&lt;/a&gt;. There is also a simple python script
+if you feel more comfortable.&lt;/p&gt;
+&lt;p&gt;To finish see it in action:&lt;/p&gt;
+&lt;iframe align="center" width="420" height="315" src="//www.youtube.com/embed/8SB75jznN9I?rel=0"
+frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maximiliano Padulo</dc:creator><pubDate>Sat, 28 Mar 2009 00:00:00 +0100</pubDate><guid>tag:mxlian.github.io,2009-03-28:15-digit-7-segment-display.html</guid></item></channel></rss>
