@@ -799,8 +799,8 @@ with following specs:&lt;/p&gt;
 &lt;li&gt;flicker free&lt;/li&gt;
 &lt;li&gt;doesn't require constant refreshing&lt;/li&gt;
 &lt;li&gt;must be cheap (I'm a student)&lt;/li&gt;
-&lt;li&gt;should work with with the serial port&lt;/li&gt;
-&lt;li&gt;modular (simply connect many of them to expand the display if necessary)&lt;/li&gt;
+&lt;li&gt;works with with the serial port&lt;/li&gt;
+&lt;li&gt;modular (simply connect many of them to expand the display)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img alt="7sd" src="http://mxlian.github.io/images/7sd/intro.JPG" /&gt;&lt;/p&gt;
 
