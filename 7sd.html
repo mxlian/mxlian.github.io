@@ -64,7 +64,7 @@
     </header>
 <article>
   <div id="article_title">
-    <h1><a href="http://mxlian.github.io/15-digit-7-segment-display.html">15 digit 7 segment display</a></h1>
+    <h1><a href="http://mxlian.github.io/7sd.html">15 digit 7 segment display</a></h1>
   </div>
   <div id="article_text">
     <p>To show some stats of my home server I end up building a nice 7 segment display
@@ -108,7 +108,7 @@ array.</p>
 <ul>
 <li>Data</li>
 <li>Clock (on each cycle the stages will cascade once to the 'right')</li>
-<li>Strobe (just to be fancy, prevents flickering when sendig data)</li>
+<li>Strobe (just to be fancy, prevents flickering when sending data)</li>
 </ul>
 <p>To keep it cheap, we don't want to have extra components to decode the data
 coming from the serial port. Using the <a href="http://es.wikipedia.org/wiki/RS-232#Conexiones_.28desde_la_perspectiva_del_DTE.29">serial port</a> in an unconventional way it's
@@ -121,7 +121,7 @@ voltage adaptation with some passive components. We use:</p>
 <li>RTS (Request to Send) as <strong>Clock</strong> (PIN 7 - DB9)</li>
 <li>TX (Data) as <strong>Strobe</strong> (PIN 3 - DB9)</li>
 </ul>
-<p>For the display we use the Kingbright BA56-11. These are very unexpensive
+<p>For the display we use the Kingbright BA56-11. These are very inexpensive
 3 digit modules.</p>
 <p><img alt="display" src="http://mxlian.github.io/images/7sd/display.png" /></p>
 <h1>Hardware</h1>
@@ -130,7 +130,7 @@ even simpler (and after reading the datasheets) I even didn't use any resistors
 between the outputs and the 7 segments.</p>
 <p><img alt="pcb" src="http://mxlian.github.io/images/7sd/diag.png" /></p>
 <p>As you can see there is a lot of wire that we have to route on the PCB. That is
-a very challenging operation (and it seems you can allways do better). I got it
+a very challenging operation (and it seems you can always do better). I got it
 down to the following:</p>
 <p><img alt="pcb" src="http://mxlian.github.io/images/7sd/layout.png" /></p>
 <p>There is only one trace you will have to do connect manually (on the left, green
@@ -141,18 +141,20 @@ wire).</p>
 <p><img alt="pcb" src="http://mxlian.github.io/images/7sd/back2.png" /></p>
 <p>To produce the PCB the low cost toner transfer method (I may upload the process
 if someone is interested)</p>
-<p>I won't lie. The manufacturing of this PCB is hard, but for me it's a lot of
+<p>I won't lie. The manufacturing of this PCB is hard, but for me it was a lot of
 fun. It took me over 10 hours of printing, drilling and soldering, but I enjoyed
 every minute of it.</p>
-<p>If you don't enjoy it send the layout to your favourite PCB manufacturer. Just
-to give you an idea of the complexity see some stats: </p>
+<p><img alt="working" src="http://mxlian.github.io/images/7sd/working.jpg" /></p>
+<p>If you don't enjoy the process just send the layout to your favourite PCB
+manufacturer. To give you an idea of the complexity I got some stats of the
+board: </p>
 <p><img alt="stats" src="http://mxlian.github.io/images/7sd/stats.png" /></p>
 <p>To make the schematic and layout I've used Proteus from Labcenter Electronics.</p>
 <p><strong>DISCLAIMER:</strong> The PCB is pretty good, but not yet perfect. If you want to
 improve it I put the schematics and layouts in the <a href="https://github.com/mxlian/7sd">Github repository</a>.</p>
 <h1>Driver</h1>
 <p>Julian made an awesome program to drive the display. Basically it encodes
-a string in a way it can be represented by the 7 segements (see below) and then
+a string in a way it can be represented by the 7 segments (see below) and then
 it sends the data to the display using the control lines of the serial port. He
 also implemented some nice features to display strings longer than the display
 itself with automatic rotation. Feel free to experiment with it.</p>
@@ -174,8 +176,8 @@ frameborder="0" allowfullscreen></iframe>
     <div class="comments">
       <div id="disqus_thread"></div>
       <script type="text/javascript">
-        var disqus_identifier = "15-digit-7-segment-display.html";
-        var disqus_url = "http://mxlian.github.io/15-digit-7-segment-display.html";
+        var disqus_identifier = "7sd.html";
+        var disqus_url = "http://mxlian.github.io/7sd.html";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://planocomplejo.disqus.com/embed.js';

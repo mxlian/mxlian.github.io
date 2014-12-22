@@ -771,7 +771,7 @@ deflectors and also make sure everything is well isolated.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Coil connector" src="http://mxlian.github.io/images/coil/9.resized.JPG" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt;: I found a nice video on the matter:&lt;/p&gt;
 &lt;iframe width="560" height="315" src="//www.youtube.com/embed/QVYG3ShP6S4"
-frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary></entry><entry><title>15 digit 7 segment display</title><link href="http://mxlian.github.io/15-digit-7-segment-display.html" rel="alternate"></link><updated>2009-03-28T00:00:00+01:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2009-03-28:15-digit-7-segment-display.html</id><summary type="html">&lt;p&gt;To show some stats of my home server I end up building a nice 7 segment display
+frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary></entry><entry><title>15 digit 7 segment display</title><link href="http://mxlian.github.io/7sd.html" rel="alternate"></link><updated>2009-03-28T00:00:00+01:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2009-03-28:7sd.html</id><summary type="html">&lt;p&gt;To show some stats of my home server I end up building a nice 7 segment display
 with following specs:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;15 digits (supporting all alphabet)&lt;/li&gt;
@@ -812,7 +812,7 @@ array.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Data&lt;/li&gt;
 &lt;li&gt;Clock (on each cycle the stages will cascade once to the 'right')&lt;/li&gt;
-&lt;li&gt;Strobe (just to be fancy, prevents flickering when sendig data)&lt;/li&gt;
+&lt;li&gt;Strobe (just to be fancy, prevents flickering when sending data)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;To keep it cheap, we don't want to have extra components to decode the data
 coming from the serial port. Using the &lt;a href="http://es.wikipedia.org/wiki/RS-232#Conexiones_.28desde_la_perspectiva_del_DTE.29"&gt;serial port&lt;/a&gt; in an unconventional way it's
@@ -825,7 +825,7 @@ voltage adaptation with some passive components. We use:&lt;/p&gt;
 &lt;li&gt;RTS (Request to Send) as &lt;strong&gt;Clock&lt;/strong&gt; (PIN 7 - DB9)&lt;/li&gt;
 &lt;li&gt;TX (Data) as &lt;strong&gt;Strobe&lt;/strong&gt; (PIN 3 - DB9)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;For the display we use the Kingbright BA56-11. These are very unexpensive
+&lt;p&gt;For the display we use the Kingbright BA56-11. These are very inexpensive
 3 digit modules.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="display" src="http://mxlian.github.io/images/7sd/display.png" /&gt;&lt;/p&gt;
 &lt;h1&gt;Hardware&lt;/h1&gt;
@@ -834,7 +834,7 @@ even simpler (and after reading the datasheets) I even didn't use any resistors
 between the outputs and the 7 segments.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="pcb" src="http://mxlian.github.io/images/7sd/diag.png" /&gt;&lt;/p&gt;
 &lt;p&gt;As you can see there is a lot of wire that we have to route on the PCB. That is
-a very challenging operation (and it seems you can allways do better). I got it
+a very challenging operation (and it seems you can always do better). I got it
 down to the following:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="pcb" src="http://mxlian.github.io/images/7sd/layout.png" /&gt;&lt;/p&gt;
 &lt;p&gt;There is only one trace you will have to do connect manually (on the left, green
@@ -845,18 +845,20 @@ wire).&lt;/p&gt;
 &lt;p&gt;&lt;img alt="pcb" src="http://mxlian.github.io/images/7sd/back2.png" /&gt;&lt;/p&gt;
 &lt;p&gt;To produce the PCB the low cost toner transfer method (I may upload the process
 if someone is interested)&lt;/p&gt;
-&lt;p&gt;I won't lie. The manufacturing of this PCB is hard, but for me it's a lot of
+&lt;p&gt;I won't lie. The manufacturing of this PCB is hard, but for me it was a lot of
 fun. It took me over 10 hours of printing, drilling and soldering, but I enjoyed
 every minute of it.&lt;/p&gt;
-&lt;p&gt;If you don't enjoy it send the layout to your favourite PCB manufacturer. Just
-to give you an idea of the complexity see some stats: &lt;/p&gt;
+&lt;p&gt;&lt;img alt="working" src="http://mxlian.github.io/images/7sd/working.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;If you don't enjoy the process just send the layout to your favourite PCB
+manufacturer. To give you an idea of the complexity I got some stats of the
+board: &lt;/p&gt;
 &lt;p&gt;&lt;img alt="stats" src="http://mxlian.github.io/images/7sd/stats.png" /&gt;&lt;/p&gt;
 &lt;p&gt;To make the schematic and layout I've used Proteus from Labcenter Electronics.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;DISCLAIMER:&lt;/strong&gt; The PCB is pretty good, but not yet perfect. If you want to
 improve it I put the schematics and layouts in the &lt;a href="https://github.com/mxlian/7sd"&gt;Github repository&lt;/a&gt;.&lt;/p&gt;
 &lt;h1&gt;Driver&lt;/h1&gt;
 &lt;p&gt;Julian made an awesome program to drive the display. Basically it encodes
-a string in a way it can be represented by the 7 segements (see below) and then
+a string in a way it can be represented by the 7 segments (see below) and then
 it sends the data to the display using the control lines of the serial port. He
 also implemented some nice features to display strings longer than the display
 itself with automatic rotation. Feel free to experiment with it.&lt;/p&gt;
