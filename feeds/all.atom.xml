@@ -813,7 +813,7 @@ with following specs:&lt;/p&gt;
 a relative small number of digits (mostly 2 or 4). What didn't convinced me was
 the way they were controlled. They all shared the 8 bits data lines, and they
 were switched on and off one at the time. Done fast enough your eye should
-perceive the numbers well enough.&lt;/p&gt;
+perceive the numbers well enough (&lt;a href="http://en.wikipedia.org/wiki/Persistence_of_vision"&gt;persistence of vision&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;That design has some drawbacks:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;You need to constantly refresh the display&lt;/li&gt;
