@@ -16,9 +16,10 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   <link href="http://mxlian.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="planocomplejo Full Atom Feed" />
 
+<meta name="keywords" content="vim">
 
   <title>
-planocomplejo - Authors  </title>
+Remapping CapsLock key for vim users  </title>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -59,16 +60,58 @@ planocomplejo - Authors  </title>
 
   <main>
      <header>
-		<p><a href="http://mxlian.github.io">planocomplejo</a>
-        	&#124; <a href="http://mxlian.github.io/feeds/all.atom.xml" title="ATOM FEED"><i class="fa fa-rss"></i></a></li>
-          </p>
+<p>Posted on Mi 06 Mai 2015</p>
     </header>
-    <h1>Authors on planocomplejo</h1>
+<article>
+  <div id="article_title">
+    <h1><a href="http://mxlian.github.io/drafts/remapping-capslock-key-for-vim-users.html">Remapping CapsLock key for vim users</a></h1>
+  </div>
+  <div id="article_text">
+    <p>Let me start with the most important: don't do it.</p>
+<ul>
+<li>There is no 'easy' way to do it</li>
+<li>That means you are not portable, go to another machine and throw your vim
+knowledge out of the window.</li>
+<li>Vim is extremely case sesnsitive. Capslock on is lethal</li>
+<li>Don't do it</li>
+<li>Read the vim help, use defaults: in this case Ctrl+[</li>
+<li>
+<p>Use english keyboard (write an article on this)</p>
+</li>
+<li>
+<p>Instead of remapping disable it: 1. It will save you from accidental errors 2.
+Will help you to wipe your muscle memory if you already have it, in a safe way.</p>
+</li>
+</ul>
+<p>How?: </p>
+<p>Many options, but that's my favourite (setxkbmap), because i have to use it
+anyways to set english layout</p>
+<div class="codehilite"><pre>setxkbmap [us] -option caps:none
+</pre></div>
 
-    <ul>        <li><a href="http://mxlian.github.io/author/maximiliano-padulo.html">Maximiliano Padulo</a> (7)</li>
-    </ul>
+
+<p>If you need to reset:</p>
+<div class="codehilite"><pre>setxkbmap [us] -option
+</pre></div>
+
+
+<p>Find all options here:</p>
+<p>cat /usr/share/X11/xkb/rules/base.lst |grep caps</p>
+<ul>
+<li>The keyboard is the most important input interface with the computer world.
+Invest time on it</li>
+</ul>
+  </div>
+  <div id="article_meta">
+  	<p>Author: <a href="http://mxlian.github.io/author/maximiliano-padulo.html">Maximiliano Padulo</a></p>
+    <p>Category: <a href="http://mxlian.github.io/category/.html"></a></p>
+    <p>Tags:
+      <a href="http://mxlian.github.io/tag/vim.html">vim</a>    </p>
+  </div>
+</article>
 
     <footer> 
+<p><a href="http://mxlian.github.io/" class="button_accent">&larr; Back to Index</a></p>
     </footer>
 
     <div id="ending_message">
