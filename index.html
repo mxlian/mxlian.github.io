@@ -74,7 +74,7 @@ knowledge only: <strong>MP4 (H264 + aac)</strong></p>
 <div class="highlight"><pre><span></span><span class="x">INPUT_FILE=~/vids/ground_spiral.MP4</span>
 
 <span class="x">avconv -i </span><span class="p">$</span><span class="nv">INPUT_FILE</span><span class="x"> \</span>
-<span class="x">       -f mp4 -c:v h264 -b:v 1200k -g 300 -bf 2 -s 640x480 \</span>
+<span class="x">       -f mp4 -c:v h264 -b:v 1200k -g 300 -bf 2 -s 640x352 \</span>
 <span class="x">       -c:a aac -b:a 64k -ac 1 \</span>
 <span class="x">       /tmp/output.MP4</span>
 </pre></div>
@@ -83,6 +83,11 @@ knowledge only: <strong>MP4 (H264 + aac)</strong></p>
 <p>You can try with different settings for better quality. In the example it will
 reencode the video with a bitrate of 1200k and a resolution of 640x480. Audio
 will have a bitrate of 64k and it will be monoaural (use <strong>-ac 2</strong> for stereo).</p>
+<p>To only convert a part of the original video specify start and end like this:</p>
+<div class="highlight"><pre><span></span>-ss 00:1:02 -to 00:2:43
+</pre></div>
+
+
 
   </div>
   <div id="article_more">
