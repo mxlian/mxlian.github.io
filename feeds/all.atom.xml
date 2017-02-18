@@ -1,14 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>planocomplejo</title><link href="http://mxlian.github.io/" rel="alternate"></link><link href="http://mxlian.github.io/feeds/all.atom.xml" rel="self"></link><id>http://mxlian.github.io/</id><updated>2015-09-01T10:27:05+02:00</updated><entry><title>Install Hack Typeface on Ubuntu/Debian</title><link href="http://mxlian.github.io/install-hack-typeface-on-ubuntudebian.html" rel="alternate"></link><updated>2015-09-01T10:27:05+02:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2015-09-01:install-hack-typeface-on-ubuntudebian.html</id><summary type="html">&lt;p&gt;Want to try &lt;a href="http://sourcefoundry.org/hack/"&gt;Hack Typeface&lt;/a&gt;? Use the following gist:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>planocomplejo</title><link href="http://mxlian.github.io/" rel="alternate"></link><link href="http://mxlian.github.io/feeds/all.atom.xml" rel="self"></link><id>http://mxlian.github.io/</id><updated>2017-02-18T20:52:03+01:00</updated><entry><title>Encode videos to send via WhatsApp</title><link href="http://mxlian.github.io/encode-videos-to-send-via-whatsapp.html" rel="alternate"></link><published>2017-02-18T20:52:03+01:00</published><updated>2017-02-18T20:52:03+01:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2017-02-18:/encode-videos-to-send-via-whatsapp.html</id><summary type="html">&lt;p&gt;WhatsApp currently is kind of picky about the video format that supports. To my
+knowledge only: &lt;strong&gt;MP4 (H264 + aac)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I use &lt;strong&gt;avconv&lt;/strong&gt; to convert my existing video files:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="x"&gt;INPUT_FILE=~/vids/ground_spiral.MP4&lt;/span&gt;
+
+&lt;span class="x"&gt;avconv -i &lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;INPUT_FILE&lt;/span&gt;&lt;span class="x"&gt; \&lt;/span&gt;
+&lt;span class="x"&gt;       -f mp4 -c:v h264 -b:v 1200k -g 300 -bf 2 -s 640x480 \&lt;/span&gt;
+&lt;span class="x"&gt;       -c:a aac -b:a 64k -ac 1 \&lt;/span&gt;
+&lt;span class="x"&gt;       /tmp/output.MP4&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can try with different settings for better quality. In the example it will
+reencode the video with a bitrate of 1200k and a resolution of 640x480. Audio
+will have a bitrate of 64k and it will be monoaural (use &lt;strong&gt;-ac 2&lt;/strong&gt; for stereo).&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;WhatsApp currently is kind of picky about the video format that supports. To my
+knowledge only: &lt;strong&gt;MP4 (H264 + aac)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I use &lt;strong&gt;avconv&lt;/strong&gt; to convert my existing video files:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="x"&gt;INPUT_FILE=~/vids/ground_spiral.MP4&lt;/span&gt;
+
+&lt;span class="x"&gt;avconv -i &lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;INPUT_FILE&lt;/span&gt;&lt;span class="x"&gt; \&lt;/span&gt;
+&lt;span class="x"&gt;       -f mp4 -c:v h264 -b:v 1200k -g 300 -bf 2 -s 640x480 \&lt;/span&gt;
+&lt;span class="x"&gt;       -c:a aac -b:a 64k -ac 1 \&lt;/span&gt;
+&lt;span class="x"&gt;       /tmp/output.MP4&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can try with different settings for better quality. In the example it will
+reencode the video with a bitrate of 1200k and a resolution of 640x480. Audio
+will have a bitrate of 64k and it will be monoaural (use &lt;strong&gt;-ac 2&lt;/strong&gt; for stereo).&lt;/p&gt;
+</content><category term="video"></category><category term="encoding"></category><category term="whatsapp"></category></entry><entry><title>Install Hack Typeface on Ubuntu/Debian</title><link href="http://mxlian.github.io/install-hack-typeface-on-ubuntudebian.html" rel="alternate"></link><published>2015-09-01T10:27:05+02:00</published><updated>2015-09-01T10:27:05+02:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2015-09-01:/install-hack-typeface-on-ubuntudebian.html</id><summary type="html">&lt;p&gt;Want to try &lt;a href="http://sourcefoundry.org/hack/"&gt;Hack Typeface&lt;/a&gt;? Use the following gist:&lt;/p&gt;
 &lt;script src="https://gist.github.com/mxlian/33c279b2b0ae0492793d.js"&gt;&lt;/script&gt;
 
 &lt;p&gt;Happy coding!
-&lt;/p&gt;</summary><category term="hack"></category><category term="typeface"></category><category term="ubuntu"></category><category term="debian"></category></entry><entry><title>Add custom facts to puppet</title><link href="http://mxlian.github.io/add-custom-facts-to-puppet.html" rel="alternate"></link><updated>2014-11-27T14:18:56+01:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2014-11-27:add-custom-facts-to-puppet.html</id><summary type="html">&lt;p&gt;Just needed a fast way to set up &lt;code&gt;facts&lt;/code&gt; with a couple of commands on
+</summary><content type="html">&lt;p&gt;Want to try &lt;a href="http://sourcefoundry.org/hack/"&gt;Hack Typeface&lt;/a&gt;? Use the following gist:&lt;/p&gt;
+&lt;script src="https://gist.github.com/mxlian/33c279b2b0ae0492793d.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;Happy coding!
+&lt;/p&gt;</content><category term="hack"></category><category term="typeface"></category><category term="ubuntu"></category><category term="debian"></category></entry><entry><title>Add custom facts to puppet</title><link href="http://mxlian.github.io/add-custom-facts-to-puppet.html" rel="alternate"></link><published>2014-11-27T14:18:56+01:00</published><updated>2014-11-27T14:18:56+01:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2014-11-27:/add-custom-facts-to-puppet.html</id><summary type="html">&lt;p&gt;Just needed a fast way to set up &lt;code&gt;facts&lt;/code&gt; with a couple of commands on
 the machine where I'm using/testing puppet manifests. &lt;/p&gt;
 &lt;p&gt;Surprissingly I found what I was looking for digging in &lt;a href="https://github.com/mitchellh/vagrant/blob/efd1d5e11bfc5a72c7a1d1eae294b4751d841544/plugins/provisioners/puppet/provisioner/puppet_server.rb"&gt;Vagrant
 code&lt;/a&gt;. Put your facts in environment variables, prefixed with
 '&lt;code&gt;FACTER_&lt;/code&gt;':&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;# Define your facts as variables
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Define your facts as variables
+export FACTER_YOURCUSTOMFACT=value1
+export FACTER_OTHERFACT=value2
+
+puppet apply /path/to/puppet/test/main.pp
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Happy testing!
+</summary><content type="html">&lt;p&gt;Just needed a fast way to set up &lt;code&gt;facts&lt;/code&gt; with a couple of commands on
+the machine where I'm using/testing puppet manifests. &lt;/p&gt;
+&lt;p&gt;Surprissingly I found what I was looking for digging in &lt;a href="https://github.com/mitchellh/vagrant/blob/efd1d5e11bfc5a72c7a1d1eae294b4751d841544/plugins/provisioners/puppet/provisioner/puppet_server.rb"&gt;Vagrant
+code&lt;/a&gt;. Put your facts in environment variables, prefixed with
+'&lt;code&gt;FACTER_&lt;/code&gt;':&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Define your facts as variables
 export FACTER_YOURCUSTOMFACT=value1
 export FACTER_OTHERFACT=value2
 
@@ -27,7 +75,7 @@ with &lt;a href="https://docs.puppetlabs.com/puppet/latest/reference/lang_facts_
 &lt;p&gt;What if you want to define your own facts for testing some manifests? I couldn't
 find on the web an easy way to do it. It seems that most of the puppet
 documentation is related to agent/master use cases, and not my particular
-minimalistic setup without a master.&lt;/p&gt;</summary><category term="puppet"></category><category term="facter"></category><category term="facts"></category></entry><entry><title>Extracting RFID chip from SSS Siedle</title><link href="http://mxlian.github.io/extracting-rfid-chip-from-sss-siedle.html" rel="alternate"></link><updated>2013-10-17T00:00:00+02:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2013-10-17:extracting-rfid-chip-from-sss-siedle.html</id><summary type="html">&lt;p&gt;At work we use RFID cards to get through the doors. I don't like to
+minimalistic setup without a master.&lt;/p&gt;</content><category term="puppet"></category><category term="facter"></category><category term="facts"></category></entry><entry><title>Extracting RFID chip from SSS Siedle</title><link href="http://mxlian.github.io/extracting-rfid-chip-from-sss-siedle.html" rel="alternate"></link><published>2013-10-17T00:00:00+02:00</published><updated>2013-10-17T00:00:00+02:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2013-10-17:/extracting-rfid-chip-from-sss-siedle.html</id><summary type="html">&lt;p&gt;At work we use RFID cards to get through the doors. I don't like to
 carry it hanging from the neck. I wanted to put the rfid card in my
 phone, which is the only artifact (beside my wristwatch) that
 I carry with me all the time. &lt;/p&gt;
@@ -36,7 +84,17 @@ mostly made of plastic, so my idea was to somehow extract the chip
 and antenna from the card.&lt;/p&gt;
 &lt;p&gt;If you have a Siedle RFID card, which looks like the picture, and want do do the
 same keep reading:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="SSS Siedle RFID" src="http://mxlian.github.io/images/rfid/sss-siedle-card.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="SSS Siedle RFID" src="http://mxlian.github.io/images/rfid/sss-siedle-card.jpg"&gt;&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;At work we use RFID cards to get through the doors. I don't like to
+carry it hanging from the neck. I wanted to put the rfid card in my
+phone, which is the only artifact (beside my wristwatch) that
+I carry with me all the time. &lt;/p&gt;
+&lt;p&gt;One problem: the card is too thick to fit inside the phone. But it's
+mostly made of plastic, so my idea was to somehow extract the chip
+and antenna from the card.&lt;/p&gt;
+&lt;p&gt;If you have a Siedle RFID card, which looks like the picture, and want do do the
+same keep reading:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="SSS Siedle RFID" src="http://mxlian.github.io/images/rfid/sss-siedle-card.jpg"&gt;&lt;/p&gt;
 
 
 &lt;p&gt;Researching I found almost the same solution I wanted by
@@ -51,10 +109,10 @@ process to help someone with the same kind of card. Here we go:&lt;/p&gt;
 lacquer removers. It takes a lot of time. I got usable results after
 10-12 hours. The best is to leave it covered, to prevent flooding
 your entire home with acetone and also reduce the evaporation.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Nail polish remover" src="http://mxlian.github.io/images/rfid/1.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Nail polish remover" src="http://mxlian.github.io/images/rfid/1.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;I covered it with a glass (don't use plastic!) bowl, and leave it
 the whole night working.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Plastic dissolved" src="http://mxlian.github.io/images/rfid/2.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Plastic dissolved" src="http://mxlian.github.io/images/rfid/2.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;The plastic is not rigid anymore. It looks more like gum. You can
 easily distinguish the antenna ring on the card.&lt;/p&gt;
 &lt;h1&gt;2. Extract the chip&lt;/h1&gt;
@@ -62,40 +120,40 @@ easily distinguish the antenna ring on the card.&lt;/p&gt;
 there are nothing useful outside the ring. Just be careful not to cut
 the ring. It's better to leave some room for errors and then retouch
 it later in small increments.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Cutting" src="http://mxlian.github.io/images/rfid/3.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Cutting" src="http://mxlian.github.io/images/rfid/3.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;The card is like a sandwich, with the rfid circuit in the middle.
 What you want to do is to get rid of the 'bread'. &lt;/p&gt;
 &lt;p&gt;Using small increments, cut around the circle formed by the antenna
 until you find a spot where both sides of the card aren't stick to
 each other. From that sort of bubble you want to start to pull 
 both sides in opposite directions.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Cutting" src="http://mxlian.github.io/images/rfid/4.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Cutting" src="http://mxlian.github.io/images/rfid/4.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;It's better to start with the opposite side where the chip resides,
 to leave the delicate part to the end, when you already have
 revealed most of the antenna's surface.&lt;/p&gt;
 &lt;p&gt;I've marked with a circle where the chip approximately resides and
 with an arrow the best place (in my opinion) to start pulling the
 card aside.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Cutting" src="http://mxlian.github.io/images/rfid/5.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Cutting" src="http://mxlian.github.io/images/rfid/5.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;Start pulling slowly and very carefully ...&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Peeling" src="http://mxlian.github.io/images/rfid/6.resized.JPG" /&gt;
-&lt;img alt="Peeling" src="http://mxlian.github.io/images/rfid/7.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Peeling" src="http://mxlian.github.io/images/rfid/6.resized.JPG"&gt;
+&lt;img alt="Peeling" src="http://mxlian.github.io/images/rfid/7.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;Now comes the tricky part. The chip is attached to the antenna with
 &lt;strong&gt;very very thin wires&lt;/strong&gt;. If you brake them, you're done. So be
 &lt;strong&gt;very careful&lt;/strong&gt;. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="Peeling" src="http://mxlian.github.io/images/rfid/8.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Peeling" src="http://mxlian.github.io/images/rfid/8.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;Mission accomplished!&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Core" src="http://mxlian.github.io/images/rfid/9.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Core" src="http://mxlian.github.io/images/rfid/9.resized.JPG"&gt;&lt;/p&gt;
 &lt;h1&gt;3. Protect it&lt;/h1&gt;
 &lt;p&gt;Now that you &lt;em&gt;hopefully&lt;/em&gt; managed to get rid of the plastic without
 ripping the chip from the antenna apart, it's time to protect this
 fragile device. &lt;/p&gt;
 &lt;p&gt;I used simple Tesa tape, to sandwich it. Works like a charm.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Protect it" src="http://mxlian.github.io/images/rfid/10.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Protect it" src="http://mxlian.github.io/images/rfid/10.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;Now with a little bit of love an awesome RFID device:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Protect it" src="http://mxlian.github.io/images/rfid/11.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Protect it" src="http://mxlian.github.io/images/rfid/11.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;Now enjoy the magic of opening the doors only with your phone.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Into the phone" src="http://mxlian.github.io/images/rfid/12.resized.JPG" /&gt;&lt;/p&gt;</summary></entry><entry><title>Electronic controller for the washing machine</title><link href="http://mxlian.github.io/wm.html" rel="alternate"></link><updated>2010-08-25T00:00:00+02:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2010-08-25:wm.html</id><summary type="html">&lt;p&gt;The electromechanical timer of my washing machine died. It couldn't
+&lt;p&gt;&lt;img alt="Into the phone" src="http://mxlian.github.io/images/rfid/12.resized.JPG"&gt;&lt;/p&gt;</content></entry><entry><title>Electronic controller for the washing machine</title><link href="http://mxlian.github.io/wm.html" rel="alternate"></link><published>2010-08-25T00:00:00+02:00</published><updated>2010-08-25T00:00:00+02:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2010-08-25:/wm.html</id><summary type="html">&lt;p&gt;The electromechanical timer of my washing machine died. It couldn't
 be repaired and had to be replaced. &lt;/p&gt;
 &lt;p&gt;What to do?&lt;/p&gt;
 &lt;ol&gt;
@@ -103,7 +161,16 @@ be repaired and had to be replaced. &lt;/p&gt;
 &lt;li&gt;Build your own, even if you have no idea how &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;If you think the second option is the right one keep reading...&lt;/p&gt;
-&lt;p&gt;&lt;img alt="samples" src="http://mxlian.github.io/images/washing-machine/summary2.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="samples" src="http://mxlian.github.io/images/washing-machine/summary2.JPG"&gt;&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;The electromechanical timer of my washing machine died. It couldn't
+be repaired and had to be replaced. &lt;/p&gt;
+&lt;p&gt;What to do?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Be boring, go to the store, buy a new one, replace it&lt;/li&gt;
+&lt;li&gt;Build your own, even if you have no idea how &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you think the second option is the right one keep reading...&lt;/p&gt;
+&lt;p&gt;&lt;img alt="samples" src="http://mxlian.github.io/images/washing-machine/summary2.JPG"&gt;&lt;/p&gt;
 
 
 &lt;h1&gt;Background&lt;/h1&gt;
@@ -124,8 +191,8 @@ I started the project, so don't kill me for all the wrong choices.&lt;/p&gt;
 &lt;h1&gt;The finished project&lt;/h1&gt;
 &lt;p&gt;Don't want to bore you with details, so let me show you how it went
 and leave the rest for the end in case you still interested.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="finished" src="http://mxlian.github.io/images/washing-machine/finished-trim.JPG" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="internals" src="http://mxlian.github.io/images/washing-machine/topview.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="finished" src="http://mxlian.github.io/images/washing-machine/finished-trim.JPG"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="internals" src="http://mxlian.github.io/images/washing-machine/topview.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;The machine provides 4 different full programs, 2 short ones, and configuration:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Ropa de algodón (cotton)&lt;/li&gt;
@@ -170,7 +237,7 @@ frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;li&gt;Yellow led (show established link to pc, if connected)&lt;/li&gt;
 &lt;li&gt;Piezoelectric sounder (to generate tones)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="logic diagram" src="http://mxlian.github.io/images/washing-machine/control_panel.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="logic diagram" src="http://mxlian.github.io/images/washing-machine/control_panel.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;The LCD has his own driver (microcontroller). Mine was the HD44780, and the
 protocol can be found on the datasheet. I used a library which spared me the
 headache. Sadly the driver is very sensitive to EMI, which caused a LOT of
@@ -192,14 +259,14 @@ a wide range of tones.&lt;/p&gt;
 &lt;p&gt;It's the central part of the design. It hosts the microcontroller and
 connects it with the peripherals.&lt;/p&gt;
 &lt;p&gt;The design was made with Eagle CAD. You can find it on &lt;a href="http://github.com/mxlian/wm"&gt;Github&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="eagle" src="http://mxlian.github.io/images/washing-machine/eagle.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="eagle" src="http://mxlian.github.io/images/washing-machine/eagle.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;The PCB it's made of cheap Pertinax (FR-2) to save some money. No high
 frequencies to justify a higher quality.&lt;/p&gt;
 &lt;p&gt;The first thing is the power source. The input voltage is 9VAC 1A (a 220v/9v
 transformer with fuse). The motherboard contains a diode bridge to obtain 12VDC
 for the relays and the servo and voltage regulator (LM7805) to power the LCD and
 the micro at 5VDC.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="trafo" src="http://mxlian.github.io/images/washing-machine/trafo.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="trafo" src="http://mxlian.github.io/images/washing-machine/trafo.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;Peripherals are connected to the mainboard trough housing connectors, making
 removal of the motherboard very easy.&lt;/p&gt;
 &lt;p&gt;The microcontroller used is the PIC 16F877PI with at 4Mhz. There was no need to
@@ -208,7 +275,7 @@ generator library for the piezo sounder.&lt;/p&gt;
 &lt;p&gt;To program it there is a ICSP socket, to allow direct firmware updates without
 having to extract the micro.&lt;/p&gt;
 &lt;p&gt;There is optical isolation with the power stage using optocouplers (HPCL-817).&lt;/p&gt;
-&lt;p&gt;&lt;img alt="mainboard" src="http://mxlian.github.io/images/washing-machine/motherboard.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="mainboard" src="http://mxlian.github.io/images/washing-machine/motherboard.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;The firmware is C code compiled with the PCM compiler from CCS, a very good
 PIC compilers of that time. The firmware uses about 85% of the ROM and required
 some nasty tricks to fit them in.&lt;/p&gt;
@@ -217,9 +284,9 @@ some nasty tricks to fit them in.&lt;/p&gt;
 &lt;p&gt;It consists in a 'panel' of relays, acting as switches to control the
 electric flow to the different components of the machine:&lt;/p&gt;
 &lt;p&gt;The panel diagram:
-&lt;img alt="Panel Diagram" src="http://mxlian.github.io/images/washing-machine/panelDistribucion.JPG" /&gt;&lt;/p&gt;
+&lt;img alt="Panel Diagram" src="http://mxlian.github.io/images/washing-machine/panelDistribucion.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;The actual panel:
-&lt;img alt="Real Panel" src="http://mxlian.github.io/images/washing-machine/WM_Relays.JPG" /&gt;&lt;/p&gt;
+&lt;img alt="Real Panel" src="http://mxlian.github.io/images/washing-machine/WM_Relays.JPG"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Electrovalve(RLY_EV): an electrically controlled water inlet. It let
 water flow when an electrical current is applied. The water goes
@@ -236,7 +303,7 @@ straightforward. So I will omit the explanation.&lt;/p&gt;
 how to make it work. These are the results:&lt;/p&gt;
 &lt;p&gt;Lets assign numbers to the connector pins (from left to right). The
 upper row 1, 2, 3 and 4, 5, 6 to the bottom row.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Motor connector" src="http://mxlian.github.io/images/washing-machine/fichon.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Motor connector" src="http://mxlian.github.io/images/washing-machine/fichon.JPG"&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -281,7 +348,7 @@ is active they have no effect.&lt;/p&gt;
 &lt;p&gt;The relay RLY_AC switch the motor on and off. The &lt;a href="http://en.wikipedia.org/wiki/Snubber"&gt;snubber&lt;/a&gt;
 reduces the EMI of the commutation, which is horrible for big
 inductive loads like the motor.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Snubber" src="http://mxlian.github.io/images/washing-machine/snubber.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Snubber" src="http://mxlian.github.io/images/washing-machine/snubber.png"&gt;&lt;/p&gt;
 &lt;p&gt;The snubber configuration used (ignore the values of the diagram):&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;R=100Ohm/1Watt&lt;/li&gt;
@@ -289,17 +356,17 @@ inductive loads like the motor.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;The relays I used are SANYOU SRD-S-112D, the are very cheap. I end
 up using it in pairs instead of buyin &lt;em&gt;double pole&lt;/em&gt; ones.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="SANYOU relays" src="http://mxlian.github.io/images/washing-machine/relay.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="SANYOU relays" src="http://mxlian.github.io/images/washing-machine/relay.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;To control the relays I used an array of Darlington transistors
 (ULN2003AN). Each Darlington comes with a &lt;a href="https://www.youtube.com/watch?v=LXGtE3X2k7Y"&gt;freewheeling diode&lt;/a&gt;,
 to protect the transistors from coil auto induction, when driving
 inductive loads.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="ULN2003AN" src="http://mxlian.github.io/images/washing-machine/uln2003.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="ULN2003AN" src="http://mxlian.github.io/images/washing-machine/uln2003.png"&gt;&lt;/p&gt;
 &lt;h3&gt;Sensors&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Pressure switch&lt;/strong&gt;: allows to know when the water reached
 a predefined level by measuring the air pressure exert by the water
 in a special air chamber. It's used as a normal switch.
-&lt;img alt="Pressure switch" src="http://mxlian.github.io/images/washing-machine/presometro.JPG" /&gt;&lt;/p&gt;
+&lt;img alt="Pressure switch" src="http://mxlian.github.io/images/washing-machine/presometro.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Door switch&lt;/strong&gt;: actually a main switch, which is closed only by the door. When
 the door closes the machine is turned on. I keep using it as originally
 designed. The door switch doesn't contains any lock mechanism.&lt;/p&gt;
@@ -308,17 +375,17 @@ measure water temperature and control the heater. I completely
 replaced it with a LM35 temperature sensor reusing the original
 metallic housing of the thermostat. The LM35 was attached to the 
 housing using super glue.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Pressure switch" src="http://mxlian.github.io/images/washing-machine/thermostat.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pressure switch" src="http://mxlian.github.io/images/washing-machine/thermostat.png"&gt;&lt;/p&gt;
 &lt;h3&gt;Dispenser system&lt;/h3&gt;
 &lt;p&gt;This machine has only one water inlet and a rotatory arm to divert
 the water flow into the different compartments. The arm was
 originally controlled by the electromechanical timer. To achieve the
 same function I used a low cost servo for model airplanes (I took
 the idea from &lt;a href="http://pablin.com.ar/electron/circuito/mc/lavapic/index.htm"&gt;Pablo Canello&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Servo" src="http://mxlian.github.io/images/washing-machine/WM_Servo2.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Servo" src="http://mxlian.github.io/images/washing-machine/WM_Servo2.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;The servo was attached to the rotatory arm (green) using a little
 bit of bricolage ingenuity.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Servo" src="http://mxlian.github.io/images/washing-machine/WM_Servo1.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Servo" src="http://mxlian.github.io/images/washing-machine/WM_Servo1.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Check this &lt;a href="//www.youtube.com/embed/WQ8yoPQx2lU"&gt;video&lt;/a&gt; to see exactly how it
 works.&lt;/p&gt;
 &lt;p&gt;The servo has 3 lines, VCC, GND and signal. To control the servo
@@ -350,7 +417,7 @@ parameters.&lt;/p&gt;
 wasn't excluded when selecting the parameters).&lt;/p&gt;
 &lt;p&gt;Each task has its own parameters which varies between all the
 washing programs. Please refer to the code to see the differences.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="logic diagram" src="http://mxlian.github.io/images/washing-machine/diagLogico.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="logic diagram" src="http://mxlian.github.io/images/washing-machine/diagLogico.png"&gt;&lt;/p&gt;
 &lt;h1&gt;Hardware versions&lt;/h1&gt;
 &lt;p&gt;The motherboard went through 3 different iterations:&lt;/p&gt;
 &lt;h3&gt;Version 1&lt;/h3&gt;
@@ -359,7 +426,7 @@ machine and the PC. The power stage and the sensors where connected
 to a PIC 16F84A. &lt;/p&gt;
 &lt;p&gt;The user interface was a computer program which sent orders to the
 PIC UART through a serial interface.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="serial connector" src="http://mxlian.github.io/images/washing-machine/serialconn.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="serial connector" src="http://mxlian.github.io/images/washing-machine/serialconn.JPG"&gt;&lt;/p&gt;
 &lt;h3&gt;Version 2&lt;/h3&gt;
 &lt;p&gt;I grew up my skills on microcontrollers so I went for an autonomous
 solution. A new set of features were added:&lt;/p&gt;
@@ -440,20 +507,28 @@ are talking!&lt;/p&gt;
 &lt;li&gt;Better temperature sensing algorithm &lt;/li&gt;
 &lt;li&gt;Improved relay switching to reduce wear out&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Firmware simulation" src="http://mxlian.github.io/images/washing-machine/WMv5on4.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Firmware simulation" src="http://mxlian.github.io/images/washing-machine/WMv5on4.jpg"&gt;&lt;/p&gt;
 &lt;h1&gt;Sources&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Update 2014&lt;/strong&gt;: You can find the sources and designs in &lt;a href="http://github.com/mxlian/wm"&gt;Github&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If something wrong or missing just drop me a line.  &lt;/p&gt;
 &lt;h1&gt;Acknowledgements&lt;/h1&gt;
 &lt;p&gt;I got a lot of inspiration and ideas from Pablo Canelo and his 
-&lt;a href="http://pablin.com.ar/electron/circuito/mc/lavapic/index.htm"&gt;washing machine&lt;/a&gt;. &lt;/p&gt;</summary><category term="pic"></category><category term="washing machine"></category><category term="controller"></category></entry><entry><title>Biometric identification through door movement analysis</title><link href="http://mxlian.github.io/neuror.html" rel="alternate"></link><updated>2010-07-27T00:00:00+02:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2010-07-27:neuror.html</id><summary type="html">&lt;p&gt;With my friend Julian we thought it may be possible to identify a person
+&lt;a href="http://pablin.com.ar/electron/circuito/mc/lavapic/index.htm"&gt;washing machine&lt;/a&gt;. &lt;/p&gt;</content><category term="pic"></category><category term="washing machine"></category><category term="controller"></category></entry><entry><title>Biometric identification through door movement analysis</title><link href="http://mxlian.github.io/neuror.html" rel="alternate"></link><published>2010-07-27T00:00:00+02:00</published><updated>2010-07-27T00:00:00+02:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2010-07-27:/neuror.html</id><summary type="html">&lt;p&gt;With my friend Julian we thought it may be possible to identify a person
 entering into a building from the way it opens the building's door, analyzing
 the angular values over time.&lt;/p&gt;
 &lt;p&gt;It's because of the differences between human beings (physical and
 psychological) that anyone of us interact with our surroundings in a very unique
 way. The key thing here is to be able to recognize patterns for each individual,
 and then use them as identification method.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="samples" src="http://mxlian.github.io/images/neuror/samples.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="samples" src="http://mxlian.github.io/images/neuror/samples.png"&gt;&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;With my friend Julian we thought it may be possible to identify a person
+entering into a building from the way it opens the building's door, analyzing
+the angular values over time.&lt;/p&gt;
+&lt;p&gt;It's because of the differences between human beings (physical and
+psychological) that anyone of us interact with our surroundings in a very unique
+way. The key thing here is to be able to recognize patterns for each individual,
+and then use them as identification method.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="samples" src="http://mxlian.github.io/images/neuror/samples.png"&gt;&lt;/p&gt;
 
 
 &lt;h1&gt;Input&lt;/h1&gt;
@@ -466,10 +541,10 @@ a fixed rate for a fixed amount of time. This sample will then be used as the
 amount of people has access. &lt;/p&gt;
 &lt;p&gt;For the sensor we use a potentiometer with its body fixed to the wall, and the
 moving shaft attached to the door. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="potentionmeter" src="http://mxlian.github.io/images/neuror/1.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="potentionmeter" src="http://mxlian.github.io/images/neuror/1.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;The potentiometer should be aligned with the door axis, allowing the moving
 shaft to follow the angular movements of the door.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="potentionmeter" src="http://mxlian.github.io/images/neuror/2.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="potentionmeter" src="http://mxlian.github.io/images/neuror/2.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;Nice, we're all set. Now whenever someone opens the door, the potentiometer will
 track the movement all the time.&lt;/p&gt;
 &lt;!--![potentionmeter]({filename}/images/neuror/3.resized.JPG)--&gt;
@@ -479,7 +554,7 @@ money it's my self made Severino version.&lt;/p&gt;
 &lt;p&gt;The signals of the potentiometer are directly connected to the Arduino, where
 it's digitalized/cuantified and then sent to a PC where it's going to be stored
 in a database for future processing.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="arduino" src="http://mxlian.github.io/images/neuror/4.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="arduino" src="http://mxlian.github.io/images/neuror/4.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;We defined our data sample as the serie of measurements while the door is open.
 When the door is closed we don't care. &lt;/p&gt;
 &lt;p&gt;As the Arduino is very scarse on memory we have can't store the whole data
@@ -498,7 +573,7 @@ has more resources.  The arduino runs a sketch wich performs the following: &lt;
 &lt;li&gt;When the door closes send a special character to signalize the pc that the sampling finished (and it can be saved on the DB)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The code of the sketch looks like this:&lt;/p&gt;
-&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
  2
  3
  4
@@ -565,7 +640,7 @@ has more resources.  The arduino runs a sketch wich performs the following: &lt;
 65
 66
 67
-68&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
+68&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;       Neuror - Door Interface Sketch &lt;/span&gt;
 &lt;span class="cm"&gt;*/&lt;/span&gt;
 
@@ -639,7 +714,7 @@ has more resources.  The arduino runs a sketch wich performs the following: &lt;
 &lt;p&gt;To recieve the data we reconditioned some old hardware, and we plug the Arduino
 Severino to the serial port (I like old fashion). If you're interested you can
 read about &lt;a href="{filename}/coil-inversion.md"&gt;how to invert your monitor coils&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="pc" src="http://mxlian.github.io/images/neuror/5.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pc" src="http://mxlian.github.io/images/neuror/5.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;The data is now received on the PC through the serial port. To keep it simple we
 run a SQLite database and a python script which constantly waiting for data. The
 script recieves all the measurements in secuence, and when the newline caracter
@@ -658,7 +733,7 @@ of the sampling &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;NOTE: The &lt;code&gt;readline()&lt;/code&gt; function of the Serial library blocks until the newline
 character appears on the line.&lt;/p&gt;
-&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
  2
  3
  4
@@ -693,42 +768,42 @@ character appears on the line.&lt;/p&gt;
 33
 34
 35
-36&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;datetime&lt;/span&gt;
+36&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;datetime&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;serial&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sqlite3&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
 
-&lt;span class="n"&gt;connection&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;sqlite3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;connect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;puerta-datos.db&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
+&lt;span class="n"&gt;connection&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;sqlite3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;connect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;puerta-datos.db&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
                              &lt;span class="n"&gt;detect_types&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;sqlite3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PARSE_DECLTYPES&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;sqlite3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PARSE_COLNAMES&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;cursor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;connection&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cursor&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 
-&lt;span class="c"&gt;## To create the database the first time uncomment this&lt;/span&gt;
-&lt;span class="c"&gt;#print &amp;quot;Creando base de datos...&amp;quot;&lt;/span&gt;
-&lt;span class="c"&gt;#cursor.execute(&amp;#39;DROP TABLE datos&amp;#39;)&lt;/span&gt;
-&lt;span class="c"&gt;#cursor.execute(&amp;#39;CREATE TABLE datos (id INTEGER PRIMARY KEY, &lt;/span&gt;
-&lt;span class="c"&gt;#                                    fecha TIMESTAMP, &lt;/span&gt;
-&lt;span class="c"&gt;#                                    datos VARCHAR(320))&amp;#39;)  #320 ==&amp;gt; &amp;quot;9999-&amp;quot;x64&lt;/span&gt;
-&lt;span class="c"&gt;#connection.commit()&lt;/span&gt;
+&lt;span class="c1"&gt;## To create the database the first time uncomment this&lt;/span&gt;
+&lt;span class="c1"&gt;#print &amp;quot;Creando base de datos...&amp;quot;&lt;/span&gt;
+&lt;span class="c1"&gt;#cursor.execute(&amp;#39;DROP TABLE datos&amp;#39;)&lt;/span&gt;
+&lt;span class="c1"&gt;#cursor.execute(&amp;#39;CREATE TABLE datos (id INTEGER PRIMARY KEY, &lt;/span&gt;
+&lt;span class="c1"&gt;#                                    fecha TIMESTAMP, &lt;/span&gt;
+&lt;span class="c1"&gt;#                                    datos VARCHAR(320))&amp;#39;)  #320 ==&amp;gt; &amp;quot;9999-&amp;quot;x64&lt;/span&gt;
+&lt;span class="c1"&gt;#connection.commit()&lt;/span&gt;
 
-&lt;span class="c"&gt;## To print all the data use this&lt;/span&gt;
-&lt;span class="c"&gt;#print &amp;quot;Visualizando datos:&amp;quot;&lt;/span&gt;
-&lt;span class="c"&gt;#cursor.execute(&amp;#39;SELECT * FROM datos&amp;#39;)&lt;/span&gt;
-&lt;span class="c"&gt;#for row in cursor:&lt;/span&gt;
-&lt;span class="c"&gt;#    print row&lt;/span&gt;
+&lt;span class="c1"&gt;## To print all the data use this&lt;/span&gt;
+&lt;span class="c1"&gt;#print &amp;quot;Visualizando datos:&amp;quot;&lt;/span&gt;
+&lt;span class="c1"&gt;#cursor.execute(&amp;#39;SELECT * FROM datos&amp;#39;)&lt;/span&gt;
+&lt;span class="c1"&gt;#for row in cursor:&lt;/span&gt;
+&lt;span class="c1"&gt;#    print row&lt;/span&gt;
 
-&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;serial&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Serial&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;/dev/ttyS0&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;9600&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Port in use:&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;portstr&lt;/span&gt;
+&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;serial&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Serial&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/dev/ttyS0&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;9600&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Port in use:&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;portstr&lt;/span&gt;
 
 &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-    &lt;span class="n"&gt;cursor&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;execute&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;INSERT INTO datos(fecha, datos) values (?, ?)&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;cursor&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;execute&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;INSERT INTO datos(fecha, datos) values (?, ?)&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
                     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;now&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt;
 &lt;span class="hll"&gt;                     &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readline&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 &lt;/span&gt;                  &lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="n"&gt;connection&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;commit&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 
-&lt;span class="c"&gt;#cursor.close()&lt;/span&gt;
-&lt;span class="c"&gt;#connection.close()&lt;/span&gt;
-&lt;span class="c"&gt;#s.close()&lt;/span&gt;
+&lt;span class="c1"&gt;#cursor.close()&lt;/span&gt;
+&lt;span class="c1"&gt;#connection.close()&lt;/span&gt;
+&lt;span class="c1"&gt;#s.close()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
@@ -737,20 +812,26 @@ character appears on the line.&lt;/p&gt;
 different patters that appear.&lt;/p&gt;
 &lt;p&gt;See the picture at the beginning of the article. I used matplotlib to plot some
 of them. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="samples" src="http://mxlian.github.io/images/neuror/sample47.png" /&gt;
-&lt;img alt="samples" src="http://mxlian.github.io/images/neuror/sample49.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="samples" src="http://mxlian.github.io/images/neuror/sample47.png"&gt;
+&lt;img alt="samples" src="http://mxlian.github.io/images/neuror/sample49.png"&gt;&lt;/p&gt;
 &lt;h1&gt;Analysis&lt;/h1&gt;
 &lt;p&gt;Julian started to train some neuronal networks to be able to recognize and group
 the patterns. He worked with Kohonnen maps.&lt;/p&gt;
 &lt;p&gt;Sadly we had to quit the project because we got another priorities and we end up
 abandon the project.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;UPDATE (Oct 2014)&lt;/strong&gt;: I put all the samples and code on
-&lt;a href="//github.com/mxlian/neuror"&gt;GitHub&lt;/a&gt; in case you're interested. &lt;/p&gt;</summary></entry><entry><title>Hack your monitor to hang upside down</title><link href="http://mxlian.github.io/monitor-coil-inversion.html" rel="alternate"></link><updated>2010-05-25T00:00:00+02:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2010-05-25:monitor-coil-inversion.html</id><summary type="html">&lt;p&gt;For another project I was lacking enough room to put a CRT monitor and a PC on
+&lt;a href="//github.com/mxlian/neuror"&gt;GitHub&lt;/a&gt; in case you're interested. &lt;/p&gt;</content></entry><entry><title>Hack your monitor to hang upside down</title><link href="http://mxlian.github.io/monitor-coil-inversion.html" rel="alternate"></link><published>2010-05-25T00:00:00+02:00</published><updated>2010-05-25T00:00:00+02:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2010-05-25:/monitor-coil-inversion.html</id><summary type="html">&lt;p&gt;For another project I was lacking enough room to put a CRT monitor and a PC on
 relatively small shelf. So instead of getting another extra shelf I decided to
 put the monitor on the bottom side of the shelf. Yeah :) &lt;/p&gt;
 &lt;p&gt;I just need to manage to invert the image of the monitor, to make some use of
 this &lt;em&gt;fancy&lt;/em&gt; setup.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Monitor with inverted coils" src="http://mxlian.github.io/images/coil/0.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Monitor with inverted coils" src="http://mxlian.github.io/images/coil/0.resized.JPG"&gt;&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;For another project I was lacking enough room to put a CRT monitor and a PC on
+relatively small shelf. So instead of getting another extra shelf I decided to
+put the monitor on the bottom side of the shelf. Yeah :) &lt;/p&gt;
+&lt;p&gt;I just need to manage to invert the image of the monitor, to make some use of
+this &lt;em&gt;fancy&lt;/em&gt; setup.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Monitor with inverted coils" src="http://mxlian.github.io/images/coil/0.resized.JPG"&gt;&lt;/p&gt;
 
 
 &lt;p&gt;Actually I found it's not a big deal.&lt;/p&gt;
@@ -773,33 +854,33 @@ image. Great.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;WARNING&lt;/strong&gt;: Inside the monitor there are big capacitors which work with really
 high voltage. Very important to take necessary protections and to unplug the
 monitor while it still on, to help the capacitors discharge themselves.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Monitor internals" src="http://mxlian.github.io/images/coil/1.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Monitor internals" src="http://mxlian.github.io/images/coil/1.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;We are looking for a connector with two pair of cables. One for each coil. To
 make it even easier, the usually came in the same colors.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Yellow/Brown&lt;/li&gt;
 &lt;li&gt;Red/Blue&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img alt="Coil connector" src="http://mxlian.github.io/images/coil/2.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Coil connector" src="http://mxlian.github.io/images/coil/2.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;Just to be sure, we check with the multimeter. The coils are independent, so to
 find each coil you have to find the combination of cables who show some
 resistance in the multimeter. &lt;/p&gt;
 &lt;p&gt;Now lets make a test, and invert the polarity of the coil. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="Coil polarity inversion" src="http://mxlian.github.io/images/coil/4.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Coil polarity inversion" src="http://mxlian.github.io/images/coil/4.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;And test it.
-&lt;img alt="Inversion test" src="http://mxlian.github.io/images/coil/5.resized.JPG" /&gt;&lt;/p&gt;
+&lt;img alt="Inversion test" src="http://mxlian.github.io/images/coil/5.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;Wonderful we inverted the vertical deflectors, and we are getting a vertically
 mirrored image.&lt;/p&gt;
 &lt;p&gt;To achieve the desired effect I will also switch the polarity of the horizontal
 deflectors and also make sure everything is well isolated.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Coil connector" src="http://mxlian.github.io/images/coil/6.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Coil connector" src="http://mxlian.github.io/images/coil/6.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;Test again. Ta da! Exactly what I was needing.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Coil connector" src="http://mxlian.github.io/images/coil/8.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Coil connector" src="http://mxlian.github.io/images/coil/8.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;Take a look at the final setup.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Coil connector" src="http://mxlian.github.io/images/coil/9.resized.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Coil connector" src="http://mxlian.github.io/images/coil/9.resized.JPG"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt;: I found a nice video on the matter:&lt;/p&gt;
 &lt;iframe width="560" height="315" src="//www.youtube.com/embed/QVYG3ShP6S4"
-frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary></entry><entry><title>15 digit 7 segment display</title><link href="http://mxlian.github.io/7sd.html" rel="alternate"></link><updated>2009-03-28T00:00:00+01:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2009-03-28:7sd.html</id><summary type="html">&lt;p&gt;To show some stats of my home server I end up building a nice 7 segment display
+frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content></entry><entry><title>15 digit 7 segment display</title><link href="http://mxlian.github.io/7sd.html" rel="alternate"></link><published>2009-03-28T00:00:00+01:00</published><updated>2009-03-28T00:00:00+01:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2009-03-28:/7sd.html</id><summary type="html">&lt;p&gt;To show some stats of my home server I end up building a nice 7 segment display
 with following specs:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;15 digits (supporting all alphabet)&lt;/li&gt;
@@ -809,7 +890,18 @@ with following specs:&lt;/p&gt;
 &lt;li&gt;works with with the serial port&lt;/li&gt;
 &lt;li&gt;modular (simply connect many of them to expand the display)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="7sd" src="http://mxlian.github.io/images/7sd/intro.JPG" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="7sd" src="http://mxlian.github.io/images/7sd/intro.JPG"&gt;&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;To show some stats of my home server I end up building a nice 7 segment display
+with following specs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;15 digits (supporting all alphabet)&lt;/li&gt;
+&lt;li&gt;flicker free&lt;/li&gt;
+&lt;li&gt;doesn't require constant refreshing&lt;/li&gt;
+&lt;li&gt;must be cheap (I'm a student)&lt;/li&gt;
+&lt;li&gt;works with with the serial port&lt;/li&gt;
+&lt;li&gt;modular (simply connect many of them to expand the display)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="7sd" src="http://mxlian.github.io/images/7sd/intro.JPG"&gt;&lt;/p&gt;
 
 
 &lt;h1&gt;Background&lt;/h1&gt;
@@ -847,7 +939,7 @@ coming from the serial port. Using the &lt;a href="http://es.wikipedia.org/wiki/
 possible to drive the shift registers without extra logic. &lt;/p&gt;
 &lt;p&gt;The control lines can be setted/unsetted at will. It will only require a minimal
 voltage adaptation with some passive components. We use:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="pinout" src="http://upload.wikimedia.org/wikipedia/commons/2/29/RS-232_DE-9_Connector_Pinouts.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pinout" src="http://upload.wikimedia.org/wikipedia/commons/2/29/RS-232_DE-9_Connector_Pinouts.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;DTR (Data Terminal Ready) as &lt;strong&gt;Data&lt;/strong&gt; (PIN 4 - DB9) &lt;/li&gt;
 &lt;li&gt;RTS (Request to Send) as &lt;strong&gt;Clock&lt;/strong&gt; (PIN 7 - DB9)&lt;/li&gt;
@@ -855,32 +947,32 @@ voltage adaptation with some passive components. We use:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;For the display we use the Kingbright BA56-11. These are very inexpensive
 3 digit modules.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="display" src="http://mxlian.github.io/images/7sd/display.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="display" src="http://mxlian.github.io/images/7sd/display.png"&gt;&lt;/p&gt;
 &lt;h1&gt;Hardware&lt;/h1&gt;
 &lt;p&gt;The connection of the shift registers is very straight forward and to keep it
 even simpler (and after reading the datasheets) I even didn't use any resistors
 between the outputs and the 7 segments.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="pcb" src="http://mxlian.github.io/images/7sd/diag.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pcb" src="http://mxlian.github.io/images/7sd/diag.png"&gt;&lt;/p&gt;
 &lt;p&gt;As you can see there is a lot of wire that we have to route on the PCB. That is
 a very challenging operation (and it seems you can always do better). I got it
 down to the following:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="pcb" src="http://mxlian.github.io/images/7sd/layout.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pcb" src="http://mxlian.github.io/images/7sd/layout.png"&gt;&lt;/p&gt;
 &lt;p&gt;There is only one trace you will have to do connect manually (on the left, green
 wire).&lt;/p&gt;
 &lt;p&gt;The components are placed mostly on the front side of the PCB &lt;/p&gt;
-&lt;p&gt;&lt;img alt="pcb" src="http://mxlian.github.io/images/7sd/front.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pcb" src="http://mxlian.github.io/images/7sd/front.png"&gt;&lt;/p&gt;
 &lt;p&gt;but I have to squeeze one CD4094 on the back with the DB-9 Connectors.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="pcb" src="http://mxlian.github.io/images/7sd/back2.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pcb" src="http://mxlian.github.io/images/7sd/back2.png"&gt;&lt;/p&gt;
 &lt;p&gt;To produce the PCB the low cost toner transfer method (I may upload the process
 if someone is interested)&lt;/p&gt;
 &lt;p&gt;I won't lie. The manufacturing of this PCB is hard, but for me it was a lot of
 fun. It took me over 10 hours of printing, drilling and soldering, but I enjoyed
 every minute of it.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="working" src="http://mxlian.github.io/images/7sd/working.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="working" src="http://mxlian.github.io/images/7sd/working.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;If you don't enjoy the process just send the layout to your favourite PCB
 manufacturer. To give you an idea of the complexity I got some stats of the
 board: &lt;/p&gt;
-&lt;p&gt;&lt;img alt="stats" src="http://mxlian.github.io/images/7sd/stats.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="stats" src="http://mxlian.github.io/images/7sd/stats.png"&gt;&lt;/p&gt;
 &lt;p&gt;To make the schematic and layout I've used Proteus from Labcenter Electronics.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;DISCLAIMER:&lt;/strong&gt; The PCB is pretty good, but not yet perfect. If you want to
 improve it I put the schematics and layouts in the &lt;a href="https://github.com/mxlian/7sd"&gt;Github repository&lt;/a&gt;.&lt;/p&gt;
@@ -891,7 +983,7 @@ it sends the data to the display using the control lines of the serial port. He
 also implemented some nice features to display strings longer than the display
 itself with automatic rotation. Feel free to experiment with it.&lt;/p&gt;
 &lt;p&gt;Encoding digits is obvious but to encode letters we use the Harvey Twyman font.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="font" src="http://www.twyman.org.uk/Fonts/7%20Seq-3D.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="font" src="http://www.twyman.org.uk/Fonts/7%20Seq-3D.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;The results are very readable most of the time, specially because the breain can
 'guess' the 'not so obvious' letters using the context. Using smaller displays
 the results aren't so spectacular.&lt;/p&gt;
@@ -899,4 +991,4 @@ the results aren't so spectacular.&lt;/p&gt;
 if you feel more comfortable.&lt;/p&gt;
 &lt;p&gt;To finish see it in action:&lt;/p&gt;
 &lt;iframe align="center" width="420" height="315" src="//www.youtube.com/embed/8SB75jznN9I?rel=0"
-frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary></entry></feed>
+frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content></entry></feed>

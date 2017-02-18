@@ -77,7 +77,7 @@ with following specs:</p>
 <li>works with with the serial port</li>
 <li>modular (simply connect many of them to expand the display)</li>
 </ul>
-<p><img alt="7sd" src="http://mxlian.github.io/images/7sd/intro.JPG" /></p>
+<p><img alt="7sd" src="http://mxlian.github.io/images/7sd/intro.JPG"></p>
 
 
 <h1>Background</h1>
@@ -115,7 +115,7 @@ coming from the serial port. Using the <a href="http://es.wikipedia.org/wiki/RS-
 possible to drive the shift registers without extra logic. </p>
 <p>The control lines can be setted/unsetted at will. It will only require a minimal
 voltage adaptation with some passive components. We use:</p>
-<p><img alt="pinout" src="http://upload.wikimedia.org/wikipedia/commons/2/29/RS-232_DE-9_Connector_Pinouts.png" /></p>
+<p><img alt="pinout" src="http://upload.wikimedia.org/wikipedia/commons/2/29/RS-232_DE-9_Connector_Pinouts.png"></p>
 <ul>
 <li>DTR (Data Terminal Ready) as <strong>Data</strong> (PIN 4 - DB9) </li>
 <li>RTS (Request to Send) as <strong>Clock</strong> (PIN 7 - DB9)</li>
@@ -123,32 +123,32 @@ voltage adaptation with some passive components. We use:</p>
 </ul>
 <p>For the display we use the Kingbright BA56-11. These are very inexpensive
 3 digit modules.</p>
-<p><img alt="display" src="http://mxlian.github.io/images/7sd/display.png" /></p>
+<p><img alt="display" src="http://mxlian.github.io/images/7sd/display.png"></p>
 <h1>Hardware</h1>
 <p>The connection of the shift registers is very straight forward and to keep it
 even simpler (and after reading the datasheets) I even didn't use any resistors
 between the outputs and the 7 segments.</p>
-<p><img alt="pcb" src="http://mxlian.github.io/images/7sd/diag.png" /></p>
+<p><img alt="pcb" src="http://mxlian.github.io/images/7sd/diag.png"></p>
 <p>As you can see there is a lot of wire that we have to route on the PCB. That is
 a very challenging operation (and it seems you can always do better). I got it
 down to the following:</p>
-<p><img alt="pcb" src="http://mxlian.github.io/images/7sd/layout.png" /></p>
+<p><img alt="pcb" src="http://mxlian.github.io/images/7sd/layout.png"></p>
 <p>There is only one trace you will have to do connect manually (on the left, green
 wire).</p>
 <p>The components are placed mostly on the front side of the PCB </p>
-<p><img alt="pcb" src="http://mxlian.github.io/images/7sd/front.png" /></p>
+<p><img alt="pcb" src="http://mxlian.github.io/images/7sd/front.png"></p>
 <p>but I have to squeeze one CD4094 on the back with the DB-9 Connectors.</p>
-<p><img alt="pcb" src="http://mxlian.github.io/images/7sd/back2.png" /></p>
+<p><img alt="pcb" src="http://mxlian.github.io/images/7sd/back2.png"></p>
 <p>To produce the PCB the low cost toner transfer method (I may upload the process
 if someone is interested)</p>
 <p>I won't lie. The manufacturing of this PCB is hard, but for me it was a lot of
 fun. It took me over 10 hours of printing, drilling and soldering, but I enjoyed
 every minute of it.</p>
-<p><img alt="working" src="http://mxlian.github.io/images/7sd/working.jpg" /></p>
+<p><img alt="working" src="http://mxlian.github.io/images/7sd/working.jpg"></p>
 <p>If you don't enjoy the process just send the layout to your favourite PCB
 manufacturer. To give you an idea of the complexity I got some stats of the
 board: </p>
-<p><img alt="stats" src="http://mxlian.github.io/images/7sd/stats.png" /></p>
+<p><img alt="stats" src="http://mxlian.github.io/images/7sd/stats.png"></p>
 <p>To make the schematic and layout I've used Proteus from Labcenter Electronics.</p>
 <p><strong>DISCLAIMER:</strong> The PCB is pretty good, but not yet perfect. If you want to
 improve it I put the schematics and layouts in the <a href="https://github.com/mxlian/7sd">Github repository</a>.</p>
@@ -159,7 +159,7 @@ it sends the data to the display using the control lines of the serial port. He
 also implemented some nice features to display strings longer than the display
 itself with automatic rotation. Feel free to experiment with it.</p>
 <p>Encoding digits is obvious but to encode letters we use the Harvey Twyman font.</p>
-<p><img alt="font" src="http://www.twyman.org.uk/Fonts/7%20Seq-3D.jpg" /></p>
+<p><img alt="font" src="http://www.twyman.org.uk/Fonts/7%20Seq-3D.jpg"></p>
 <p>The results are very readable most of the time, specially because the breain can
 'guess' the 'not so obvious' letters using the context. Using smaller displays
 the results aren't so spectacular.</p>

@@ -1,14 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>planocomplejo</title><link href="http://mxlian.github.io/" rel="alternate"></link><link href="http://mxlian.github.io/feeds/misc.atom.xml" rel="self"></link><id>http://mxlian.github.io/</id><updated>2015-09-01T10:27:05+02:00</updated><entry><title>Install Hack Typeface on Ubuntu/Debian</title><link href="http://mxlian.github.io/install-hack-typeface-on-ubuntudebian.html" rel="alternate"></link><updated>2015-09-01T10:27:05+02:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2015-09-01:install-hack-typeface-on-ubuntudebian.html</id><summary type="html">&lt;p&gt;Want to try &lt;a href="http://sourcefoundry.org/hack/"&gt;Hack Typeface&lt;/a&gt;? Use the following gist:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>planocomplejo - misc</title><link href="http://mxlian.github.io/" rel="alternate"></link><link href="http://mxlian.github.io/feeds/misc.atom.xml" rel="self"></link><id>http://mxlian.github.io/</id><updated>2017-02-18T20:52:03+01:00</updated><entry><title>Encode videos to send via WhatsApp</title><link href="http://mxlian.github.io/encode-videos-to-send-via-whatsapp.html" rel="alternate"></link><published>2017-02-18T20:52:03+01:00</published><updated>2017-02-18T20:52:03+01:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2017-02-18:/encode-videos-to-send-via-whatsapp.html</id><summary type="html">&lt;p&gt;WhatsApp currently is kind of picky about the video format that supports. To my
+knowledge only: &lt;strong&gt;MP4 (H264 + aac)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I use &lt;strong&gt;avconv&lt;/strong&gt; to convert my existing video files:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="x"&gt;INPUT_FILE=~/vids/ground_spiral.MP4&lt;/span&gt;
+
+&lt;span class="x"&gt;avconv -i &lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;INPUT_FILE&lt;/span&gt;&lt;span class="x"&gt; \&lt;/span&gt;
+&lt;span class="x"&gt;       -f mp4 -c:v h264 -b:v 1200k -g 300 -bf 2 -s 640x480 \&lt;/span&gt;
+&lt;span class="x"&gt;       -c:a aac -b:a 64k -ac 1 \&lt;/span&gt;
+&lt;span class="x"&gt;       /tmp/output.MP4&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can try with different settings for better quality. In the example it will
+reencode the video with a bitrate of 1200k and a resolution of 640x480. Audio
+will have a bitrate of 64k and it will be monoaural (use &lt;strong&gt;-ac 2&lt;/strong&gt; for stereo).&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;WhatsApp currently is kind of picky about the video format that supports. To my
+knowledge only: &lt;strong&gt;MP4 (H264 + aac)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I use &lt;strong&gt;avconv&lt;/strong&gt; to convert my existing video files:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="x"&gt;INPUT_FILE=~/vids/ground_spiral.MP4&lt;/span&gt;
+
+&lt;span class="x"&gt;avconv -i &lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;INPUT_FILE&lt;/span&gt;&lt;span class="x"&gt; \&lt;/span&gt;
+&lt;span class="x"&gt;       -f mp4 -c:v h264 -b:v 1200k -g 300 -bf 2 -s 640x480 \&lt;/span&gt;
+&lt;span class="x"&gt;       -c:a aac -b:a 64k -ac 1 \&lt;/span&gt;
+&lt;span class="x"&gt;       /tmp/output.MP4&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can try with different settings for better quality. In the example it will
+reencode the video with a bitrate of 1200k and a resolution of 640x480. Audio
+will have a bitrate of 64k and it will be monoaural (use &lt;strong&gt;-ac 2&lt;/strong&gt; for stereo).&lt;/p&gt;
+</content><category term="video"></category><category term="encoding"></category><category term="whatsapp"></category></entry><entry><title>Install Hack Typeface on Ubuntu/Debian</title><link href="http://mxlian.github.io/install-hack-typeface-on-ubuntudebian.html" rel="alternate"></link><published>2015-09-01T10:27:05+02:00</published><updated>2015-09-01T10:27:05+02:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2015-09-01:/install-hack-typeface-on-ubuntudebian.html</id><summary type="html">&lt;p&gt;Want to try &lt;a href="http://sourcefoundry.org/hack/"&gt;Hack Typeface&lt;/a&gt;? Use the following gist:&lt;/p&gt;
 &lt;script src="https://gist.github.com/mxlian/33c279b2b0ae0492793d.js"&gt;&lt;/script&gt;
 
 &lt;p&gt;Happy coding!
-&lt;/p&gt;</summary><category term="hack"></category><category term="typeface"></category><category term="ubuntu"></category><category term="debian"></category></entry><entry><title>Add custom facts to puppet</title><link href="http://mxlian.github.io/add-custom-facts-to-puppet.html" rel="alternate"></link><updated>2014-11-27T14:18:56+01:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2014-11-27:add-custom-facts-to-puppet.html</id><summary type="html">&lt;p&gt;Just needed a fast way to set up &lt;code&gt;facts&lt;/code&gt; with a couple of commands on
+</summary><content type="html">&lt;p&gt;Want to try &lt;a href="http://sourcefoundry.org/hack/"&gt;Hack Typeface&lt;/a&gt;? Use the following gist:&lt;/p&gt;
+&lt;script src="https://gist.github.com/mxlian/33c279b2b0ae0492793d.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;Happy coding!
+&lt;/p&gt;</content><category term="hack"></category><category term="typeface"></category><category term="ubuntu"></category><category term="debian"></category></entry><entry><title>Add custom facts to puppet</title><link href="http://mxlian.github.io/add-custom-facts-to-puppet.html" rel="alternate"></link><published>2014-11-27T14:18:56+01:00</published><updated>2014-11-27T14:18:56+01:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2014-11-27:/add-custom-facts-to-puppet.html</id><summary type="html">&lt;p&gt;Just needed a fast way to set up &lt;code&gt;facts&lt;/code&gt; with a couple of commands on
 the machine where I'm using/testing puppet manifests. &lt;/p&gt;
 &lt;p&gt;Surprissingly I found what I was looking for digging in &lt;a href="https://github.com/mitchellh/vagrant/blob/efd1d5e11bfc5a72c7a1d1eae294b4751d841544/plugins/provisioners/puppet/provisioner/puppet_server.rb"&gt;Vagrant
 code&lt;/a&gt;. Put your facts in environment variables, prefixed with
 '&lt;code&gt;FACTER_&lt;/code&gt;':&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;# Define your facts as variables
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Define your facts as variables
+export FACTER_YOURCUSTOMFACT=value1
+export FACTER_OTHERFACT=value2
+
+puppet apply /path/to/puppet/test/main.pp
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Happy testing!
+</summary><content type="html">&lt;p&gt;Just needed a fast way to set up &lt;code&gt;facts&lt;/code&gt; with a couple of commands on
+the machine where I'm using/testing puppet manifests. &lt;/p&gt;
+&lt;p&gt;Surprissingly I found what I was looking for digging in &lt;a href="https://github.com/mitchellh/vagrant/blob/efd1d5e11bfc5a72c7a1d1eae294b4751d841544/plugins/provisioners/puppet/provisioner/puppet_server.rb"&gt;Vagrant
+code&lt;/a&gt;. Put your facts in environment variables, prefixed with
+'&lt;code&gt;FACTER_&lt;/code&gt;':&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Define your facts as variables
 export FACTER_YOURCUSTOMFACT=value1
 export FACTER_OTHERFACT=value2
 
@@ -27,4 +75,4 @@ with &lt;a href="https://docs.puppetlabs.com/puppet/latest/reference/lang_facts_
 &lt;p&gt;What if you want to define your own facts for testing some manifests? I couldn't
 find on the web an easy way to do it. It seems that most of the puppet
 documentation is related to agent/master use cases, and not my particular
-minimalistic setup without a master.&lt;/p&gt;</summary><category term="puppet"></category><category term="facter"></category><category term="facts"></category></entry></feed>
+minimalistic setup without a master.&lt;/p&gt;</content><category term="puppet"></category><category term="facter"></category><category term="facts"></category></entry></feed>

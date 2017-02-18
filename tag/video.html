@@ -18,7 +18,7 @@
 
 
   <title>
-Tag: controller  </title>
+Tag: video  </title>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -59,27 +59,33 @@ Tag: controller  </title>
 
   <main>
      <header>
-<p>Tag: controller
+<p>Tag: video
 </p>
     </header>
 <article>
   <div id="article_title">
-    <h1><a href="http://mxlian.github.io/wm.html">Electronic controller for the washing machine</a></h1>
+    <h1><a href="http://mxlian.github.io/encode-videos-to-send-via-whatsapp.html">Encode videos to send via WhatsApp</a></h1>
   </div>
   <div id="article_text">
-    <p>The electromechanical timer of my washing machine died. It couldn't
-be repaired and had to be replaced. </p>
-<p>What to do?</p>
-<ol>
-<li>Be boring, go to the store, buy a new one, replace it</li>
-<li>Build your own, even if you have no idea how </li>
-</ol>
-<p>If you think the second option is the right one keep reading...</p>
-<p><img alt="samples" src="http://mxlian.github.io/images/washing-machine/summary2.JPG"></p>
+    <p>WhatsApp currently is kind of picky about the video format that supports. To my
+knowledge only: <strong>MP4 (H264 + aac)</strong></p>
+<p>I use <strong>avconv</strong> to convert my existing video files:</p>
+<div class="highlight"><pre><span></span><span class="x">INPUT_FILE=~/vids/ground_spiral.MP4</span>
+
+<span class="x">avconv -i </span><span class="p">$</span><span class="nv">INPUT_FILE</span><span class="x"> \</span>
+<span class="x">       -f mp4 -c:v h264 -b:v 1200k -g 300 -bf 2 -s 640x480 \</span>
+<span class="x">       -c:a aac -b:a 64k -ac 1 \</span>
+<span class="x">       /tmp/output.MP4</span>
+</pre></div>
+
+
+<p>You can try with different settings for better quality. In the example it will
+reencode the video with a bitrate of 1200k and a resolution of 640x480. Audio
+will have a bitrate of 64k and it will be monoaural (use <strong>-ac 2</strong> for stereo).</p>
 
   </div>
   <div id="article_more">
-  	<a class="button_more" href="http://mxlian.github.io/wm.html">More <i class=" icon-arrow-right"></i></a>
+  	<a class="button_more" href="http://mxlian.github.io/encode-videos-to-send-via-whatsapp.html">More <i class=" icon-arrow-right"></i></a>
   </div>
 </article>
 

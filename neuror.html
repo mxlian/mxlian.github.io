@@ -74,7 +74,7 @@ the angular values over time.</p>
 psychological) that anyone of us interact with our surroundings in a very unique
 way. The key thing here is to be able to recognize patterns for each individual,
 and then use them as identification method.</p>
-<p><img alt="samples" src="http://mxlian.github.io/images/neuror/samples.png" /></p>
+<p><img alt="samples" src="http://mxlian.github.io/images/neuror/samples.png"></p>
 
 
 <h1>Input</h1>
@@ -87,10 +87,10 @@ a fixed rate for a fixed amount of time. This sample will then be used as the
 amount of people has access. </p>
 <p>For the sensor we use a potentiometer with its body fixed to the wall, and the
 moving shaft attached to the door. </p>
-<p><img alt="potentionmeter" src="http://mxlian.github.io/images/neuror/1.resized.JPG" /></p>
+<p><img alt="potentionmeter" src="http://mxlian.github.io/images/neuror/1.resized.JPG"></p>
 <p>The potentiometer should be aligned with the door axis, allowing the moving
 shaft to follow the angular movements of the door.</p>
-<p><img alt="potentionmeter" src="http://mxlian.github.io/images/neuror/2.resized.JPG" /></p>
+<p><img alt="potentionmeter" src="http://mxlian.github.io/images/neuror/2.resized.JPG"></p>
 <p>Nice, we're all set. Now whenever someone opens the door, the potentiometer will
 track the movement all the time.</p>
 <!--![potentionmeter]({filename}/images/neuror/3.resized.JPG)-->
@@ -100,7 +100,7 @@ money it's my self made Severino version.</p>
 <p>The signals of the potentiometer are directly connected to the Arduino, where
 it's digitalized/cuantified and then sent to a PC where it's going to be stored
 in a database for future processing.</p>
-<p><img alt="arduino" src="http://mxlian.github.io/images/neuror/4.resized.JPG" /></p>
+<p><img alt="arduino" src="http://mxlian.github.io/images/neuror/4.resized.JPG"></p>
 <p>We defined our data sample as the serie of measurements while the door is open.
 When the door is closed we don't care. </p>
 <p>As the Arduino is very scarse on memory we have can't store the whole data
@@ -119,7 +119,7 @@ has more resources.  The arduino runs a sketch wich performs the following: </p>
 <li>When the door closes send a special character to signalize the pc that the sampling finished (and it can be saved on the DB)</li>
 </ul>
 <p>The code of the sketch looks like this:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -186,7 +186,7 @@ has more resources.  The arduino runs a sketch wich performs the following: </p>
 65
 66
 67
-68</pre></div></td><td class="code"><div class="codehilite"><pre><span class="cm">/*</span>
+68</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm">       Neuror - Door Interface Sketch </span>
 <span class="cm">*/</span>
 
@@ -260,7 +260,7 @@ has more resources.  The arduino runs a sketch wich performs the following: </p>
 <p>To recieve the data we reconditioned some old hardware, and we plug the Arduino
 Severino to the serial port (I like old fashion). If you're interested you can
 read about <a href="{filename}/coil-inversion.md">how to invert your monitor coils</a>.</p>
-<p><img alt="pc" src="http://mxlian.github.io/images/neuror/5.resized.JPG" /></p>
+<p><img alt="pc" src="http://mxlian.github.io/images/neuror/5.resized.JPG"></p>
 <p>The data is now received on the PC through the serial port. To keep it simple we
 run a SQLite database and a python script which constantly waiting for data. The
 script recieves all the measurements in secuence, and when the newline caracter
@@ -279,7 +279,7 @@ of the sampling </li>
 </ul>
 <p>NOTE: The <code>readline()</code> function of the Serial library blocks until the newline
 character appears on the line.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -314,42 +314,42 @@ character appears on the line.</p>
 33
 34
 35
-36</pre></div></td><td class="code"><div class="codehilite"><pre><span class="kn">import</span> <span class="nn">datetime</span>
+36</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">datetime</span>
 <span class="kn">import</span> <span class="nn">serial</span>
 <span class="kn">import</span> <span class="nn">sqlite3</span>
 <span class="kn">import</span> <span class="nn">time</span>
 
-<span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s">&#39;puerta-datos.db&#39;</span><span class="p">,</span> 
+<span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;puerta-datos.db&#39;</span><span class="p">,</span> 
                              <span class="n">detect_types</span><span class="o">=</span><span class="n">sqlite3</span><span class="o">.</span><span class="n">PARSE_DECLTYPES</span><span class="o">|</span><span class="n">sqlite3</span><span class="o">.</span><span class="n">PARSE_COLNAMES</span><span class="p">)</span>
 <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 
-<span class="c">## To create the database the first time uncomment this</span>
-<span class="c">#print &quot;Creando base de datos...&quot;</span>
-<span class="c">#cursor.execute(&#39;DROP TABLE datos&#39;)</span>
-<span class="c">#cursor.execute(&#39;CREATE TABLE datos (id INTEGER PRIMARY KEY, </span>
-<span class="c">#                                    fecha TIMESTAMP, </span>
-<span class="c">#                                    datos VARCHAR(320))&#39;)  #320 ==&gt; &quot;9999-&quot;x64</span>
-<span class="c">#connection.commit()</span>
+<span class="c1">## To create the database the first time uncomment this</span>
+<span class="c1">#print &quot;Creando base de datos...&quot;</span>
+<span class="c1">#cursor.execute(&#39;DROP TABLE datos&#39;)</span>
+<span class="c1">#cursor.execute(&#39;CREATE TABLE datos (id INTEGER PRIMARY KEY, </span>
+<span class="c1">#                                    fecha TIMESTAMP, </span>
+<span class="c1">#                                    datos VARCHAR(320))&#39;)  #320 ==&gt; &quot;9999-&quot;x64</span>
+<span class="c1">#connection.commit()</span>
 
-<span class="c">## To print all the data use this</span>
-<span class="c">#print &quot;Visualizando datos:&quot;</span>
-<span class="c">#cursor.execute(&#39;SELECT * FROM datos&#39;)</span>
-<span class="c">#for row in cursor:</span>
-<span class="c">#    print row</span>
+<span class="c1">## To print all the data use this</span>
+<span class="c1">#print &quot;Visualizando datos:&quot;</span>
+<span class="c1">#cursor.execute(&#39;SELECT * FROM datos&#39;)</span>
+<span class="c1">#for row in cursor:</span>
+<span class="c1">#    print row</span>
 
-<span class="n">s</span> <span class="o">=</span> <span class="n">serial</span><span class="o">.</span><span class="n">Serial</span><span class="p">(</span><span class="s">&#39;/dev/ttyS0&#39;</span><span class="p">,</span> <span class="mi">9600</span><span class="p">)</span>
-<span class="k">print</span> <span class="s">&quot;Port in use:&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">portstr</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">serial</span><span class="o">.</span><span class="n">Serial</span><span class="p">(</span><span class="s1">&#39;/dev/ttyS0&#39;</span><span class="p">,</span> <span class="mi">9600</span><span class="p">)</span>
+<span class="k">print</span> <span class="s2">&quot;Port in use:&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">portstr</span>
 
 <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s">&#39;INSERT INTO datos(fecha, datos) values (?, ?)&#39;</span><span class="p">,</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;INSERT INTO datos(fecha, datos) values (?, ?)&#39;</span><span class="p">,</span>
                     <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(),</span>
 <span class="hll">                     <span class="n">s</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span>
 </span>                  <span class="p">)</span>
     <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
 
-<span class="c">#cursor.close()</span>
-<span class="c">#connection.close()</span>
-<span class="c">#s.close()</span>
+<span class="c1">#cursor.close()</span>
+<span class="c1">#connection.close()</span>
+<span class="c1">#s.close()</span>
 </pre></div>
 </td></tr></table>
 
@@ -358,8 +358,8 @@ character appears on the line.</p>
 different patters that appear.</p>
 <p>See the picture at the beginning of the article. I used matplotlib to plot some
 of them. </p>
-<p><img alt="samples" src="http://mxlian.github.io/images/neuror/sample47.png" />
-<img alt="samples" src="http://mxlian.github.io/images/neuror/sample49.png" /></p>
+<p><img alt="samples" src="http://mxlian.github.io/images/neuror/sample47.png">
+<img alt="samples" src="http://mxlian.github.io/images/neuror/sample49.png"></p>
 <h1>Analysis</h1>
 <p>Julian started to train some neuronal networks to be able to recognize and group
 the patterns. He worked with Kohonnen maps.</p>

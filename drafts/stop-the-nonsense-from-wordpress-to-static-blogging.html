@@ -60,7 +60,7 @@ stop the nonsense: from Wordpress to static blogging  </title>
 
   <main>
      <header>
-<p>Posted on So 21 Dezember 2014</p>
+<p>Posted on Di 04 November 2014</p>
     </header>
 <article>
   <div id="article_title">
@@ -71,7 +71,7 @@ stop the nonsense: from Wordpress to static blogging  </title>
 <blockquote>
 <p>Hey I am the one</p>
 </blockquote>
-<div class="codehilite"><pre><span class="nt">-</span><span class="o">&gt;</span> <span class="nt">Modified</span><span class="o">:</span> <span class="nt">settings</span><span class="o">.</span> <span class="nt">re-generating</span><span class="o">...</span>
+<div class="highlight"><pre><span></span><span class="nt">-</span><span class="o">&gt;</span> <span class="nt">Modified</span><span class="o">:</span> <span class="nt">settings</span><span class="o">.</span> <span class="nt">re-generating</span><span class="o">...</span>
 <span class="nt">DEBUG</span><span class="o">:</span> <span class="nt">signal</span> <span class="o">&lt;</span><span class="nt">blinker</span><span class="nc">.base.NamedSignal</span> <span class="nt">object</span> <span class="nt">at</span> <span class="nt">0x2ba5a43d89d0</span><span class="o">;</span> <span class="nt">u</span><span class="s1">&#39;static_generator_preread&#39;</span><span class="o">&gt;</span><span class="nc">.send</span><span class="o">(&lt;</span><span class="nt">pelican</span><span class="nc">.generators.StaticGenerator</span> <span class="nt">object</span> <span class="nt">at</span> <span class="nt">0x2ba5a77fad50</span><span class="o">&gt;)</span>
 <span class="nt">DEBUG</span><span class="o">:</span> <span class="nt">signal</span> <span class="o">&lt;</span><span class="nt">blinker</span><span class="nc">.base.NamedSignal</span> <span class="nt">object</span> <span class="nt">at</span> <span class="nt">0x2ba5a43d8a10</span><span class="o">;</span> <span class="nt">u</span><span class="s1">&#39;static_generator_context&#39;</span><span class="o">&gt;</span><span class="nc">.send</span><span class="o">(&lt;</span><span class="nt">pelican</span><span class="nc">.generators.StaticGenerator</span> <span class="nt">object</span> <span class="nt">at</span> <span class="nt">0x2ba5a77fad50</span><span class="o">&gt;,</span> <span class="o">&lt;</span><span class="nt">metadata</span><span class="o">&gt;)</span>
 <span class="nt">DEBUG</span><span class="o">:</span> <span class="nt">signal</span> <span class="o">&lt;</span><span class="nt">blinker</span><span class="nc">.base.NamedSignal</span> <span class="nt">object</span> <span class="nt">at</span> <span class="nt">0x2ba5a43d88d0</span><span class="o">;</span> <span class="nt">u</span><span class="s1">&#39;article_generator_preread&#39;</span><span class="o">&gt;</span><span class="nc">.send</span><span class="o">(&lt;</span><span class="nt">pelican</span><span class="nc">.generators.ArticlesGenerator</span> <span class="nt">object</span> <span class="nt">at</span> <span class="nt">0x2ba5a7755510</span><span class="o">&gt;)</span>
@@ -89,7 +89,7 @@ stop the nonsense: from Wordpress to static blogging  </title>
 
 
 <p>asdf laskdfj </p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -112,30 +112,30 @@ stop the nonsense: from Wordpress to static blogging  </title>
 21
 22
 23
-24</pre></div></td><td class="code"><div class="codehilite"><pre><span class="c">#!/usr/bin/env python</span>
-<span class="c"># -*- coding: utf-8 -*- #</span>
+24</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+<span class="c1"># -*- coding: utf-8 -*- #</span>
 <span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
 
-<span class="c"># This file is only used if you use `make publish` or</span>
-<span class="c"># explicitly specify it as your config file.</span>
+<span class="c1"># This file is only used if you use `make publish` or</span>
+<span class="c1"># explicitly specify it as your config file.</span>
 
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">sys</span>
 <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">curdir</span><span class="p">)</span>
 <span class="kn">from</span> <span class="nn">pelicanconf</span> <span class="kn">import</span> <span class="o">*</span>
 
-<span class="n">SITEURL</span> <span class="o">=</span> <span class="s">&#39;http://mxlian.github.io&#39;</span>
+<span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">&#39;http://mxlian.github.io&#39;</span>
 <span class="n">RELATIVE_URLS</span> <span class="o">=</span> <span class="bp">False</span>
 
-<span class="n">FEED_ALL_ATOM</span> <span class="o">=</span> <span class="s">&#39;feeds/all.atom.xml&#39;</span>
-<span class="n">CATEGORY_FEED_ATOM</span> <span class="o">=</span> <span class="s">&#39;feeds/</span><span class="si">%s</span><span class="s">.atom.xml&#39;</span>
+<span class="n">FEED_ALL_ATOM</span> <span class="o">=</span> <span class="s1">&#39;feeds/all.atom.xml&#39;</span>
+<span class="n">CATEGORY_FEED_ATOM</span> <span class="o">=</span> <span class="s1">&#39;feeds/</span><span class="si">%s</span><span class="s1">.atom.xml&#39;</span>
 
 <span class="n">DELETE_OUTPUT_DIRECTORY</span> <span class="o">=</span> <span class="bp">True</span>
 
-<span class="c"># Following items are often useful when publishing</span>
+<span class="c1"># Following items are often useful when publishing</span>
 
-<span class="c">#DISQUS_SITENAME = &quot;&quot;</span>
-<span class="c">#GOOGLE_ANALYTICS = &quot;&quot;</span>
+<span class="c1">#DISQUS_SITENAME = &quot;&quot;</span>
+<span class="c1">#GOOGLE_ANALYTICS = &quot;&quot;</span>
 </pre></div>
 </td></tr></table>
   </div>

@@ -75,7 +75,7 @@ be repaired and had to be replaced. </p>
 <li>Build your own, even if you have no idea how </li>
 </ol>
 <p>If you think the second option is the right one keep reading...</p>
-<p><img alt="samples" src="http://mxlian.github.io/images/washing-machine/summary2.JPG" /></p>
+<p><img alt="samples" src="http://mxlian.github.io/images/washing-machine/summary2.JPG"></p>
 
 
 <h1>Background</h1>
@@ -96,8 +96,8 @@ I started the project, so don't kill me for all the wrong choices.</p>
 <h1>The finished project</h1>
 <p>Don't want to bore you with details, so let me show you how it went
 and leave the rest for the end in case you still interested.</p>
-<p><img alt="finished" src="http://mxlian.github.io/images/washing-machine/finished-trim.JPG" /></p>
-<p><img alt="internals" src="http://mxlian.github.io/images/washing-machine/topview.JPG" /></p>
+<p><img alt="finished" src="http://mxlian.github.io/images/washing-machine/finished-trim.JPG"></p>
+<p><img alt="internals" src="http://mxlian.github.io/images/washing-machine/topview.JPG"></p>
 <p>The machine provides 4 different full programs, 2 short ones, and configuration:</p>
 <ul>
 <li>Ropa de algodón (cotton)</li>
@@ -142,7 +142,7 @@ frameborder="0" allowfullscreen></iframe>
 <li>Yellow led (show established link to pc, if connected)</li>
 <li>Piezoelectric sounder (to generate tones)</li>
 </ul>
-<p><img alt="logic diagram" src="http://mxlian.github.io/images/washing-machine/control_panel.jpg" /></p>
+<p><img alt="logic diagram" src="http://mxlian.github.io/images/washing-machine/control_panel.jpg"></p>
 <p>The LCD has his own driver (microcontroller). Mine was the HD44780, and the
 protocol can be found on the datasheet. I used a library which spared me the
 headache. Sadly the driver is very sensitive to EMI, which caused a LOT of
@@ -164,14 +164,14 @@ a wide range of tones.</p>
 <p>It's the central part of the design. It hosts the microcontroller and
 connects it with the peripherals.</p>
 <p>The design was made with Eagle CAD. You can find it on <a href="http://github.com/mxlian/wm">Github</a>.</p>
-<p><img alt="eagle" src="http://mxlian.github.io/images/washing-machine/eagle.jpg" /></p>
+<p><img alt="eagle" src="http://mxlian.github.io/images/washing-machine/eagle.jpg"></p>
 <p>The PCB it's made of cheap Pertinax (FR-2) to save some money. No high
 frequencies to justify a higher quality.</p>
 <p>The first thing is the power source. The input voltage is 9VAC 1A (a 220v/9v
 transformer with fuse). The motherboard contains a diode bridge to obtain 12VDC
 for the relays and the servo and voltage regulator (LM7805) to power the LCD and
 the micro at 5VDC.</p>
-<p><img alt="trafo" src="http://mxlian.github.io/images/washing-machine/trafo.JPG" /></p>
+<p><img alt="trafo" src="http://mxlian.github.io/images/washing-machine/trafo.JPG"></p>
 <p>Peripherals are connected to the mainboard trough housing connectors, making
 removal of the motherboard very easy.</p>
 <p>The microcontroller used is the PIC 16F877PI with at 4Mhz. There was no need to
@@ -180,7 +180,7 @@ generator library for the piezo sounder.</p>
 <p>To program it there is a ICSP socket, to allow direct firmware updates without
 having to extract the micro.</p>
 <p>There is optical isolation with the power stage using optocouplers (HPCL-817).</p>
-<p><img alt="mainboard" src="http://mxlian.github.io/images/washing-machine/motherboard.JPG" /></p>
+<p><img alt="mainboard" src="http://mxlian.github.io/images/washing-machine/motherboard.JPG"></p>
 <p>The firmware is C code compiled with the PCM compiler from CCS, a very good
 PIC compilers of that time. The firmware uses about 85% of the ROM and required
 some nasty tricks to fit them in.</p>
@@ -189,9 +189,9 @@ some nasty tricks to fit them in.</p>
 <p>It consists in a 'panel' of relays, acting as switches to control the
 electric flow to the different components of the machine:</p>
 <p>The panel diagram:
-<img alt="Panel Diagram" src="http://mxlian.github.io/images/washing-machine/panelDistribucion.JPG" /></p>
+<img alt="Panel Diagram" src="http://mxlian.github.io/images/washing-machine/panelDistribucion.JPG"></p>
 <p>The actual panel:
-<img alt="Real Panel" src="http://mxlian.github.io/images/washing-machine/WM_Relays.JPG" /></p>
+<img alt="Real Panel" src="http://mxlian.github.io/images/washing-machine/WM_Relays.JPG"></p>
 <ul>
 <li>Electrovalve(RLY_EV): an electrically controlled water inlet. It let
 water flow when an electrical current is applied. The water goes
@@ -208,7 +208,7 @@ straightforward. So I will omit the explanation.</p>
 how to make it work. These are the results:</p>
 <p>Lets assign numbers to the connector pins (from left to right). The
 upper row 1, 2, 3 and 4, 5, 6 to the bottom row.</p>
-<p><img alt="Motor connector" src="http://mxlian.github.io/images/washing-machine/fichon.JPG" /></p>
+<p><img alt="Motor connector" src="http://mxlian.github.io/images/washing-machine/fichon.JPG"></p>
 <table>
 <thead>
 <tr>
@@ -253,7 +253,7 @@ is active they have no effect.</p>
 <p>The relay RLY_AC switch the motor on and off. The <a href="http://en.wikipedia.org/wiki/Snubber">snubber</a>
 reduces the EMI of the commutation, which is horrible for big
 inductive loads like the motor.</p>
-<p><img alt="Snubber" src="http://mxlian.github.io/images/washing-machine/snubber.png" /></p>
+<p><img alt="Snubber" src="http://mxlian.github.io/images/washing-machine/snubber.png"></p>
 <p>The snubber configuration used (ignore the values of the diagram):</p>
 <ul>
 <li>R=100Ohm/1Watt</li>
@@ -261,17 +261,17 @@ inductive loads like the motor.</p>
 </ul>
 <p>The relays I used are SANYOU SRD-S-112D, the are very cheap. I end
 up using it in pairs instead of buyin <em>double pole</em> ones.</p>
-<p><img alt="SANYOU relays" src="http://mxlian.github.io/images/washing-machine/relay.JPG" /></p>
+<p><img alt="SANYOU relays" src="http://mxlian.github.io/images/washing-machine/relay.JPG"></p>
 <p>To control the relays I used an array of Darlington transistors
 (ULN2003AN). Each Darlington comes with a <a href="https://www.youtube.com/watch?v=LXGtE3X2k7Y">freewheeling diode</a>,
 to protect the transistors from coil auto induction, when driving
 inductive loads.</p>
-<p><img alt="ULN2003AN" src="http://mxlian.github.io/images/washing-machine/uln2003.png" /></p>
+<p><img alt="ULN2003AN" src="http://mxlian.github.io/images/washing-machine/uln2003.png"></p>
 <h3>Sensors</h3>
 <p><strong>Pressure switch</strong>: allows to know when the water reached
 a predefined level by measuring the air pressure exert by the water
 in a special air chamber. It's used as a normal switch.
-<img alt="Pressure switch" src="http://mxlian.github.io/images/washing-machine/presometro.JPG" /></p>
+<img alt="Pressure switch" src="http://mxlian.github.io/images/washing-machine/presometro.JPG"></p>
 <p><strong>Door switch</strong>: actually a main switch, which is closed only by the door. When
 the door closes the machine is turned on. I keep using it as originally
 designed. The door switch doesn't contains any lock mechanism.</p>
@@ -280,17 +280,17 @@ measure water temperature and control the heater. I completely
 replaced it with a LM35 temperature sensor reusing the original
 metallic housing of the thermostat. The LM35 was attached to the 
 housing using super glue.</p>
-<p><img alt="Pressure switch" src="http://mxlian.github.io/images/washing-machine/thermostat.png" /></p>
+<p><img alt="Pressure switch" src="http://mxlian.github.io/images/washing-machine/thermostat.png"></p>
 <h3>Dispenser system</h3>
 <p>This machine has only one water inlet and a rotatory arm to divert
 the water flow into the different compartments. The arm was
 originally controlled by the electromechanical timer. To achieve the
 same function I used a low cost servo for model airplanes (I took
 the idea from <a href="http://pablin.com.ar/electron/circuito/mc/lavapic/index.htm">Pablo Canello</a>)</p>
-<p><img alt="Servo" src="http://mxlian.github.io/images/washing-machine/WM_Servo2.jpg" /></p>
+<p><img alt="Servo" src="http://mxlian.github.io/images/washing-machine/WM_Servo2.jpg"></p>
 <p>The servo was attached to the rotatory arm (green) using a little
 bit of bricolage ingenuity.</p>
-<p><img alt="Servo" src="http://mxlian.github.io/images/washing-machine/WM_Servo1.jpg" /></p>
+<p><img alt="Servo" src="http://mxlian.github.io/images/washing-machine/WM_Servo1.jpg"></p>
 <p>Check this <a href="//www.youtube.com/embed/WQ8yoPQx2lU">video</a> to see exactly how it
 works.</p>
 <p>The servo has 3 lines, VCC, GND and signal. To control the servo
@@ -322,7 +322,7 @@ parameters.</p>
 wasn't excluded when selecting the parameters).</p>
 <p>Each task has its own parameters which varies between all the
 washing programs. Please refer to the code to see the differences.</p>
-<p><img alt="logic diagram" src="http://mxlian.github.io/images/washing-machine/diagLogico.png" /></p>
+<p><img alt="logic diagram" src="http://mxlian.github.io/images/washing-machine/diagLogico.png"></p>
 <h1>Hardware versions</h1>
 <p>The motherboard went through 3 different iterations:</p>
 <h3>Version 1</h3>
@@ -331,7 +331,7 @@ machine and the PC. The power stage and the sensors where connected
 to a PIC 16F84A. </p>
 <p>The user interface was a computer program which sent orders to the
 PIC UART through a serial interface.</p>
-<p><img alt="serial connector" src="http://mxlian.github.io/images/washing-machine/serialconn.JPG" /></p>
+<p><img alt="serial connector" src="http://mxlian.github.io/images/washing-machine/serialconn.JPG"></p>
 <h3>Version 2</h3>
 <p>I grew up my skills on microcontrollers so I went for an autonomous
 solution. A new set of features were added:</p>
@@ -412,7 +412,7 @@ are talking!</p>
 <li>Better temperature sensing algorithm </li>
 <li>Improved relay switching to reduce wear out</li>
 </ul>
-<p><img alt="Firmware simulation" src="http://mxlian.github.io/images/washing-machine/WMv5on4.jpg" /></p>
+<p><img alt="Firmware simulation" src="http://mxlian.github.io/images/washing-machine/WMv5on4.jpg"></p>
 <h1>Sources</h1>
 <p><strong>Update 2014</strong>: You can find the sources and designs in <a href="http://github.com/mxlian/wm">Github</a>.</p>
 <p>If something wrong or missing just drop me a line.  </p>
