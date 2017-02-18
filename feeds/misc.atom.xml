@@ -11,14 +11,6 @@ knowledge only: &lt;strong&gt;MP4 (H264 + aac)&lt;/strong&gt;&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;You can try with different settings for better quality. In the example it will
-reencode the video with a bitrate of 1200k and a resolution of 640x480. Audio
-will have a bitrate of 64k and it will be monoaural (use &lt;strong&gt;-ac 2&lt;/strong&gt; for stereo).&lt;/p&gt;
-&lt;p&gt;To only convert a part of the original video specify start and end like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-ss 00:1:02 -to 00:2:43
-&lt;/pre&gt;&lt;/div&gt;
-
-
 </summary><content type="html">&lt;p&gt;WhatsApp currently is kind of picky about the video format that supports. To my
 knowledge only: &lt;strong&gt;MP4 (H264 + aac)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;strong&gt;avconv&lt;/strong&gt; to convert my existing video files:&lt;/p&gt;
@@ -31,15 +23,14 @@ knowledge only: &lt;strong&gt;MP4 (H264 + aac)&lt;/strong&gt;&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
+
+
 &lt;p&gt;You can try with different settings for better quality. In the example it will
 reencode the video with a bitrate of 1200k and a resolution of 640x480. Audio
 will have a bitrate of 64k and it will be monoaural (use &lt;strong&gt;-ac 2&lt;/strong&gt; for stereo).&lt;/p&gt;
 &lt;p&gt;To only convert a part of the original video specify start and end like this:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-ss 00:1:02 -to 00:2:43
-&lt;/pre&gt;&lt;/div&gt;
-
-
-</content><category term="video"></category><category term="encoding"></category><category term="whatsapp"></category></entry><entry><title>Install Hack Typeface on Ubuntu/Debian</title><link href="http://mxlian.github.io/install-hack-typeface-on-ubuntudebian.html" rel="alternate"></link><published>2015-09-01T10:27:05+02:00</published><updated>2015-09-01T10:27:05+02:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2015-09-01:/install-hack-typeface-on-ubuntudebian.html</id><summary type="html">&lt;p&gt;Want to try &lt;a href="http://sourcefoundry.org/hack/"&gt;Hack Typeface&lt;/a&gt;? Use the following gist:&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="video"></category><category term="encoding"></category><category term="whatsapp"></category></entry><entry><title>Install Hack Typeface on Ubuntu/Debian</title><link href="http://mxlian.github.io/install-hack-typeface-on-ubuntudebian.html" rel="alternate"></link><published>2015-09-01T10:27:05+02:00</published><updated>2015-09-01T10:27:05+02:00</updated><author><name>Maximiliano Padulo</name></author><id>tag:mxlian.github.io,2015-09-01:/install-hack-typeface-on-ubuntudebian.html</id><summary type="html">&lt;p&gt;Want to try &lt;a href="http://sourcefoundry.org/hack/"&gt;Hack Typeface&lt;/a&gt;? Use the following gist:&lt;/p&gt;
 &lt;script src="https://gist.github.com/mxlian/33c279b2b0ae0492793d.js"&gt;&lt;/script&gt;
 
 &lt;p&gt;Happy coding!

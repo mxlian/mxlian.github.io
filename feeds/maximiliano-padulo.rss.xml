@@ -11,14 +11,6 @@ knowledge only: &lt;strong&gt;MP4 (H264 + aac)&lt;/strong&gt;&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;You can try with different settings for better quality. In the example it will
-reencode the video with a bitrate of 1200k and a resolution of 640x480. Audio
-will have a bitrate of 64k and it will be monoaural (use &lt;strong&gt;-ac 2&lt;/strong&gt; for stereo).&lt;/p&gt;
-&lt;p&gt;To only convert a part of the original video specify start and end like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-ss 00:1:02 -to 00:2:43
-&lt;/pre&gt;&lt;/div&gt;
-
-
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maximiliano Padulo</dc:creator><pubDate>Sat, 18 Feb 2017 20:52:03 +0100</pubDate><guid isPermaLink="false">tag:mxlian.github.io,2017-02-18:/encode-videos-to-send-via-whatsapp.html</guid><category>video</category><category>encoding</category><category>whatsapp</category></item><item><title>Install Hack Typeface on Ubuntu/Debian</title><link>http://mxlian.github.io/install-hack-typeface-on-ubuntudebian.html</link><description>&lt;p&gt;Want to try &lt;a href="http://sourcefoundry.org/hack/"&gt;Hack Typeface&lt;/a&gt;? Use the following gist:&lt;/p&gt;
 &lt;script src="https://gist.github.com/mxlian/33c279b2b0ae0492793d.js"&gt;&lt;/script&gt;
 
