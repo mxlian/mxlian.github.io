@@ -353,14 +353,13 @@ all my effort (really felt clueless most of the time) to eradicate it:</p>
 <li>Filters on the power supply</li>
 <li>Galvanic isolation from the power stage (with optocouplers)</li>
 <li>Decoupling capacitors (between VCC and GND)</li>
-<li>A Faraday cage (sort of) for the PIC connecte to GND</li>
+<li>A Faraday cage (sort of) for the PIC connected to GND</li>
 <li>Better PCB design</li>
 </ul>
-<p>It improved the stability of the system a lot, but it was still not
-freeze free. After an incredible amount of time (because it only
-happened randomly and very spaciated in time) I discovered that the
-LCD microcontroller was also being affected by EMI and as result it
-was blocking my PIC. </p>
+<p>It improved the stability of the system a lot, but still had some sporadic
+problems. After some more debugging I discovered that the LCD display was also
+being affected by EMI and as result it was blocking the execution of the
+program.</p>
 <p>I applied 2 extra measures:</p>
 <ul>
 <li>Snubbers on the relays to reduce EMI emission (they make a hell of
@@ -389,16 +388,14 @@ task:</p>
 <p>It was a failure because of the stack overflows. They were a lot of
 tasks, and the PIC has only a 8 bytes stack.</p>
 <h3>Version 3</h3>
-<p>A minimalistic secuencial version. No RTOS. </p>
-<p>There is only one washing program. The LCD display isn't updated
-while washing.</p>
+<p>A minimalistic sequential version. No RTOS. </p>
+<p>There was only one washing program. The LCD display isn't updated while washing.</p>
 <h3>Version 4</h3>
-<p>I borrowed a lot of the nice ideas of using a RTOS and introduced it
-in the sequential version to obtain a similar behaviour.</p>
-<p>Different washing programs were added, and the EEPROM is used to
-resume after a power failure.</p>
-<p>The display is updated while the washing task are running. Now we
-are talking!</p>
+<p>I borrowed a lot of the nice ideas of using a RTOS and introduced it in the
+sequential version to obtain a similar behaviour.</p>
+<p>Different washing programs were added, and the EEPROM is used to resume after
+a power failure.</p>
+<p>The display is updated while the washing task are running. Now we are talking!</p>
 <h3>Version 5</h3>
 <p>Basically a lot of small improvements:</p>
 <ul>
